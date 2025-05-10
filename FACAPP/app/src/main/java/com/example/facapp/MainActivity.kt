@@ -1,11 +1,16 @@
 package com.example.facapp
 
+import android.annotation.SuppressLint
+import android.graphics.Paint
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.style.UnderlineSpan
 import android.util.Log
 import android.widget.Button
 import android.widget.NumberPicker
 import android.widget.NumberPicker.OnValueChangeListener
 import android.widget.RadioGroup
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -14,6 +19,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -23,6 +29,15 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
+        val textView = findViewById<TextView>(R.id.acum)
+        val content = "Accumulated"
+        val contentUnderline = SpannableString(content)
+        contentUnderline.setSpan(UnderlineSpan(), 0, content.length, 0)
+        textView.text = contentUnderline
+
+
 
 
     //codigo encode para la ALU:
@@ -125,5 +140,60 @@ class MainActivity : AppCompatActivity() {
             }.start()
         }
 
+
+
+        //logica para mandarel el rst
+
+
+        val btnReset = findViewById<Button>(R.id.RST)
+
+        btnReset.setOnClickListener {
+            btnEncnder.isEnabled = false // 🔒 Desactiva el botón para evitar múltiples toques
+
+            var ByteReset = "0000" + "00" + "01"
+            val url = "http://192.168.4.1/data/$ByteReset"
+
+            Thread {
+                try {
+                    val connection = URL(url).openConnection() as HttpURLConnection
+                    connection.requestMethod = "GET"
+                    connection.connectTimeout = 5000
+                    connection.readTimeout = 5000
+
+                    val responseCode = connection.responseCode
+                    if (responseCode == HttpURLConnection.HTTP_OK) {
+                        Log.d("ESP8266", "Conexión exitosa, respuesta: $responseCode")
+                    } else {
+                        Log.e("ESP8266", "Error en la respuesta: $responseCode")
+                    }
+                    connection.disconnect()
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                    Log.e("ESP8266", "Error en la conexión: ${e.message}")
+                }
+
+                // ✅ Volver a activar el botón en la UI
+                runOnUiThread {
+                    btnEncnder.isEnabled = true
+                }
+
+            }.start()
+        }
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
 }
