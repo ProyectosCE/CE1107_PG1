@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.NumberPicker
+import android.widget.NumberPicker.OnValueChangeListener
 import android.widget.RadioGroup
-import android.widget.Switch
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,50 +25,84 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+    //codigo encode para la ALU:
+
+        val Operaciones = findViewById<RadioGroup>(R.id.operaciones)
+        var SelectedId = 0
+        var EncodeOperacion = "00"
+
+        Operaciones.setOnCheckedChangeListener { group, checkedId ->
+            SelectedId = checkedId
+            if(SelectedId == 2131231032){
+                EncodeOperacion = "00"
+            }
+            else if(SelectedId == 2131231159){
+                EncodeOperacion = "01"
+
+            }
+
+            else if(SelectedId == 2131231243){
+                EncodeOperacion = "10"
+            }
+            else{
+                EncodeOperacion = "11"
+            }
+            Log.d("Operacion", EncodeOperacion)
+
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 //        valor maximo que puede tener el acumulado
-
-
         val numberPicker = findViewById<NumberPicker>(R.id.numberPicker)
         numberPicker.minValue = 0
         numberPicker.maxValue = 15
         numberPicker.wrapSelectorWheel = true
         numberPicker.value = 5
         numberPicker.isEnabled = true
+        var acumulado =  0
+        var binary_acumulado = "0000";
 
 
 
-//        que solo un switch este prendido
+
+        numberPicker.setOnValueChangedListener(OnValueChangeListener { picker, oldVal, newVal ->
+             acumulado = newVal
+             binary_acumulado = Integer.toBinaryString(acumulado).padStart(4,'0')
+            Log.d("picker value", binary_acumulado.toString() + "")
+        })
 
 
 
-        val switch1 = findViewById<Switch>(R.id.switch1)
-        val switch2 = findViewById<Switch>(R.id.switch2)
-        val switch3 = findViewById<Switch>(R.id.switch3)
-        val switch4 = findViewById<Switch>(R.id.switch4)
 
-        val switches = listOf(switch1, switch2, switch3, switch4)
 
-        for (s in switches) {
-            s.setOnCheckedChangeListener { _, isChecked ->
-                if (isChecked) {
-                    switches.filter { it != s }.forEach { it.isChecked = false }
-                }
-            }
-        }
+
+
 
 
         //encender led
         val btnEncnder = findViewById<Button>(R.id.CLK)
 
         btnEncnder.setOnClickListener {
-            val url = "http://192.168.4.1/led/on" // CAMBIADO
+            btnEncnder.isEnabled = false // 🔒 Desactiva el botón para evitar múltiples toques
+
+            var ByteCLK = binary_acumulado + EncodeOperacion + "10"
+            val url = "http://192.168.4.1/data/$ByteCLK"
 
             Thread {
                 try {
                     val connection = URL(url).openConnection() as HttpURLConnection
                     connection.requestMethod = "GET"
-                    connection.connectTimeout = 5000  // Agregar un timeout
+                    connection.connectTimeout = 5000
                     connection.readTimeout = 5000
 
                     val responseCode = connection.responseCode
@@ -82,6 +116,12 @@ class MainActivity : AppCompatActivity() {
                     e.printStackTrace()
                     Log.e("ESP8266", "Error en la conexión: ${e.message}")
                 }
+
+                // ✅ Volver a activar el botón en la UI
+                runOnUiThread {
+                    btnEncnder.isEnabled = true
+                }
+
             }.start()
         }
 

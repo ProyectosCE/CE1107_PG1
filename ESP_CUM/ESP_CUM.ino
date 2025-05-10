@@ -49,16 +49,23 @@ void loop() {
   client.readStringUntil('\n');
   Serial.println("Petición: " + request);
 
-  if (request.indexOf("/led/on") != -1) {
-    digitalWrite(ledPin, HIGH);
-  } else if (request.indexOf("/led/off") != -1) {
-    digitalWrite(ledPin, LOW);
-  }
+  if (request.indexOf("/data/") != -1) {
+  int pos = request.indexOf("/data/") + 6;
+  String binario = request.substring(pos, pos + 8); // Asumiendo longitud fija
+  Serial.println("Binario recibido: " + binario);
+
+  // Si quieres convertirlo a número:
+  byte valor = strtol(binario.c_str(), NULL, 2); // convierte de binario a decimal
+  Serial.print("Valor en decimal: ");
+  Serial.println(valor);
+  Serial.write(valor);  // Envía el byte real por UART
+}
 
   client.print("HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\n");
   client.print("LED está ");
   client.print((digitalRead(ledPin) == HIGH) ? "ENCENDIDO" : "APAGADO");
 
   delay(1);
+  client.flush();
   client.stop();
 }
