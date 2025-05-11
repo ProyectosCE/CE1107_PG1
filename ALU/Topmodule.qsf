@@ -57,3 +57,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE and_op.sv
 set_global_assignment -name SYSTEMVERILOG_FILE xor_op.sv
 set_global_assignment -name SYSTEMVERILOG_FILE sub_op.sv
 set_global_assignment -name SYSTEMVERILOG_FILE mul_op.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux4_1.sv
