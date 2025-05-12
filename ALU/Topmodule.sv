@@ -1,7 +1,7 @@
 // ----------------------
 // TopModule: conexión completa ALU + flags + visualización
 // ----------------------
-module topmodule(
+module Topmodule(
     input  logic [9:0] switches,      // switches[3:0] = A, switches[5:4] = B, switches[7:6] = sel
     output logic [6:0] seg0,          // display de 7 segmentos (HEX0)
     output logic [9:0] leds           // leds[3:0] = flags Z, N, C, V (de derecha a izquierda)
