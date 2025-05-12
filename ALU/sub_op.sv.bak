@@ -1,12 +1,11 @@
 // ----------------------
 // Módulo SUB (A - B) usando complemento a dos
 // ----------------------
+
 module sub_op(
     input  logic [3:0] A,
     input  logic [1:0] B,
-    output logic [3:0] Y,
-    output logic C_out,
-    output logic V_out
+    output logic [3:0] Y
 );
     logic [3:0] B_ext, B_inv;
     logic C1, C2, C3;
@@ -25,9 +24,4 @@ module sub_op(
     assign C3 = (A[2] & B_inv[2]) | (A[2] & C2) | (B_inv[2] & C2);
 
     assign Y[3] = A[3] ^ B_inv[3] ^ C3;
-
-    // Carry y overflow
-    assign C_out = (A[3] & B_inv[3]) | (A[3] & C3) | (B_inv[3] & C3);
-    assign V_out = C3 ^ C_out; // overflow = Cout3 XOR Cout4
-	 
 endmodule
