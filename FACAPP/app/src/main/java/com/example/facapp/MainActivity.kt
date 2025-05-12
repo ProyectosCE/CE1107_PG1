@@ -42,29 +42,7 @@ class MainActivity : AppCompatActivity() {
 
     //codigo encode para la ALU:
 
-        val Operaciones = findViewById<RadioGroup>(R.id.operaciones)
-        var SelectedId = 0
-        var EncodeOperacion = "00"
 
-        Operaciones.setOnCheckedChangeListener { group, checkedId ->
-            SelectedId = checkedId
-            if(SelectedId == 2131231032){
-                EncodeOperacion = "00"
-            }
-            else if(SelectedId == 2131231159){
-                EncodeOperacion = "01"
-
-            }
-
-            else if(SelectedId == 2131231243){
-                EncodeOperacion = "10"
-            }
-            else{
-                EncodeOperacion = "11"
-            }
-            Log.d("Operacion", EncodeOperacion)
-
-        }
 
 
 
@@ -108,9 +86,22 @@ class MainActivity : AppCompatActivity() {
         val btnEncnder = findViewById<Button>(R.id.CLK)
 
         btnEncnder.setOnClickListener {
-            btnEncnder.isEnabled = false // 🔒 Desactiva el botón para evitar múltiples toques
+            val Operaciones = findViewById<RadioGroup>(R.id.operaciones)
+            val selectedId = Operaciones.checkedRadioButtonId
 
-            var ByteCLK = binary_acumulado + EncodeOperacion + "10"
+            val encodeOperacion = when (selectedId) {
+                R.id.multiply -> "00"
+                R.id.sub -> "01"
+                R.id.xor -> "10"
+                R.id.and -> "11"
+                else -> "00" // Puedes poner un default seguro aquí si quieres
+            }
+
+            Log.d("Operacion", encodeOperacion)
+
+            btnEncnder.isEnabled = false
+
+            val ByteCLK = binary_acumulado + encodeOperacion + "10"
             val url = "http://192.168.4.1/data/$ByteCLK"
 
             Thread {
@@ -132,11 +123,9 @@ class MainActivity : AppCompatActivity() {
                     Log.e("ESP8266", "Error en la conexión: ${e.message}")
                 }
 
-                // ✅ Volver a activar el botón en la UI
                 runOnUiThread {
                     btnEncnder.isEnabled = true
                 }
-
             }.start()
         }
 

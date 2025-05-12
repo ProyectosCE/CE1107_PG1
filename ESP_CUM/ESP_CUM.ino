@@ -10,7 +10,7 @@ void setup() {
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, LOW);
 
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   // 1. IP fija para evitar conflictos y mantener estable la conexión
   IPAddress local_ip(192, 168, 4, 1);
@@ -66,6 +66,6 @@ void loop() {
   client.print((digitalRead(ledPin) == HIGH) ? "ENCENDIDO" : "APAGADO");
 
   delay(1);
-  client.flush();
+
   client.stop();
 }
