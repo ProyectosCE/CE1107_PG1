@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Topmodule
-Sun May 11 22:31:25 2025
+Mon May 12 08:57:28 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -44,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 11 22:31:25 2025          ;
+; Analysis & Synthesis Status     ; Successful - Mon May 12 08:57:28 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Topmodule                                      ;
 ; Top-level Entity Name           ; Topmodule                                      ;
@@ -265,7 +265,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -275,7 +275,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sun May 11 22:31:12 2025
+    Info: Processing started: Mon May 12 08:57:13 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_HDL -c Topmodule
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -295,6 +295,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
     Info (12023): Found entity 1: alu File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file hex_sevenseg.sv
     Info (12023): Found entity 1: HEX_SevenSeg File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file and_op_tb.sv
+    Info (12023): Found entity 1: and_op_tb File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/and_op_tb.sv Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file xor_op_tb.sv
+    Info (12023): Found entity 1: xor_op_tb File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/xor_op_tb.sv Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file sub_op_tb.sv
+    Info (12023): Found entity 1: sub_op_tb File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/sub_op_tb.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file mul_op_tb.sv
+    Info (12023): Found entity 1: mul_op_tb File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mul_op_tb.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file mux4_1_tb.sv
+    Info (12023): Found entity 1: mux4_1_tb File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux4_1_tb.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
+    Info (12023): Found entity 1: alu_tb File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu_tb.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file hex_sevenseg_tb.sv
+    Info (12023): Found entity 1: HEX_SevenSeg_tb File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/HEX_SevenSeg_tb.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file topmodule_tb.sv
+    Info (12023): Found entity 1: Topmodule_tb File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Topmodule_tb.sv Line: 7
 Info (12127): Elaborating entity "Topmodule" for the top level hierarchy
 Info (12128): Elaborating entity "alu" for hierarchy "alu:u_alu" File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 29
 Info (12128): Elaborating entity "and_op" for hierarchy "alu:u_alu|and_op:u_and" File: C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu.sv Line: 16
@@ -323,9 +339,9 @@ Info (21057): Implemented 44 device resources after synthesis - the final resour
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 17 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4837 megabytes
-    Info: Processing ended: Sun May 11 22:31:25 2025
-    Info: Elapsed time: 00:00:13
+    Info: Peak virtual memory: 4844 megabytes
+    Info: Processing ended: Mon May 12 08:57:28 2025
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:30
 
 
