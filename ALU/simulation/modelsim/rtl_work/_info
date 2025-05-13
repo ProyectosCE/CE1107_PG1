@@ -1,0 +1,237 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/josee/CE1107_PG1/ALU/simulation/modelsim
+valu
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1747076481
+!i10b 1
+!s100 :eZHle3]Tl2f;V_iAfJz33
+IjPAdNh`ehg:lSHTOk34RY3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 alu_sv_unit
+S1
+R0
+Z4 w1747094463
+8C:/Users/josee/CE1107_PG1/ALU/alu.sv
+FC:/Users/josee/CE1107_PG1/ALU/alu.sv
+L0 4
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1747076481.000000
+!s107 C:/Users/josee/CE1107_PG1/ALU/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/alu.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU
+Z9 tCvgOpt 0
+vand_op
+R1
+Z10 !s110 1747076480
+!i10b 1
+!s100 nEoa3WkHj2i;WRe1OWQEI3
+Ice6^Hg93Bol]g<fMP^;Mj0
+R3
+!s105 and_op_sv_unit
+S1
+R0
+w1747075135
+8C:/Users/josee/CE1107_PG1/ALU/and_op.sv
+FC:/Users/josee/CE1107_PG1/ALU/and_op.sv
+L0 5
+R5
+r1
+!s85 0
+31
+Z11 !s108 1747076480.000000
+!s107 C:/Users/josee/CE1107_PG1/ALU/and_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/and_op.sv|
+!i113 1
+R7
+R8
+R9
+vHEX_SevenSeg
+R1
+R2
+!i10b 1
+!s100 gVfUlze:Ql6lfdlc3j3=Y1
+IC^mm@3^1kzDIfS?Va>^;D1
+R3
+!s105 HEX_SevenSeg_sv_unit
+S1
+R0
+w1747073673
+8C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv
+FC:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv|
+!i113 1
+R7
+R8
+R9
+n@h@e@x_@seven@seg
+vmul_op
+R1
+R2
+!i10b 1
+!s100 :[VI9QEh<8VK>UFF;6[T=1
+I33T:91gRbbkRe92?1SbK?3
+R3
+!s105 mul_op_sv_unit
+S1
+R0
+w1747075622
+8C:/Users/josee/CE1107_PG1/ALU/mul_op.sv
+FC:/Users/josee/CE1107_PG1/ALU/mul_op.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/josee/CE1107_PG1/ALU/mul_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/mul_op.sv|
+!i113 1
+R7
+R8
+R9
+vmul_op_tb
+R1
+R2
+!i10b 1
+!s100 37;ej@lRJozXlKZhCN1P[1
+IDY48^H=@3A4nWz>WI<PnA2
+R3
+!s105 mul_op_tb_sv_unit
+S1
+R0
+w1747094471
+8C:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv
+FC:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv
+L0 7
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv|
+!i113 1
+R7
+R8
+R9
+vmux4_1
+R1
+R2
+!i10b 1
+!s100 eL179KRJdM0j_Xc[deOX20
+IL5WzGVZ?gJ`ZL@oQBk2e]1
+R3
+!s105 mux4_1_sv_unit
+S1
+R0
+w1747075517
+8C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv
+FC:/Users/josee/CE1107_PG1/ALU/mux4_1.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv|
+!i113 1
+R7
+R8
+R9
+vsub_op
+R1
+R10
+!i10b 1
+!s100 @ICaKAQAc:9h8L>VmkT<U3
+Ia;3;5Z:6k`ZTe<6NSL3b:0
+R3
+!s105 sub_op_sv_unit
+S1
+R0
+w1747075274
+8C:/Users/josee/CE1107_PG1/ALU/sub_op.sv
+FC:/Users/josee/CE1107_PG1/ALU/sub_op.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/josee/CE1107_PG1/ALU/sub_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/sub_op.sv|
+!i113 1
+R7
+R8
+R9
+vTopmodule
+R1
+R10
+!i10b 1
+!s100 50_HUY2PG`4;j4]69CobH1
+I0@m9f768i=7H[2iMT2;;k2
+R3
+!s105 Topmodule_sv_unit
+S1
+R0
+R4
+8C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv
+FC:/Users/josee/CE1107_PG1/ALU/Topmodule.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv|
+!i113 1
+R7
+R8
+R9
+n@topmodule
+vxor_op
+R1
+R10
+!i10b 1
+!s100 [^AUF0hFjMn=hKfZ9ODQ>3
+IIYcgB24DShH7Z`VTDo`2m2
+R3
+!s105 xor_op_sv_unit
+S1
+R0
+w1747075140
+8C:/Users/josee/CE1107_PG1/ALU/xor_op.sv
+FC:/Users/josee/CE1107_PG1/ALU/xor_op.sv
+L0 5
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/josee/CE1107_PG1/ALU/xor_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/xor_op.sv|
+!i113 1
+R7
+R8
+R9

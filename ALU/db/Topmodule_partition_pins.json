@@ -48,27 +48,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches[7]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[6]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[2]",
-					"strict" : false
-				},
-				{
 					"name" : "switches[5]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[1]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[0]",
 					"strict" : false
 				},
 				{
@@ -76,7 +56,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches[3]",
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "tx_esp",
 					"strict" : false
 				}
 			]

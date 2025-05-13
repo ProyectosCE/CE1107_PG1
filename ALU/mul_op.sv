@@ -1,6 +1,3 @@
-// ----------------------
-// Módulo MUL (A x B) con 4 bits A, 2 bits B
-// ----------------------
 module mul_op(
     input  logic [3:0] A,
     input  logic [1:0] B,
@@ -8,39 +5,38 @@ module mul_op(
     output logic C_out
 );
     // Productos parciales
-    logic p0, p1a, p1b, p2a, p2b, p2c, p3a, p3b, p3c, p4, p5;
-    logic C2, C3;
+    logic pp0, pp1_0, pp1_1, pp2_0, pp2_1, pp3_0, pp3_1, pp4_1;
 
-    assign p0  = A[0] & B[0];
-    assign p1a = A[1] & B[0];
-    assign p1b = A[0] & B[1];
+    // Carries
+    logic c1, c2, c3, c4, c5;
 
-    assign p2a = A[2] & B[0];
-    assign p2b = A[1] & B[1];
-    assign p2c = p1a & p1b;
+    // Productos parciales (bit a bit)
+    assign pp0    = A[0] & B[0];
+    assign pp1_0  = A[1] & B[0];
+    assign pp2_0  = A[2] & B[0];
+    assign pp3_0  = A[3] & B[0];
 
-    assign p3a = A[3] & B[0];
-    assign p3b = A[2] & B[1];
-    assign p3c = p2a & p2b | p2a & p2c | p2b & p2c;
+    assign pp1_1  = A[0] & B[1];
+    assign pp2_1  = A[1] & B[1];
+    assign pp3_1  = A[2] & B[1];
+    assign pp4_1  = A[3] & B[1];
 
-    assign p4 = A[3] & B[1];
-    assign p5 = p3a & p3b;
+    // Y[0]
+    assign Y[0] = pp0;
 
-    // Y0
-    assign Y[0] = p0;
+    // Y[1] = pp1_0 ^ pp1_1
+    assign Y[1] = pp1_0 ^ pp1_1;
+    assign c1   = pp1_0 & pp1_1;
 
-    // Y1
-    assign Y[1] = p1a ^ p1b;
+    // Y[2] = pp2_0 ^ pp2_1 ^ c1
+    assign Y[2] = pp2_0 ^ pp2_1 ^ c1;
+    assign c2 = (pp2_0 & pp2_1) | (pp2_0 & c1) | (pp2_1 & c1);
 
-    // Y2
-    assign C2 = p1a & p1b;
-    assign Y[2] = p2a ^ p2b ^ C2;
+    // Y[3] = pp3_0 ^ pp3_1 ^ c2
+    assign Y[3] = pp3_0 ^ pp3_1 ^ c2;
+    assign c3 = (pp3_0 & pp3_1) | (pp3_0 & c2) | (pp3_1 & c2);
 
-    // Y3
-    assign C3 = (p2a & p2b) | (p2a & C2) | (p2b & C2);
-    assign Y[3] = p3a ^ p3b ^ C3;
+    // C_out = pp4_1 ^ c3 (podés hacer más lógica si querés más precisión)
+    assign C_out = pp4_1 | c3;
 
-    // Carry si el resultado completo excede 4 bits
-    assign C_out = p4 | p5;
-	 
 endmodule

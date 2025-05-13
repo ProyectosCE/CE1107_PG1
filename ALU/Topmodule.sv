@@ -3,6 +3,9 @@
 // ----------------------
 module Topmodule(
     input  logic [9:0] switches,      // switches[3:0] = A, switches[5:4] = B, switches[7:6] = sel
+	 input logic clk,
+	 input tx_esp,
+	 input rst,
     output logic [6:0] seg0,          // display de 7 segmentos (HEX0)
     output logic [9:0] leds           // leds[3:0] = flags Z, N, C, V (de derecha a izquierda)
 );
@@ -10,11 +13,21 @@ module Topmodule(
     logic [1:0] B, sel;
     logic [3:0] Y;
     logic Z, N, C, V;
+	 logic [7:0] Outs_uart;
 
     // Asignación de entradas desde switches
-    assign A   = switches[3:0];
+    assign A   = Outs_uart[7:4];
     assign B   = switches[5:4];
-    assign sel = switches[7:6];
+    assign sel = Outs_uart[3:2];
+	 
+	 
+	 UART uart_inst(
+    .clk(clk),              // Reloj FPGA (50 MHz)
+    .rst_n(~rst),            // Botón de reset ACTIVO BAJO
+    .uart_rx(tx_esp),          // Entrada UART RX desde Arduino
+    .Out(Outs_uart)         // salida conectada a esp
+);
+	 
 
     // Instancia de la ALU
     alu u_alu(
@@ -42,5 +55,6 @@ module Topmodule(
 
     // Resto de LEDs no utilizados
     assign leds[9:4] = 6'b0;
+
 
 endmodule

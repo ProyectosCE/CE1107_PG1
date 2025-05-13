@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46bcdaf4-b499-44f7-aa7b-6f0eed5acb0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ESP_CUM/ESP_CUM.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../ESP_CUM/ESP_CUM.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/facapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/facapp/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/UART.qws" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/UART.qws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.asm.qmsg" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.asm.qmsg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.asm.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.asm.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.cmp.bpm" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.cmp.bpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.cmp.cdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.cmp.cdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.cmp.hdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.cmp.hdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.cmp.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.cmp.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.cyclonev_io_sim_cache.ff_0c_fast.hsd" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.cyclonev_io_sim_cache.ff_0c_fast.hsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.cyclonev_io_sim_cache.tt_85c_slow.hsd" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.cyclonev_io_sim_cache.tt_85c_slow.hsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.db_info" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.db_info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.eda.qmsg" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.eda.qmsg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.fit.qmsg" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.fit.qmsg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.map.bpm" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.map.bpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.map.cdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.map.cdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.map.hdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.map.hdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.map.kpt" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.map.kpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.map.qmsg" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.map.qmsg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.map.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.map.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.map_bb.cdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.map_bb.cdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.map_bb.hdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.map_bb.hdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.pre_map.hdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.pre_map.hdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.rtlv.hdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.rtlv.hdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.sta.qmsg" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.sta.qmsg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.sta.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.sta.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.tiscmp.fast_1100mv_0c.ddb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.tiscmp.fast_1100mv_0c.ddb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.tiscmp.fast_1100mv_85c.ddb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.tiscmp.fast_1100mv_85c.ddb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.tiscmp.slow_1100mv_0c.ddb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.tiscmp.slow_1100mv_0c.ddb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.tiscmp.slow_1100mv_85c.ddb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.tiscmp.slow_1100mv_85c.ddb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/db/UART.tmw_info" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/db/UART.tmw_info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.cmp.cdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.cmp.cdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.cmp.hbdb.cdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.cmp.hbdb.cdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.cmp.hbdb.hdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.cmp.hbdb.hdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.cmp.hdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.cmp.hdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.cdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.cdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.dpi" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.dpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.hbdb.cdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.hbdb.cdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.hbdb.hdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.hbdb.hdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.hdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.hdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.kpt" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.root_partition.map.kpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.rrp.hdb" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/incremental_db/compiled_partitions/UART.rrp.hdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.asm.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.asm.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.done" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.done" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.eda.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.eda.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.fit.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.fit.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.fit.summary" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.fit.summary" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.flow.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.flow.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.jdi" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.jdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.map.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.map.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.map.smsg" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.map.smsg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.map.summary" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.map.summary" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.sof" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.sof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/output_files/UART.sta.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/output_files/UART.sta.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/simulation/modelsim/UART.svo" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/simulation/modelsim/UART.svo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UART/simulation/modelsim/UART_modelsim.xrf" beforeDir="false" afterPath="$PROJECT_DIR$/../UART/simulation/modelsim/UART_modelsim.xrf" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2wzoES1EJ3yIWYDoFZeU4pFwoKs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;UART&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/josee/CE1107_PG1/FACAPP&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="FacApp.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46bcdaf4-b499-44f7-aa7b-6f0eed5acb0a" name="Changes" comment="" />
+      <created>1747053651951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747053651951</updated>
+    </task>
+    <servers />
+  </component>
+</project>
