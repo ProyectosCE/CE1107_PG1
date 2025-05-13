@@ -377,13 +377,37 @@ seg0[6] <= seg0_internal[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Topmodule|pwm_controller:u_pwm
-clk => clk.IN1
-rst => rst.IN1
+clk => clk.IN2
+rst => rst.IN2
 duty[0] => duty[0].IN1
 duty[1] => duty[1].IN1
 duty[2] => duty[2].IN1
 duty[3] => duty[3].IN1
 pwm_out <= comparador_menor:u_cmp.menor
+
+
+|Topmodule|pwm_controller:u_pwm|div_pwm:u_div_pwm
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+rst => counter[0].ACLR
+rst => counter[1].ACLR
+rst => counter[2].ACLR
+rst => counter[3].ACLR
+rst => counter[4].ACLR
+rst => counter[5].ACLR
+rst => counter[6].ACLR
+rst => counter[7].ACLR
+rst => counter[8].ACLR
+rst => counter[9].ACLR
+tick <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Topmodule|pwm_controller:u_pwm|contador4bit:u_counter
@@ -395,6 +419,10 @@ rst => Q.OUTPUTSELECT
 rst => Q.OUTPUTSELECT
 rst => Q.OUTPUTSELECT
 rst => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE

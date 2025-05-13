@@ -5,6 +5,7 @@
 module contador4bit (
     input  logic clk,
     input  logic rst,
+	 input  logic en,
     output logic [3:0] Q
 );
 
@@ -19,8 +20,8 @@ module contador4bit (
     always_ff @(posedge clk) begin
         if (rst)
             Q <= 4'b0000;
-        else
+        else if (en)
             Q <= next_Q;
     end
 
-endmodule
+endmodule 
