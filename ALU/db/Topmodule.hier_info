@@ -9,26 +9,27 @@ switches[6] => ~NO_FANOUT~
 switches[7] => ~NO_FANOUT~
 switches[8] => ~NO_FANOUT~
 switches[9] => ~NO_FANOUT~
-clk => clk.IN1
+clk => clk.IN2
 tx_esp => tx_esp.IN1
-rst => _.IN1
-seg0[0] <= HEX_SevenSeg:u_display.seg0
-seg0[1] <= HEX_SevenSeg:u_display.seg0
-seg0[2] <= HEX_SevenSeg:u_display.seg0
-seg0[3] <= HEX_SevenSeg:u_display.seg0
-seg0[4] <= HEX_SevenSeg:u_display.seg0
-seg0[5] <= HEX_SevenSeg:u_display.seg0
-seg0[6] <= HEX_SevenSeg:u_display.seg0
-leds[0] <= alu:u_alu.Z
-leds[1] <= alu:u_alu.N
-leds[2] <= alu:u_alu.C
-leds[3] <= alu:u_alu.V
-leds[4] <= <GND>
-leds[5] <= <GND>
-leds[6] <= <GND>
-leds[7] <= <GND>
-leds[8] <= <GND>
-leds[9] <= <GND>
+rst => rst.IN1
+seg0[0] << HEX_SevenSeg:u_display.seg0
+seg0[1] << HEX_SevenSeg:u_display.seg0
+seg0[2] << HEX_SevenSeg:u_display.seg0
+seg0[3] << HEX_SevenSeg:u_display.seg0
+seg0[4] << HEX_SevenSeg:u_display.seg0
+seg0[5] << HEX_SevenSeg:u_display.seg0
+seg0[6] << HEX_SevenSeg:u_display.seg0
+leds[0] << alu:u_alu.Z
+leds[1] << alu:u_alu.N
+leds[2] << alu:u_alu.C
+leds[3] << alu:u_alu.V
+leds[4] << <GND>
+leds[5] << <GND>
+leds[6] << <GND>
+leds[7] << <GND>
+leds[8] << <GND>
+leds[9] << <GND>
+pwm_gpio << pwm_controller:u_pwm.pwm_out
 
 
 |Topmodule|UART:uart_inst
@@ -373,5 +374,48 @@ seg0[3] <= seg0_internal[3].DB_MAX_OUTPUT_PORT_TYPE
 seg0[4] <= seg0_internal[4].DB_MAX_OUTPUT_PORT_TYPE
 seg0[5] <= seg0_internal[5].DB_MAX_OUTPUT_PORT_TYPE
 seg0[6] <= seg0_internal[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|pwm_controller:u_pwm
+clk => clk.IN1
+rst => rst.IN1
+duty[0] => duty[0].IN1
+duty[1] => duty[1].IN1
+duty[2] => duty[2].IN1
+duty[3] => duty[3].IN1
+pwm_out <= comparador_menor:u_cmp.menor
+
+
+|Topmodule|pwm_controller:u_pwm|contador4bit:u_counter
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+rst => Q.OUTPUTSELECT
+rst => Q.OUTPUTSELECT
+rst => Q.OUTPUTSELECT
+rst => Q.OUTPUTSELECT
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|pwm_controller:u_pwm|comparador_menor:u_cmp
+A[0] => lt0.IN1
+A[1] => eq2.IN0
+A[1] => lt1.IN1
+A[2] => eq1.IN0
+A[2] => lt2.IN1
+A[3] => eq0.IN0
+A[3] => lt3.IN0
+B[0] => lt0.IN1
+B[1] => eq2.IN1
+B[1] => lt1.IN1
+B[2] => eq1.IN1
+B[2] => lt2.IN1
+B[3] => eq0.IN1
+B[3] => lt3.IN1
+menor <= menor.DB_MAX_OUTPUT_PORT_TYPE
 
 

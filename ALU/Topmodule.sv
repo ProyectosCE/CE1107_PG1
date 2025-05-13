@@ -7,7 +7,8 @@ module Topmodule(
 	 input tx_esp,
 	 input rst,
     output logic [6:0] seg0,          // display de 7 segmentos (HEX0)
-    output logic [9:0] leds           // leds[3:0] = flags Z, N, C, V (de derecha a izquierda)
+    output logic [9:0] leds,         // leds[3:0] = flags Z, N, C, V (de derecha a izquierda)
+	 output logic pwm_gpio
 );
     logic [3:0] A;
     logic [1:0] B, sel;
@@ -55,6 +56,15 @@ module Topmodule(
 
     // Resto de LEDs no utilizados
     assign leds[9:4] = 6'b0;
+	 
+	 
+	     // PWM controller
+    pwm_controller u_pwm(
+        .clk(clk),
+        .rst(rst),
+        .duty(Y),
+        .pwm_out(pwm_gpio)
+    );
 
 
 endmodule
