@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at HEX_SevenSeg.sv(4): object "a" differs only in case from object "A" in the same scope File: C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv Line: 4
+Info (10281): Verilog HDL Declaration information at UART.sv(40): object "data" differs only in case from object "DATA" in the same scope File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 40
