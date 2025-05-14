@@ -13,14 +13,17 @@ module contador4bit (
 
     // Lógica del siguiente estado (Q + 1)
     always_comb begin
-        next_Q = Q + 4'd1;
+        if (en)
+            next_Q = Q + 4'd1;
+        else
+            next_Q = Q;
     end
 
     // FF tipo D
     always_ff @(posedge clk) begin
         if (rst)
             Q <= 4'b0000;
-        else if (en)
+        else 
             Q <= next_Q;
     end
 
