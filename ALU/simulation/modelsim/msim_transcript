@@ -1,0 +1,119 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Topmodule_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU {C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:01:20 on May 12,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE1107_PG1/ALU" C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv 
+# -- Compiling module Topmodule
+# 
+# Top level modules:
+# 	Topmodule
+# End time: 13:01:20 on May 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU {C:/Users/josee/CE1107_PG1/ALU/and_op.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:01:20 on May 12,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE1107_PG1/ALU" C:/Users/josee/CE1107_PG1/ALU/and_op.sv 
+# -- Compiling module and_op
+# 
+# Top level modules:
+# 	and_op
+# End time: 13:01:20 on May 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU {C:/Users/josee/CE1107_PG1/ALU/xor_op.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:01:20 on May 12,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE1107_PG1/ALU" C:/Users/josee/CE1107_PG1/ALU/xor_op.sv 
+# -- Compiling module xor_op
+# 
+# Top level modules:
+# 	xor_op
+# End time: 13:01:20 on May 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU {C:/Users/josee/CE1107_PG1/ALU/sub_op.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:01:20 on May 12,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE1107_PG1/ALU" C:/Users/josee/CE1107_PG1/ALU/sub_op.sv 
+# -- Compiling module sub_op
+# 
+# Top level modules:
+# 	sub_op
+# End time: 13:01:21 on May 12,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU {C:/Users/josee/CE1107_PG1/ALU/mul_op.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:01:21 on May 12,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE1107_PG1/ALU" C:/Users/josee/CE1107_PG1/ALU/mul_op.sv 
+# -- Compiling module mul_op
+# 
+# Top level modules:
+# 	mul_op
+# End time: 13:01:21 on May 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU {C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:01:21 on May 12,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE1107_PG1/ALU" C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv 
+# -- Compiling module mux4_1
+# 
+# Top level modules:
+# 	mux4_1
+# End time: 13:01:21 on May 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU {C:/Users/josee/CE1107_PG1/ALU/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:01:21 on May 12,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE1107_PG1/ALU" C:/Users/josee/CE1107_PG1/ALU/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 13:01:21 on May 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU {C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:01:21 on May 12,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE1107_PG1/ALU" C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv 
+# -- Compiling module HEX_SevenSeg
+# 
+# Top level modules:
+# 	HEX_SevenSeg
+# End time: 13:01:21 on May 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU {C:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:01:21 on May 12,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE1107_PG1/ALU" C:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv 
+# -- Compiling module mul_op_tb
+# 
+# Top level modules:
+# 	mul_op_tb
+# End time: 13:01:21 on May 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mul_op_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" mul_op_tb 
+# Start time: 13:01:21 on May 12,2025
+# Loading sv_std.std
+# Loading work.mul_op_tb
+# Loading work.mul_op
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 13:02:35 on May 12,2025, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 0
