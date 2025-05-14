@@ -11,7 +11,7 @@ switches[8] => ~NO_FANOUT~
 switches[9] => ~NO_FANOUT~
 clk => clk.IN2
 tx_esp => tx_esp.IN1
-rst => rst.IN1
+rst => rst.IN2
 seg0[0] << HEX_SevenSeg:u_display.seg0
 seg0[1] << HEX_SevenSeg:u_display.seg0
 seg0[2] << HEX_SevenSeg:u_display.seg0
@@ -396,7 +396,6 @@ clk => counter[5].CLK
 clk => counter[6].CLK
 clk => counter[7].CLK
 clk => counter[8].CLK
-clk => counter[9].CLK
 rst => counter[0].ACLR
 rst => counter[1].ACLR
 rst => counter[2].ACLR
@@ -406,7 +405,6 @@ rst => counter[5].ACLR
 rst => counter[6].ACLR
 rst => counter[7].ACLR
 rst => counter[8].ACLR
-rst => counter[9].ACLR
 tick <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 

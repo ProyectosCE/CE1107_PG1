@@ -16,7 +16,7 @@ module pwm_controller (
 
     div_pwm #(
         .CLK_FREQ(50_000_000),
-        .PWM_FREQ(5_000) //frecuencia de pwm
+        .PWM_FREQ(10_000) //frecuencia de pwm
     ) u_div_pwm (
         .clk(clk),
         .rst(rst),
