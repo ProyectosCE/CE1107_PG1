@@ -1,41 +1,49 @@
-// ======================================================
-// PWM estructural usando contador y comparador
-// ======================================================
-
-
 module pwm_controller (
-    input  logic clk,
+    input  logic clk,           // 50 MHz
     input  logic rst,
-    input  logic [3:0] duty,
+    input  logic [3:0] duty,    // 0 a 15
     output logic pwm_out
 );
 
     logic tick;
-    logic [3:0] counter;
-    logic menor;
+    logic [11:0] clk_div;       // divisor para tick (12 bits es suficiente)
+    logic [7:0] counter;        // contador de 8 bits
+    logic [7:0] duty_scaled;
 
-    div_pwm #(
-        .CLK_FREQ(50_000_000),
-        .PWM_FREQ(10_000) //frecuencia de pwm
-    ) u_div_pwm (
-        .clk(clk),
-        .rst(rst),
-        .tick(tick)
-    );
+    // ===============================
+    // Divisor de reloj para PWM ≈ 20kHz
+    // ===============================
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst)
+            clk_div <= 0;
+        else if (clk_div == 2499)
+            clk_div <= 0;
+        else
+            clk_div <= clk_div + 1;
+    end
 
-    contador4bit u_counter (
-        .clk(clk),
-        .rst(rst),
-        .en(tick),
-        .Q(counter)
-    );
+    assign tick = (clk_div == 0); // un tick cada 2500 ciclos → 20 kHz
 
-    comparador_menor u_cmp (
-        .A(counter),
-        .B(duty),
-        .menor(menor)
-    );
+    // ===============================
+    // Contador de 8 bits para ciclo PWM
+    // ===============================
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst)
+            counter <= 0;
+        else if (tick)
+            counter <= counter + 1;
+    end
 
-    assign pwm_out = menor;
+    // ===============================
+    // Escalado de entrada duty de 4 bits a 8 bits (0–255)
+    // ===============================
+    assign duty_scaled = duty * 17; // 0*17 = 0, 15*17 = 255
+
+    // ===============================
+    // Comparador para salida PWM
+    // ===============================
+    always_comb begin
+        pwm_out = (counter < duty_scaled);
+    end
 
 endmodule

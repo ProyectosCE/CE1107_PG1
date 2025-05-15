@@ -12,7 +12,7 @@ module UART (
 
     // Instancia del receptor UART (9600 baudios, 8N1)
     uart_rx #(
-        .BAUD_RATE(9600),
+        .BAUD_RATE(115200),
         .CLOCK_FREQ(50000000)
     ) uart_inst (
         .clk(clk),

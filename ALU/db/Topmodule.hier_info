@@ -377,16 +377,6 @@ seg0[6] <= seg0_internal[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Topmodule|pwm_controller:u_pwm
-clk => clk.IN2
-rst => rst.IN2
-duty[0] => duty[0].IN1
-duty[1] => duty[1].IN1
-duty[2] => duty[2].IN1
-duty[3] => duty[3].IN1
-pwm_out <= comparador_menor:u_cmp.menor
-
-
-|Topmodule|pwm_controller:u_pwm|div_pwm:u_div_pwm
 clk => counter[0].CLK
 clk => counter[1].CLK
 clk => counter[2].CLK
@@ -395,7 +385,18 @@ clk => counter[4].CLK
 clk => counter[5].CLK
 clk => counter[6].CLK
 clk => counter[7].CLK
-clk => counter[8].CLK
+clk => clk_div[0].CLK
+clk => clk_div[1].CLK
+clk => clk_div[2].CLK
+clk => clk_div[3].CLK
+clk => clk_div[4].CLK
+clk => clk_div[5].CLK
+clk => clk_div[6].CLK
+clk => clk_div[7].CLK
+clk => clk_div[8].CLK
+clk => clk_div[9].CLK
+clk => clk_div[10].CLK
+clk => clk_div[11].CLK
 rst => counter[0].ACLR
 rst => counter[1].ACLR
 rst => counter[2].ACLR
@@ -404,44 +405,26 @@ rst => counter[4].ACLR
 rst => counter[5].ACLR
 rst => counter[6].ACLR
 rst => counter[7].ACLR
-rst => counter[8].ACLR
-tick <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|pwm_controller:u_pwm|contador4bit:u_counter
-clk => Q[0]~reg0.CLK
-clk => Q[1]~reg0.CLK
-clk => Q[2]~reg0.CLK
-clk => Q[3]~reg0.CLK
-rst => Q.OUTPUTSELECT
-rst => Q.OUTPUTSELECT
-rst => Q.OUTPUTSELECT
-rst => Q.OUTPUTSELECT
-en => next_Q[3].OUTPUTSELECT
-en => next_Q[2].OUTPUTSELECT
-en => next_Q[1].OUTPUTSELECT
-en => next_Q[0].OUTPUTSELECT
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|pwm_controller:u_pwm|comparador_menor:u_cmp
-A[0] => lt0.IN1
-A[1] => eq2.IN0
-A[1] => lt1.IN1
-A[2] => eq1.IN0
-A[2] => lt2.IN1
-A[3] => eq0.IN0
-A[3] => lt3.IN0
-B[0] => lt0.IN1
-B[1] => eq2.IN1
-B[1] => lt1.IN1
-B[2] => eq1.IN1
-B[2] => lt2.IN1
-B[3] => eq0.IN1
-B[3] => lt3.IN1
-menor <= menor.DB_MAX_OUTPUT_PORT_TYPE
+rst => clk_div[0].ACLR
+rst => clk_div[1].ACLR
+rst => clk_div[2].ACLR
+rst => clk_div[3].ACLR
+rst => clk_div[4].ACLR
+rst => clk_div[5].ACLR
+rst => clk_div[6].ACLR
+rst => clk_div[7].ACLR
+rst => clk_div[8].ACLR
+rst => clk_div[9].ACLR
+rst => clk_div[10].ACLR
+rst => clk_div[11].ACLR
+duty[0] => LessThan0.IN15
+duty[0] => LessThan0.IN16
+duty[1] => LessThan0.IN13
+duty[1] => LessThan0.IN14
+duty[2] => LessThan0.IN11
+duty[2] => LessThan0.IN12
+duty[3] => LessThan0.IN9
+duty[3] => LessThan0.IN10
+pwm_out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
