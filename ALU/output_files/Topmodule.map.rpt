@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Topmodule
-Thu May 15 00:38:43 2025
+Thu May 15 17:30:42 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,11 +13,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |Topmodule|UART:uart_inst|uart_rx:uart_inst|state
+  8. State Machine - |Topmodule|UART:uart_inst|state
   9. Registers Removed During Synthesis
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: UART:uart_inst|uart_rx:uart_inst
+ 12. Parameter Settings for User Entity Instance: UART:uart_inst
  13. Port Connectivity Checks: "UART:uart_inst"
  14. Post-Synthesis Netlist Statistics for Top Partition
  15. Elapsed Time Per Partition
@@ -48,7 +48,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 15 00:38:43 2025       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 15 17:30:42 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Topmodule                                   ;
 ; Top-level Entity Name           ; Topmodule                                   ;
@@ -160,34 +160,34 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                    ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------+---------+
-; Topmodule.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv      ;         ;
-; and_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/and_op.sv         ;         ;
-; xor_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/xor_op.sv         ;         ;
-; sub_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/sub_op.sv         ;         ;
-; mul_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/mul_op.sv         ;         ;
-; mux4_1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv         ;         ;
-; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/alu.sv            ;         ;
-; HEX_SevenSeg.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv   ;         ;
-; UART.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/UART.sv           ;         ;
-; pwm_controller.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/pwm_controller.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
+; Topmodule.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv      ;         ;
+; and_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/and_op.sv         ;         ;
+; xor_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op.sv         ;         ;
+; sub_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op.sv         ;         ;
+; mul_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mul_op.sv         ;         ;
+; mux4_1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux4_1.sv         ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv            ;         ;
+; HEX_SevenSeg.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv   ;         ;
+; UART.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv           ;         ;
+; pwm_controller.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -195,14 +195,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 65        ;
+; Estimate of Logic utilization (ALMs needed) ; 67        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 99        ;
-;     -- 7 input functions                    ; 1         ;
-;     -- 6 input functions                    ; 27        ;
-;     -- 5 input functions                    ; 6         ;
-;     -- 4 input functions                    ; 22        ;
-;     -- <=3 input functions                  ; 43        ;
+; Combinational ALUT usage for logic          ; 103       ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 28        ;
+;     -- 5 input functions                    ; 9         ;
+;     -- 4 input functions                    ; 20        ;
+;     -- <=3 input functions                  ; 46        ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 62        ;
 ;                                             ;           ;
@@ -212,51 +212,50 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 62        ;
-; Total fan-out                               ; 625       ;
-; Average fan-out                             ; 2.80      ;
+; Total fan-out                               ; 668       ;
+; Average fan-out                             ; 2.94      ;
 +---------------------------------------------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name    ; Library Name ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------+--------------+
-; |Topmodule                  ; 99 (0)              ; 62 (0)                    ; 0                 ; 0          ; 31   ; 0            ; |Topmodule                                  ; Topmodule      ; work         ;
-;    |HEX_SevenSeg:u_display| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|HEX_SevenSeg:u_display           ; HEX_SevenSeg   ; work         ;
-;    |UART:uart_inst|         ; 48 (0)              ; 42 (6)                    ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst                   ; UART           ; work         ;
-;       |uart_rx:uart_inst|   ; 48 (48)             ; 36 (36)                   ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|uart_rx:uart_inst ; uart_rx        ; work         ;
-;    |alu:u_alu|              ; 12 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu                        ; alu            ; work         ;
-;       |mul_op:u_mul|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mul_op:u_mul           ; mul_op         ; work         ;
-;       |mux4_1:u_mux|        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mux4_1:u_mux           ; mux4_1         ; work         ;
-;       |sub_op:u_sub|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|sub_op:u_sub           ; sub_op         ; work         ;
-;    |pwm_controller:u_pwm|   ; 32 (32)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|pwm_controller:u_pwm             ; pwm_controller ; work         ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+----------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name    ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+----------------+--------------+
+; |Topmodule                  ; 103 (0)             ; 62 (0)                    ; 0                 ; 0          ; 31   ; 0            ; |Topmodule                        ; Topmodule      ; work         ;
+;    |HEX_SevenSeg:u_display| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|HEX_SevenSeg:u_display ; HEX_SevenSeg   ; work         ;
+;    |UART:uart_inst|         ; 52 (52)             ; 42 (42)                   ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst         ; UART           ; work         ;
+;    |alu:u_alu|              ; 12 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu              ; alu            ; work         ;
+;       |mul_op:u_mul|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mul_op:u_mul ; mul_op         ; work         ;
+;       |mux4_1:u_mux|        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mux4_1:u_mux ; mux4_1         ; work         ;
+;       |sub_op:u_sub|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|sub_op:u_sub ; sub_op         ; work         ;
+;    |pwm_controller:u_pwm|   ; 32 (32)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|pwm_controller:u_pwm   ; pwm_controller ; work         ;
++-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------------------------------+
-; State Machine - |Topmodule|UART:uart_inst|uart_rx:uart_inst|state ;
-+-------------+------------+------------+-------------+-------------+
-; Name        ; state.STOP ; state.DATA ; state.START ; state.IDLE  ;
-+-------------+------------+------------+-------------+-------------+
-; state.IDLE  ; 0          ; 0          ; 0           ; 0           ;
-; state.START ; 0          ; 0          ; 1           ; 1           ;
-; state.DATA  ; 0          ; 1          ; 0           ; 1           ;
-; state.STOP  ; 1          ; 0          ; 0           ; 1           ;
-+-------------+------------+------------+-------------+-------------+
++------------------------------------------------------------------+
+; State Machine - |Topmodule|UART:uart_inst|state                  ;
++-------------+------------+------------+-------------+------------+
+; Name        ; state.STOP ; state.DATA ; state.START ; state.IDLE ;
++-------------+------------+------------+-------------+------------+
+; state.IDLE  ; 0          ; 0          ; 0           ; 0          ;
+; state.START ; 0          ; 0          ; 1           ; 1          ;
+; state.DATA  ; 0          ; 1          ; 0           ; 1          ;
+; state.STOP  ; 1          ; 0          ; 0           ; 1          ;
++-------------+------------+------------+-------------+------------+
 
 
-+---------------------------------------------------------------+
-; Registers Removed During Synthesis                            ;
-+------------------------------------------+--------------------+
-; Register name                            ; Reason for Removal ;
-+------------------------------------------+--------------------+
-; UART:uart_inst|uart_rx:uart_inst|state~8 ; Lost fanout        ;
-; UART:uart_inst|uart_rx:uart_inst|state~9 ; Lost fanout        ;
-; Total Number of Removed Registers = 2    ;                    ;
-+------------------------------------------+--------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; UART:uart_inst|state~8                ; Lost fanout        ;
+; UART:uart_inst|state~9                ; Lost fanout        ;
+; Total Number of Removed Registers = 2 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -267,33 +266,33 @@ Encoding Type:  One-Hot
 ; Total registers                              ; 62    ;
 ; Number of registers using Synchronous Clear  ; 28    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 20    ;
+; Number of registers using Asynchronous Clear ; 50    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 36    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |Topmodule|UART:uart_inst|uart_rx:uart_inst|bit_index[2]  ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |Topmodule|UART:uart_inst|uart_rx:uart_inst|clk_count[11] ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; No         ; |Topmodule|UART:uart_inst|uart_rx:uart_inst|Selector2     ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; No         ; |Topmodule|UART:uart_inst|uart_rx:uart_inst|Selector1     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |Topmodule|UART:uart_inst|bit_index[2]  ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |Topmodule|UART:uart_inst|clk_count[11] ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; No         ; |Topmodule|UART:uart_inst|Selector2     ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; No         ; |Topmodule|UART:uart_inst|Selector1     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UART:uart_inst|uart_rx:uart_inst ;
-+----------------+----------+---------------------------------------------------+
-; Parameter Name ; Value    ; Type                                              ;
-+----------------+----------+---------------------------------------------------+
-; BAUD_RATE      ; 115200   ; Signed Integer                                    ;
-; CLOCK_FREQ     ; 50000000 ; Signed Integer                                    ;
-+----------------+----------+---------------------------------------------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UART:uart_inst ;
++----------------+----------+---------------------------------+
+; Parameter Name ; Value    ; Type                            ;
++----------------+----------+---------------------------------+
+; BAUD_RATE      ; 115200   ; Signed Integer                  ;
+; CLOCK_FREQ     ; 50000000 ; Signed Integer                  ;
++----------------+----------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -312,25 +311,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 62                          ;
+;     CLR               ; 8                           ;
 ;     CLR SCLR          ; 12                          ;
-;     ENA               ; 12                          ;
-;     ENA CLR           ; 8                           ;
-;     ENA SCLR          ; 16                          ;
-;     plain             ; 14                          ;
-; arriav_lcell_comb     ; 109                         ;
+;     ENA               ; 6                           ;
+;     ENA CLR           ; 14                          ;
+;     ENA CLR SCLR      ; 16                          ;
+;     plain             ; 6                           ;
+; arriav_lcell_comb     ; 113                         ;
 ;     arith             ; 35                          ;
 ;         1 data inputs ; 34                          ;
 ;         2 data inputs ; 1                           ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 73                          ;
+;     normal            ; 78                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 22                          ;
-;         5 data inputs ; 6                           ;
-;         6 data inputs ; 27                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 20                          ;
+;         5 data inputs ; 9                           ;
+;         6 data inputs ; 28                          ;
 ; boundary_port         ; 31                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
@@ -343,7 +341,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -353,110 +351,108 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 15 00:38:03 2025
+    Info: Processing started: Thu May 15 17:30:33 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_HDL -c Topmodule
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file topmodule.sv
-    Info (12023): Found entity 1: Topmodule File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 4
+    Info (12023): Found entity 1: Topmodule File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file and_op.sv
-    Info (12023): Found entity 1: and_op File: C:/Users/josee/CE1107_PG1/ALU/and_op.sv Line: 5
+    Info (12023): Found entity 1: and_op File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/and_op.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file xor_op.sv
-    Info (12023): Found entity 1: xor_op File: C:/Users/josee/CE1107_PG1/ALU/xor_op.sv Line: 5
+    Info (12023): Found entity 1: xor_op File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file sub_op.sv
-    Info (12023): Found entity 1: sub_op File: C:/Users/josee/CE1107_PG1/ALU/sub_op.sv Line: 1
+    Info (12023): Found entity 1: sub_op File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mul_op.sv
-    Info (12023): Found entity 1: mul_op File: C:/Users/josee/CE1107_PG1/ALU/mul_op.sv Line: 1
+    Info (12023): Found entity 1: mul_op File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mul_op.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux4_1.sv
-    Info (12023): Found entity 1: mux4_1 File: C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv Line: 1
+    Info (12023): Found entity 1: mux4_1 File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux4_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: alu File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 4
+    Info (12023): Found entity 1: alu File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file hex_sevenseg.sv
-    Info (12023): Found entity 1: HEX_SevenSeg File: C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv Line: 2
+    Info (12023): Found entity 1: HEX_SevenSeg File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file and_op_tb.sv
-    Info (12023): Found entity 1: and_op_tb File: C:/Users/josee/CE1107_PG1/ALU/and_op_tb.sv Line: 9
+    Info (12023): Found entity 1: and_op_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/and_op_tb.sv Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file xor_op_tb.sv
-    Info (12023): Found entity 1: xor_op_tb File: C:/Users/josee/CE1107_PG1/ALU/xor_op_tb.sv Line: 8
+    Info (12023): Found entity 1: xor_op_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op_tb.sv Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file sub_op_tb.sv
-    Info (12023): Found entity 1: sub_op_tb File: C:/Users/josee/CE1107_PG1/ALU/sub_op_tb.sv Line: 7
+    Info (12023): Found entity 1: sub_op_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op_tb.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file mul_op_tb.sv
-    Info (12023): Found entity 1: mul_op_tb File: C:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv Line: 7
+    Info (12023): Found entity 1: mul_op_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mul_op_tb.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file mux4_1_tb.sv
-    Info (12023): Found entity 1: mux4_1_tb File: C:/Users/josee/CE1107_PG1/ALU/mux4_1_tb.sv Line: 7
+    Info (12023): Found entity 1: mux4_1_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux4_1_tb.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
-    Info (12023): Found entity 1: alu_tb File: C:/Users/josee/CE1107_PG1/ALU/alu_tb.sv Line: 7
+    Info (12023): Found entity 1: alu_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu_tb.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file hex_sevenseg_tb.sv
-    Info (12023): Found entity 1: HEX_SevenSeg_tb File: C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg_tb.sv Line: 7
+    Info (12023): Found entity 1: HEX_SevenSeg_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg_tb.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file topmodule_tb.sv
-    Info (12023): Found entity 1: Topmodule_tb File: C:/Users/josee/CE1107_PG1/ALU/Topmodule_tb.sv Line: 7
-Info (12021): Found 2 design units, including 2 entities, in source file uart.sv
-    Info (12023): Found entity 1: UART File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 1
-    Info (12023): Found entity 2: uart_rx File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 36
+    Info (12023): Found entity 1: Topmodule_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule_tb.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file uart.sv
+    Info (12023): Found entity 1: UART File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pwm_controller.sv
-    Info (12023): Found entity 1: pwm_controller File: C:/Users/josee/CE1107_PG1/ALU/pwm_controller.sv Line: 1
+    Info (12023): Found entity 1: pwm_controller File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador4bit.sv
-    Info (12023): Found entity 1: contador4bit File: C:/Users/josee/CE1107_PG1/ALU/contador4bit.sv Line: 5
+    Info (12023): Found entity 1: contador4bit File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/contador4bit.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file comparador_menor.sv
-    Info (12023): Found entity 1: comparador_menor File: C:/Users/josee/CE1107_PG1/ALU/comparador_menor.sv Line: 5
+    Info (12023): Found entity 1: comparador_menor File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/comparador_menor.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file contador8bit.sv
-    Info (12023): Found entity 1: contador8bit File: C:/Users/josee/CE1107_PG1/ALU/contador8bit.sv Line: 1
+    Info (12023): Found entity 1: contador8bit File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/contador8bit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file div_pwn.sv
-    Info (12023): Found entity 1: div_pwm File: C:/Users/josee/CE1107_PG1/ALU/div_pwn.sv Line: 5
+    Info (12023): Found entity 1: div_pwm File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/div_pwn.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file clk_div_50m_to_10k.sv
-    Info (12023): Found entity 1: clk_div_50M_to_10K File: C:/Users/josee/CE1107_PG1/ALU/clk_div_50M_to_10K.sv Line: 1
+    Info (12023): Found entity 1: clk_div_50M_to_10K File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/clk_div_50M_to_10K.sv Line: 1
 Info (12127): Elaborating entity "Topmodule" for the top level hierarchy
-Info (12128): Elaborating entity "UART" for hierarchy "UART:uart_inst" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 30
-Info (12128): Elaborating entity "uart_rx" for hierarchy "UART:uart_inst|uart_rx:uart_inst" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 23
-Warning (10230): Verilog HDL assignment warning at UART.sv(78): truncated value with size 32 to match size of target (16) File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 78
-Warning (10230): Verilog HDL assignment warning at UART.sv(88): truncated value with size 32 to match size of target (3) File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 88
-Warning (10230): Verilog HDL assignment warning at UART.sv(91): truncated value with size 32 to match size of target (16) File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 91
-Warning (10230): Verilog HDL assignment warning at UART.sv(101): truncated value with size 32 to match size of target (16) File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 101
-Info (12128): Elaborating entity "alu" for hierarchy "alu:u_alu" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 43
-Info (12128): Elaborating entity "and_op" for hierarchy "alu:u_alu|and_op:u_and" File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 16
-Info (12128): Elaborating entity "xor_op" for hierarchy "alu:u_alu|xor_op:u_xor" File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 17
-Info (12128): Elaborating entity "sub_op" for hierarchy "alu:u_alu|sub_op:u_sub" File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 18
-Info (12128): Elaborating entity "mul_op" for hierarchy "alu:u_alu|mul_op:u_mul" File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 19
-Info (12128): Elaborating entity "mux4_1" for hierarchy "alu:u_alu|mux4_1:u_mux" File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 28
-Info (12128): Elaborating entity "HEX_SevenSeg" for hierarchy "HEX_SevenSeg:u_display" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 49
-Info (12128): Elaborating entity "pwm_controller" for hierarchy "pwm_controller:u_pwm" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 67
-Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(22): truncated value with size 32 to match size of target (12) File: C:/Users/josee/CE1107_PG1/ALU/pwm_controller.sv Line: 22
-Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(34): truncated value with size 32 to match size of target (8) File: C:/Users/josee/CE1107_PG1/ALU/pwm_controller.sv Line: 34
-Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(40): truncated value with size 32 to match size of target (8) File: C:/Users/josee/CE1107_PG1/ALU/pwm_controller.sv Line: 40
+Info (12128): Elaborating entity "UART" for hierarchy "UART:uart_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 30
+Warning (10230): Verilog HDL assignment warning at UART.sv(55): truncated value with size 32 to match size of target (16) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 55
+Warning (10230): Verilog HDL assignment warning at UART.sv(65): truncated value with size 32 to match size of target (3) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 65
+Warning (10230): Verilog HDL assignment warning at UART.sv(68): truncated value with size 32 to match size of target (16) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 68
+Warning (10230): Verilog HDL assignment warning at UART.sv(78): truncated value with size 32 to match size of target (16) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 78
+Info (12128): Elaborating entity "alu" for hierarchy "alu:u_alu" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 43
+Info (12128): Elaborating entity "and_op" for hierarchy "alu:u_alu|and_op:u_and" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv Line: 16
+Info (12128): Elaborating entity "xor_op" for hierarchy "alu:u_alu|xor_op:u_xor" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv Line: 17
+Info (12128): Elaborating entity "sub_op" for hierarchy "alu:u_alu|sub_op:u_sub" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv Line: 18
+Info (12128): Elaborating entity "mul_op" for hierarchy "alu:u_alu|mul_op:u_mul" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv Line: 19
+Info (12128): Elaborating entity "mux4_1" for hierarchy "alu:u_alu|mux4_1:u_mux" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv Line: 28
+Info (12128): Elaborating entity "HEX_SevenSeg" for hierarchy "HEX_SevenSeg:u_display" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 49
+Info (12128): Elaborating entity "pwm_controller" for hierarchy "pwm_controller:u_pwm" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 67
+Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(22): truncated value with size 32 to match size of target (12) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(34): truncated value with size 32 to match size of target (8) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 34
+Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(40): truncated value with size 32 to match size of target (8) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 40
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 10
-    Warning (13410): Pin "leds[5]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 10
-    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 10
-    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 10
-    Warning (13410): Pin "leds[8]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 10
-    Warning (13410): Pin "leds[9]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 10
+    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 10
+    Warning (13410): Pin "leds[5]" is stuck at GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 10
+    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 10
+    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 10
+    Warning (13410): Pin "leds[8]" is stuck at GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 10
+    Warning (13410): Pin "leds[9]" is stuck at GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/josee/CE1107_PG1/ALU/output_files/Topmodule.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_files/Topmodule.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "switches[0]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[1]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[2]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[3]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[6]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[7]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[8]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[9]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "switches[0]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 5
+    Warning (15610): No output dependent on input pin "switches[1]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 5
+    Warning (15610): No output dependent on input pin "switches[2]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 5
+    Warning (15610): No output dependent on input pin "switches[3]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 5
+    Warning (15610): No output dependent on input pin "switches[6]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 5
+    Warning (15610): No output dependent on input pin "switches[7]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 5
+    Warning (15610): No output dependent on input pin "switches[8]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 5
+    Warning (15610): No output dependent on input pin "switches[9]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 5
+Info (21057): Implemented 146 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 111 logic cells
+    Info (21061): Implemented 115 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Thu May 15 00:38:43 2025
-    Info: Elapsed time: 00:00:40
-    Info: Total CPU time (on all processors): 00:00:48
+    Info: Peak virtual memory: 4895 megabytes
+    Info: Processing ended: Thu May 15 17:30:42 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/josee/CE1107_PG1/ALU/output_files/Topmodule.map.smsg.
+The suppressed messages can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_files/Topmodule.map.smsg.
 
 
