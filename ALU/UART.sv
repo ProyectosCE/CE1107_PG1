@@ -2,7 +2,7 @@ module UART (
     input  logic clk,              // Reloj FPGA (50 MHz)
     input  logic rst_n,            // Botón de reset ACTIVO BAJO
     input  logic uart_rx,          // Entrada UART RX desde Arduino
-    output logic [7:0] Out        // 4 LEDs para mostrar los 4 bits
+    output logic [7:0]          // 4 LEDs para mostrar los 4 bits
 );
 
     // Señales internas

@@ -147,4 +147,13 @@ set_global_assignment -name SYSTEMVERILOG_FILE contador8bit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE div_pwn.sv
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to leds
 set_global_assignment -name SYSTEMVERILOG_FILE clk_div_50M_to_10K.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Enco_Four_Two.sv
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD
+set_location_assignment PIN_AA12 -to ABCD[3]
+set_location_assignment PIN_AD12 -to ABCD[2]
+set_location_assignment PIN_AD7 -to ABCD[1]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
