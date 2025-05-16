@@ -33,137 +33,2922 @@ pwm_gpio << pwm_controller:u_pwm.pwm_out
 
 
 |Topmodule|UART:uart_inst
-clk => Out[0]~reg0.CLK
-clk => Out[1]~reg0.CLK
-clk => Out[2]~reg0.CLK
-clk => Out[3]~reg0.CLK
-clk => Out[4]~reg0.CLK
-clk => Out[5]~reg0.CLK
-clk => Out[6]~reg0.CLK
-clk => Out[7]~reg0.CLK
-clk => data[0].CLK
-clk => data[1].CLK
-clk => data[2].CLK
-clk => data[3].CLK
-clk => data[4].CLK
-clk => data[5].CLK
-clk => data[6].CLK
-clk => data[7].CLK
-clk => rx_shift[0].CLK
-clk => rx_shift[1].CLK
-clk => rx_shift[2].CLK
-clk => rx_shift[3].CLK
-clk => rx_shift[4].CLK
-clk => rx_shift[5].CLK
-clk => rx_shift[6].CLK
-clk => rx_shift[7].CLK
-clk => data_ready.CLK
-clk => bit_index[0].CLK
-clk => bit_index[1].CLK
-clk => bit_index[2].CLK
-clk => clk_count[0].CLK
-clk => clk_count[1].CLK
-clk => clk_count[2].CLK
-clk => clk_count[3].CLK
-clk => clk_count[4].CLK
-clk => clk_count[5].CLK
-clk => clk_count[6].CLK
-clk => clk_count[7].CLK
-clk => clk_count[8].CLK
-clk => clk_count[9].CLK
-clk => clk_count[10].CLK
-clk => clk_count[11].CLK
-clk => clk_count[12].CLK
-clk => clk_count[13].CLK
-clk => clk_count[14].CLK
-clk => clk_count[15].CLK
-clk => state~5.DATAIN
-rst_n => Out[0]~reg0.ACLR
-rst_n => Out[1]~reg0.ACLR
-rst_n => Out[2]~reg0.ACLR
-rst_n => Out[3]~reg0.ACLR
-rst_n => Out[4]~reg0.ACLR
-rst_n => Out[5]~reg0.ACLR
-rst_n => Out[6]~reg0.ACLR
-rst_n => Out[7]~reg0.ACLR
-rst_n => data_ready.ACLR
-rst_n => bit_index[0].ACLR
-rst_n => bit_index[1].ACLR
-rst_n => bit_index[2].ACLR
-rst_n => clk_count[0].ACLR
-rst_n => clk_count[1].ACLR
-rst_n => clk_count[2].ACLR
-rst_n => clk_count[3].ACLR
-rst_n => clk_count[4].ACLR
-rst_n => clk_count[5].ACLR
-rst_n => clk_count[6].ACLR
-rst_n => clk_count[7].ACLR
-rst_n => clk_count[8].ACLR
-rst_n => clk_count[9].ACLR
-rst_n => clk_count[10].ACLR
-rst_n => clk_count[11].ACLR
-rst_n => clk_count[12].ACLR
-rst_n => clk_count[13].ACLR
-rst_n => clk_count[14].ACLR
-rst_n => clk_count[15].ACLR
-rst_n => state~7.DATAIN
-rst_n => rx_shift[7].ENA
-rst_n => rx_shift[6].ENA
-rst_n => rx_shift[5].ENA
-rst_n => rx_shift[4].ENA
-rst_n => rx_shift[3].ENA
-rst_n => rx_shift[2].ENA
-rst_n => rx_shift[1].ENA
-rst_n => rx_shift[0].ENA
-rst_n => data[7].ENA
-rst_n => data[6].ENA
-rst_n => data[5].ENA
-rst_n => data[4].ENA
-rst_n => data[3].ENA
-rst_n => data[2].ENA
-rst_n => data[1].ENA
-rst_n => data[0].ENA
-uart_rx => rx_shift.DATAB
-uart_rx => rx_shift.DATAB
-uart_rx => rx_shift.DATAB
-uart_rx => rx_shift.DATAB
-uart_rx => rx_shift.DATAB
-uart_rx => rx_shift.DATAB
-uart_rx => rx_shift.DATAB
-uart_rx => rx_shift.DATAB
-uart_rx => state.DATAB
-uart_rx => state.OUTPUTSELECT
-uart_rx => state.OUTPUTSELECT
-uart_rx => state.OUTPUTSELECT
-uart_rx => state.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => clk_count.OUTPUTSELECT
-uart_rx => bit_index.OUTPUTSELECT
-uart_rx => bit_index.OUTPUTSELECT
-uart_rx => bit_index.OUTPUTSELECT
-uart_rx => state.DATAB
-Out[0] <= Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Out[1] <= Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Out[2] <= Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Out[3] <= Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Out[4] <= Out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Out[5] <= Out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Out[6] <= Out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Out[7] <= Out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => clk.IN8
+rst_n => rst.IN8
+uart_rx => uart_rx.IN2
+Out[0] <= reg_n:out_reg.q
+Out[1] <= reg_n:out_reg.q
+Out[2] <= reg_n:out_reg.q
+Out[3] <= reg_n:out_reg.q
+Out[4] <= reg_n:out_reg.q
+Out[5] <= reg_n:out_reg.q
+Out[6] <= reg_n:out_reg.q
+Out[7] <= reg_n:out_reg.q
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst
+clk => ~NO_FANOUT~
+rst => ~NO_FANOUT~
+uart_rx => uart_rx.IN2
+state[0] => state[0].IN2
+state[1] => state[1].IN2
+clk_count[0] => Equal0.IN4
+clk_count[0] => Equal1.IN31
+clk_count[1] => Equal0.IN31
+clk_count[1] => Equal1.IN4
+clk_count[2] => Equal0.IN30
+clk_count[2] => Equal1.IN30
+clk_count[3] => Equal0.IN3
+clk_count[3] => Equal1.IN29
+clk_count[4] => Equal0.IN2
+clk_count[4] => Equal1.IN3
+clk_count[5] => Equal0.IN29
+clk_count[5] => Equal1.IN2
+clk_count[6] => Equal0.IN1
+clk_count[6] => Equal1.IN28
+clk_count[7] => Equal0.IN0
+clk_count[7] => Equal1.IN1
+clk_count[8] => Equal0.IN28
+clk_count[8] => Equal1.IN0
+clk_count[9] => Equal0.IN27
+clk_count[9] => Equal1.IN27
+clk_count[10] => Equal0.IN26
+clk_count[10] => Equal1.IN26
+clk_count[11] => Equal0.IN25
+clk_count[11] => Equal1.IN25
+clk_count[12] => Equal0.IN24
+clk_count[12] => Equal1.IN24
+clk_count[13] => Equal0.IN23
+clk_count[13] => Equal1.IN23
+clk_count[14] => Equal0.IN22
+clk_count[14] => Equal1.IN22
+clk_count[15] => Equal0.IN21
+clk_count[15] => Equal1.IN21
+bit_index[0] => Equal2.IN2
+bit_index[1] => Equal2.IN1
+bit_index[2] => Equal2.IN0
+next_state[0] <= State_Transition:st_trans.next_state
+next_state[1] <= State_Transition:st_trans.next_state
+load_data <= Output_Logic:out_logic.load_data
+inc_clk <= Output_Logic:out_logic.inc_clk
+rst_clk <= Output_Logic:out_logic.rst_clk
+inc_bit <= Output_Logic:out_logic.inc_bit
+rst_bit <= Output_Logic:out_logic.rst_bit
+data_valid <= Output_Logic:out_logic.data_valid
+clr_data_ready <= Output_Logic:out_logic.clr_data_ready
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans
+state[0] => state[0].IN1
+state[1] => state[1].IN1
+uart_rx => to_start.IN1
+uart_rx => to_data.IN1
+clk_count_eq_half => to_data.IN1
+clk_count_eq_full => stay_data.IN1
+clk_count_eq_full => to_stop.IN1
+clk_count_eq_full => to_idle.IN1
+bit_index_eq_7 => to_stop.IN1
+bit_index_eq_7 => stay_data.IN1
+next_state[0] <= mux2_1:m9.y
+next_state[1] <= mux2_1:m10.y
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m1
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m2
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m3
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m4
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m5
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m6
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m7
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m8
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m9
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m10
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic
+state[0] => Equal0.IN1
+state[0] => Equal1.IN0
+state[0] => Equal2.IN1
+state[0] => Equal3.IN1
+state[1] => Equal0.IN0
+state[1] => Equal1.IN1
+state[1] => Equal2.IN0
+state[1] => Equal3.IN0
+uart_rx => rst_clk.IN1
+uart_rx => rst_bit.IN1
+clk_count_eq_half => rst_clk.IN1
+clk_count_eq_half => inc_clk.IN1
+clk_count_eq_full => load_data.IN1
+clk_count_eq_full => rst_clk.IN1
+clk_count_eq_full => inc_clk.IN1
+clk_count_eq_full => inc_clk.IN1
+bit_index_eq_7 => inc_bit.IN1
+load_data <= load_data.DB_MAX_OUTPUT_PORT_TYPE
+inc_clk <= inc_clk.DB_MAX_OUTPUT_PORT_TYPE
+rst_clk <= rst_clk.DB_MAX_OUTPUT_PORT_TYPE
+inc_bit <= inc_bit.DB_MAX_OUTPUT_PORT_TYPE
+rst_bit <= rst_bit.DB_MAX_OUTPUT_PORT_TYPE
+data_valid <= rst_clk.DB_MAX_OUTPUT_PORT_TYPE
+clr_data_ready <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg
+clk => clk.IN2
+rst => rst.IN2
+en => en.IN2
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+q[0] <= flip_flop_D_en:bit_ff[0].ff.q
+q[1] <= flip_flop_D_en:bit_ff[1].ff.q
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst
+rst_clk => rst_clk.IN16
+inc_clk => inc_clk.IN16
+clk_count[0] => clk_count[0].IN1
+clk_count[1] => clk_count[1].IN1
+clk_count[2] => clk_count[2].IN1
+clk_count[3] => clk_count[3].IN1
+clk_count[4] => clk_count[4].IN1
+clk_count[5] => clk_count[5].IN1
+clk_count[6] => clk_count[6].IN1
+clk_count[7] => clk_count[7].IN1
+clk_count[8] => clk_count[8].IN1
+clk_count[9] => clk_count[9].IN1
+clk_count[10] => clk_count[10].IN1
+clk_count[11] => clk_count[11].IN1
+clk_count[12] => clk_count[12].IN1
+clk_count[13] => clk_count[13].IN1
+clk_count[14] => clk_count[14].IN1
+clk_count[15] => clk_count[15].IN1
+clk_count_next[0] <= mux2_1:mux_rst[0].mux_inst.y
+clk_count_next[1] <= mux2_1:mux_rst[1].mux_inst.y
+clk_count_next[2] <= mux2_1:mux_rst[2].mux_inst.y
+clk_count_next[3] <= mux2_1:mux_rst[3].mux_inst.y
+clk_count_next[4] <= mux2_1:mux_rst[4].mux_inst.y
+clk_count_next[5] <= mux2_1:mux_rst[5].mux_inst.y
+clk_count_next[6] <= mux2_1:mux_rst[6].mux_inst.y
+clk_count_next[7] <= mux2_1:mux_rst[7].mux_inst.y
+clk_count_next[8] <= mux2_1:mux_rst[8].mux_inst.y
+clk_count_next[9] <= mux2_1:mux_rst[9].mux_inst.y
+clk_count_next[10] <= mux2_1:mux_rst[10].mux_inst.y
+clk_count_next[11] <= mux2_1:mux_rst[11].mux_inst.y
+clk_count_next[12] <= mux2_1:mux_rst[12].mux_inst.y
+clk_count_next[13] <= mux2_1:mux_rst[13].mux_inst.y
+clk_count_next[14] <= mux2_1:mux_rst[14].mux_inst.y
+clk_count_next[15] <= mux2_1:mux_rst[15].mux_inst.y
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[0].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[1].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[2].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[3].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[4].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[5].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[6].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[7].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[8].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[9].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[10].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[11].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[12].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[13].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[14].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_inc[15].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[0].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[1].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[2].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[3].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[4].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[5].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[6].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[7].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[8].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[9].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[10].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[11].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[12].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[13].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[14].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[15].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg
+clk => clk.IN16
+rst => rst.IN16
+en => en.IN16
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+d[4] => d[4].IN1
+d[5] => d[5].IN1
+d[6] => d[6].IN1
+d[7] => d[7].IN1
+d[8] => d[8].IN1
+d[9] => d[9].IN1
+d[10] => d[10].IN1
+d[11] => d[11].IN1
+d[12] => d[12].IN1
+d[13] => d[13].IN1
+d[14] => d[14].IN1
+d[15] => d[15].IN1
+q[0] <= flip_flop_D_en:bit_ff[0].ff.q
+q[1] <= flip_flop_D_en:bit_ff[1].ff.q
+q[2] <= flip_flop_D_en:bit_ff[2].ff.q
+q[3] <= flip_flop_D_en:bit_ff[3].ff.q
+q[4] <= flip_flop_D_en:bit_ff[4].ff.q
+q[5] <= flip_flop_D_en:bit_ff[5].ff.q
+q[6] <= flip_flop_D_en:bit_ff[6].ff.q
+q[7] <= flip_flop_D_en:bit_ff[7].ff.q
+q[8] <= flip_flop_D_en:bit_ff[8].ff.q
+q[9] <= flip_flop_D_en:bit_ff[9].ff.q
+q[10] <= flip_flop_D_en:bit_ff[10].ff.q
+q[11] <= flip_flop_D_en:bit_ff[11].ff.q
+q[12] <= flip_flop_D_en:bit_ff[12].ff.q
+q[13] <= flip_flop_D_en:bit_ff[13].ff.q
+q[14] <= flip_flop_D_en:bit_ff[14].ff.q
+q[15] <= flip_flop_D_en:bit_ff[15].ff.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|bit_index_next_logic:bit_index_logic_inst
+rst_bit => rst_bit.IN3
+inc_bit => inc_bit.IN3
+bit_index[0] => bit_index[0].IN1
+bit_index[1] => bit_index[1].IN1
+bit_index[2] => bit_index[2].IN1
+bit_index_next[0] <= mux2_1:mux_rst[0].mux_inst.y
+bit_index_next[1] <= mux2_1:mux_rst[1].mux_inst.y
+bit_index_next[2] <= mux2_1:mux_rst[2].mux_inst.y
+
+
+|Topmodule|UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_inc[0].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_inc[1].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_inc[2].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[0].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[1].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[2].mux_inst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg
+clk => clk.IN3
+rst => rst.IN3
+en => en.IN3
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+q[0] <= flip_flop_D_en:bit_ff[0].ff.q
+q[1] <= flip_flop_D_en:bit_ff[1].ff.q
+q[2] <= flip_flop_D_en:bit_ff[2].ff.q
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg
+clk => clk.IN8
+rst => rst.IN8
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+load => d_next.IN1
+uart_rx => d_next.IN1
+uart_rx => d_next.IN1
+uart_rx => d_next.IN1
+uart_rx => d_next.IN1
+uart_rx => d_next.IN1
+uart_rx => d_next.IN1
+uart_rx => d_next.IN1
+uart_rx => d_next.IN1
+bit_index[0] => bit_index[0].IN1
+bit_index[1] => bit_index[1].IN1
+bit_index[2] => bit_index[2].IN1
+q[0] <= flip_flop_D_en:ff0.q
+q[1] <= flip_flop_D_en:ff1.q
+q[2] <= flip_flop_D_en:ff2.q
+q[3] <= flip_flop_D_en:ff3.q
+q[4] <= flip_flop_D_en:ff4.q
+q[5] <= flip_flop_D_en:ff5.q
+q[6] <= flip_flop_D_en:ff6.q
+q[7] <= flip_flop_D_en:ff7.q
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|decoder_3to8:deco_3to8_inst
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[1] => out.IN0
+in[1] => out.IN0
+in[1] => out.IN0
+in[1] => out.IN0
+in[2] => out.IN1
+in[2] => out.IN1
+in[2] => out.IN1
+in[2] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff0
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff0|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff0|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff0|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff0|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff0|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff1
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff1|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff1|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff1|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff1|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff1|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg
+clk => clk.IN8
+rst => rst.IN8
+en => en.IN8
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+d[4] => d[4].IN1
+d[5] => d[5].IN1
+d[6] => d[6].IN1
+d[7] => d[7].IN1
+q[0] <= flip_flop_D_en:bit_ff[0].ff.q
+q[1] <= flip_flop_D_en:bit_ff[1].ff.q
+q[2] <= flip_flop_D_en:bit_ff[2].ff.q
+q[3] <= flip_flop_D_en:bit_ff[3].ff.q
+q[4] <= flip_flop_D_en:bit_ff[4].ff.q
+q[5] <= flip_flop_D_en:bit_ff[5].ff.q
+q[6] <= flip_flop_D_en:bit_ff[6].ff.q
+q[7] <= flip_flop_D_en:bit_ff[7].ff.q
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[0].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[1].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[1].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[1].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|flip_flop_D_en:data_ready_ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|flip_flop_D_en:data_ready_ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|flip_flop_D_en:data_ready_ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|flip_flop_D_en:data_ready_ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|flip_flop_D_en:data_ready_ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|flip_flop_D_en:data_ready_ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg
+clk => clk.IN8
+rst => rst.IN8
+en => en.IN8
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+d[4] => d[4].IN1
+d[5] => d[5].IN1
+d[6] => d[6].IN1
+d[7] => d[7].IN1
+q[0] <= flip_flop_D_en:bit_ff[0].ff.q
+q[1] <= flip_flop_D_en:bit_ff[1].ff.q
+q[2] <= flip_flop_D_en:bit_ff[2].ff.q
+q[3] <= flip_flop_D_en:bit_ff[3].ff.q
+q[4] <= flip_flop_D_en:bit_ff[4].ff.q
+q[5] <= flip_flop_D_en:bit_ff[5].ff.q
+q[6] <= flip_flop_D_en:bit_ff[6].ff.q
+q[7] <= flip_flop_D_en:bit_ff[7].ff.q
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[0].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[1].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[1].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[1].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff
+clk => clk.IN1
+rst => rst.IN1
+en => en.IN1
+d => d.IN1
+q <= mux2_1:mux_rst.y
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff|mux2_1:mux_en
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff|mux2_1:mux_rst
+sel => y.IN0
+sel => y.IN0
+a => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff
+clk => clk.IN1
+d => d.IN1
+q <= d_latch:slave.q
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:master
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:slave
+d => s.IN0
+d => r.IN0
+en => s.IN1
+en => r.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Topmodule|alu:u_alu

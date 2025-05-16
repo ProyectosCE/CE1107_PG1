@@ -22,13 +22,13 @@ module Topmodule(
     assign sel = Outs_uart[3:2];
 	 
 	 
-	 UART uart_inst(
-    .clk(clk),              // Reloj FPGA (50 MHz)
-    .rst_n(rst),            // Botón de reset ACTIVO BAJO
-    .uart_rx(tx_esp),          // Entrada UART RX desde Arduino
-    .Out(Outs_uart)         // salida conectada a esp
-);
-	 
+	UART uart_inst(
+		.clk(clk),              // Reloj FPGA (50 MHz)
+		.rst_n(rst),            // Botón de reset ACTIVO BAJO
+		.uart_rx(tx_esp),          // Entrada UART RX desde Arduino
+		.Out(Outs_uart)         // salida conectada a esp
+	);
+
 
     // Instancia de la ALU
     alu u_alu(
