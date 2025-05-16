@@ -7,7 +7,7 @@ module UART (
 
     // Reset activo alto interno
     logic rst;
-    assign rst = ~rst_n;
+    assign rst = rst_n;
 
     // Parámetros de configuración
     parameter BAUD_RATE = 115200;
