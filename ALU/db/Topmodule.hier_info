@@ -16,24 +16,24 @@ ABCD[0] => ABCD[0].IN1
 ABCD[1] => ABCD[1].IN1
 ABCD[2] => ABCD[2].IN1
 ABCD[3] => ABCD[3].IN1
-seg0[0] <= HEX_SevenSeg:u_display.seg0
-seg0[1] <= HEX_SevenSeg:u_display.seg0
-seg0[2] <= HEX_SevenSeg:u_display.seg0
-seg0[3] <= HEX_SevenSeg:u_display.seg0
-seg0[4] <= HEX_SevenSeg:u_display.seg0
-seg0[5] <= HEX_SevenSeg:u_display.seg0
-seg0[6] <= HEX_SevenSeg:u_display.seg0
-leds[0] <= alu:u_alu.Z
-leds[1] <= alu:u_alu.N
-leds[2] <= alu:u_alu.C
-leds[3] <= alu:u_alu.V
-leds[4] <= <GND>
-leds[5] <= <GND>
-leds[6] <= <GND>
-leds[7] <= <GND>
-leds[8] <= <GND>
-leds[9] <= <GND>
-pwm_gpio <= pwm_controller:u_pwm.pwm_out
+seg0[0] << HEX_SevenSeg:u_display.seg0
+seg0[1] << HEX_SevenSeg:u_display.seg0
+seg0[2] << HEX_SevenSeg:u_display.seg0
+seg0[3] << HEX_SevenSeg:u_display.seg0
+seg0[4] << HEX_SevenSeg:u_display.seg0
+seg0[5] << HEX_SevenSeg:u_display.seg0
+seg0[6] << HEX_SevenSeg:u_display.seg0
+leds[0] << alu:u_alu.Z
+leds[1] << alu:u_alu.N
+leds[2] << alu:u_alu.C
+leds[3] << alu:u_alu.V
+leds[4] << <GND>
+leds[5] << <GND>
+leds[6] << <GND>
+leds[7] << <GND>
+leds[8] << <GND>
+leds[9] << <GND>
+pwm_gpio << pwm_controller:u_pwm.pwm_out
 
 
 |Topmodule|Enco_Four_Two:insenco

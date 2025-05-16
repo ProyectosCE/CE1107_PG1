@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Topmodule
-Fri May 16 15:18:02 2025
+Fri May 16 16:04:55 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri May 16 15:18:02 2025       ;
+; Analysis & Synthesis Status     ; Successful - Fri May 16 16:04:55 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Topmodule                                   ;
 ; Top-level Entity Name           ; Topmodule                                   ;
@@ -455,7 +455,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri May 16 15:17:55 2025
+    Info: Processing started: Fri May 16 16:04:46 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_HDL -c Topmodule
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -577,10 +577,10 @@ Info (21057): Implemented 147 device resources after synthesis - the final resou
     Info (21059): Implemented 18 output pins
     Info (21061): Implemented 112 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4882 megabytes
-    Info: Processing ended: Fri May 16 15:18:02 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 4884 megabytes
+    Info: Processing ended: Fri May 16 16:04:55 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+

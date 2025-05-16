@@ -1,5 +1,5 @@
 Fitter report for Topmodule
-Fri May 16 15:18:29 2025
+Fri May 16 16:05:26 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Fri May 16 15:18:29 2025       ;
+; Fitter Status                   ; Successful - Fri May 16 16:05:26 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Topmodule                                   ;
 ; Top-level Entity Name           ; Topmodule                                   ;
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; 64 / 41,910 ( < 1 % )                       ;
-; Total registers                 ; 66                                          ;
+; Total registers                 ; 67                                          ;
 ; Total pins                      ; 35 / 499 ( 7 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                       ;
@@ -153,7 +153,7 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -165,24 +165,25 @@ refer to the applicable agreement for further details.
 ;     Processor 6            ;   0.2%      ;
 ;     Processor 7            ;   0.2%      ;
 ;     Processor 8            ;   0.2%      ;
-;     Processor 9            ;   0.2%      ;
-;     Processor 10           ;   0.2%      ;
+;     Processor 9            ;   0.1%      ;
+;     Processor 10           ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Netlist Optimizations                                                                                                                                                                                                                        ;
-+----------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------------+------------------+-----------------------+
-; Node                             ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                           ; Destination Port ; Destination Port Name ;
-+----------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------------+------------------+-----------------------+
-; clk~inputCLKENA0                 ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                            ;                  ;                       ;
-; pwm_controller:u_pwm|clk_div[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|clk_div[0]~DUPLICATE  ;                  ;                       ;
-; pwm_controller:u_pwm|clk_div[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|clk_div[1]~DUPLICATE  ;                  ;                       ;
-; pwm_controller:u_pwm|clk_div[4]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|clk_div[4]~DUPLICATE  ;                  ;                       ;
-; pwm_controller:u_pwm|clk_div[8]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|clk_div[8]~DUPLICATE  ;                  ;                       ;
-; pwm_controller:u_pwm|clk_div[9]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|clk_div[9]~DUPLICATE  ;                  ;                       ;
-; pwm_controller:u_pwm|clk_div[10] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|clk_div[10]~DUPLICATE ;                  ;                       ;
-+----------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------------+------------------+-----------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                                                                                                      ;
++---------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-------------------------------------------+------------------+-----------------------+
+; Node                            ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                          ; Destination Port ; Destination Port Name ;
++---------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-------------------------------------------+------------------+-----------------------+
+; clk~inputCLKENA0                ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                           ;                  ;                       ;
+; UART:uart_inst|Out[3]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; UART:uart_inst|Out[3]~DUPLICATE           ;                  ;                       ;
+; UART:uart_inst|Out[5]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; UART:uart_inst|Out[5]~DUPLICATE           ;                  ;                       ;
+; pwm_controller:u_pwm|clk_div[0] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|clk_div[0]~DUPLICATE ;                  ;                       ;
+; pwm_controller:u_pwm|clk_div[1] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|clk_div[1]~DUPLICATE ;                  ;                       ;
+; pwm_controller:u_pwm|clk_div[2] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|clk_div[2]~DUPLICATE ;                  ;                       ;
+; pwm_controller:u_pwm|clk_div[4] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|clk_div[4]~DUPLICATE ;                  ;                       ;
+; pwm_controller:u_pwm|counter[0] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pwm_controller:u_pwm|counter[0]~DUPLICATE ;                  ;                       ;
++---------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-------------------------------------------+------------------+-----------------------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -190,6 +191,7 @@ refer to the applicable agreement for further details.
 +--------------+----------------+--------------+------------+---------------+----------------+
 ; Name         ; Ignored Entity ; Ignored From ; Ignored To ; Ignored Value ; Ignored Source ;
 +--------------+----------------+--------------+------------+---------------+----------------+
+; I/O Standard ; Topmodule      ;              ; ABCD       ; 3.3-V LVCMOS  ; QSF Assignment ;
 ; I/O Standard ; Topmodule      ;              ; leds       ; 3.3-V LVCMOS  ; QSF Assignment ;
 +--------------+----------------+--------------+------------+---------------+----------------+
 
@@ -242,12 +244,12 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 64 / 41,910        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 64                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 66 / 41,910        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 26                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 36                 ;       ;
-;         [c] ALMs used for registers                         ; 4                  ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 70 / 41,910        ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 25                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 39                 ;       ;
+;         [c] ALMs used for registers                         ; 6                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 41,910         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 6 / 41,910         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41,910         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -268,17 +270,17 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ;     -- <=3 input functions                                  ; 41                 ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 1                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 66                 ;       ;
+; Dedicated logic registers                                   ; 67                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 60 / 83,820        ; < 1 % ;
-;         -- Secondary logic registers                        ; 6 / 83,820         ; < 1 % ;
+;         -- Secondary logic registers                        ; 7 / 83,820         ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
 ;         -- Design implementation registers                  ; 60                 ;       ;
-;         -- Routing optimization registers                   ; 6                  ;       ;
+;         -- Routing optimization registers                   ; 7                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 35 / 499           ; 7 %   ;
-;     -- Clock pins                                           ; 4 / 11             ; 36 %  ;
+;     -- Clock pins                                           ; 3 / 11             ; 27 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 39             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; Hard processor system peripheral utilization                ;                    ;       ;
@@ -336,10 +338,10 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.7% / 0.8% / 0.6% ;       ;
-; Maximum fan-out                                             ; 66                 ;       ;
-; Highest non-global fan-out                                  ; 26                 ;       ;
-; Total fan-out                                               ; 663                ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.7% / 0.9% / 0.2% ;       ;
+; Maximum fan-out                                             ; 67                 ;       ;
+; Highest non-global fan-out                                  ; 25                 ;       ;
+; Total fan-out                                               ; 665                ;       ;
 ; Average fan-out                                             ; 2.77               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
@@ -351,12 +353,12 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 64 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 64                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 66 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 26                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 36                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 4                    ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 70 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 25                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 39                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 6                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 6 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41910 ( 0 % )    ; 0 / 41910 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -383,10 +385,10 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
 ;         -- Primary logic registers                          ; 60 / 83820 ( < 1 % ) ; 0 / 83820 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 6 / 83820 ( < 1 % )  ; 0 / 83820 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 7 / 83820 ( < 1 % )  ; 0 / 83820 ( 0 % )              ;
 ;     -- By function:                                         ;                      ;                                ;
 ;         -- Design implementation registers                  ; 60                   ; 0                              ;
-;         -- Routing optimization registers                   ; 6                    ; 0                              ;
+;         -- Routing optimization registers                   ; 7                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
@@ -403,8 +405,8 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 663                  ; 0                              ;
-;     -- Registered Connections                               ; 210                  ; 0                              ;
+;     -- Total Connections                                    ; 665                  ; 0                              ;
+;     -- Registered Connections                               ; 214                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
 ;     -- Top                                                  ; 0                    ; 0                              ;
@@ -436,12 +438,12 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; ABCD[0]     ; AH29  ; 5A       ; 89           ; 6            ; 54           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; ABCD[1]     ; AA16  ; 4A       ; 56           ; 0            ; 0            ; 10                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; ABCD[2]     ; AK16  ; 4A       ; 54           ; 0            ; 51           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; ABCD[3]     ; AB17  ; 4A       ; 56           ; 0            ; 17           ; 12                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; clk         ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 66                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; rst         ; AJ4   ; 3B       ; 22           ; 0            ; 34           ; 26                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; ABCD[0]     ; AG10  ; 3B       ; 18           ; 0            ; 74           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; Fitter               ; no        ;
+; ABCD[1]     ; AD7   ; 3A       ; 6            ; 0            ; 0            ; 10                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; ABCD[2]     ; AD12  ; 3A       ; 16           ; 0            ; 17           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; ABCD[3]     ; AA12  ; 3A       ; 12           ; 0            ; 0            ; 12                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; clk         ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 67                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; rst         ; AJ4   ; 3B       ; 22           ; 0            ; 34           ; 25                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
 ; switches[0] ; AB30  ; 5B       ; 89           ; 21           ; 3            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
 ; switches[1] ; Y27   ; 5B       ; 89           ; 25           ; 20           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
 ; switches[2] ; AB28  ; 5B       ; 89           ; 21           ; 37           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
@@ -450,8 +452,8 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; switches[5] ; V25   ; 5B       ; 89           ; 20           ; 60           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
 ; switches[6] ; AC28  ; 5B       ; 89           ; 20           ; 77           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
 ; switches[7] ; AD30  ; 5B       ; 89           ; 25           ; 37           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; switches[8] ; AE14  ; 3B       ; 24           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; switches[9] ; AH12  ; 3B       ; 38           ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; switches[8] ; AG23  ; 4A       ; 64           ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; switches[9] ; AK29  ; 4A       ; 82           ; 0            ; 91           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; tx_esp      ; W15   ; 3B       ; 40           ; 0            ; 0            ; 13                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
@@ -490,10 +492,10 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; B2L      ; 0 / 14 ( 0 % )   ; --            ; --           ; --            ;
 ; B1L      ; 0 / 14 ( 0 % )   ; --            ; --           ; --            ;
 ; B0L      ; 0 / 14 ( 0 % )   ; --            ; --           ; --            ;
-; 3A       ; 1 / 32 ( 3 % )   ; 3.3V          ; --           ; 3.3V          ;
-; 3B       ; 5 / 48 ( 10 % )  ; 3.3V          ; --           ; 3.3V          ;
-; 4A       ; 17 / 80 ( 21 % ) ; 3.3V          ; --           ; 3.3V          ;
-; 5A       ; 4 / 32 ( 13 % )  ; 3.3V          ; --           ; 3.3V          ;
+; 3A       ; 4 / 32 ( 13 % )  ; 3.3V          ; --           ; 3.3V          ;
+; 3B       ; 4 / 48 ( 8 % )   ; 3.3V          ; --           ; 3.3V          ;
+; 4A       ; 16 / 80 ( 20 % ) ; 3.3V          ; --           ; 3.3V          ;
+; 5A       ; 3 / 32 ( 9 % )   ; 3.3V          ; --           ; 3.3V          ;
 ; 5B       ; 8 / 16 ( 50 % )  ; 3.3V          ; --           ; 3.3V          ;
 ; 6B       ; 0 / 44 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 6A       ; 0 / 56 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -549,11 +551,11 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; AA9      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA10     ;            ; 3A             ; VCCPD3A                         ; power  ;              ; 3.3V                ; --           ;                 ; --       ; --           ;
 ; AA11     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AA12     ; 74         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AA12     ; 74         ; 3A             ; ABCD[3]                         ; input  ; 3.3-V LVCMOS ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AA13     ; 90         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA14     ; 122        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA15     ; 120        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AA16     ; 146        ; 4A             ; ABCD[1]                         ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA16     ; 146        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA17     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.3V                ; --           ;                 ; --       ; --           ;
 ; AA18     ; 168        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA19     ; 176        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -584,7 +586,7 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; AB14     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 3.3V                ; --           ;                 ; --       ; --           ;
 ; AB15     ; 106        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB16     ;            ; --             ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AB17     ; 144        ; 4A             ; ABCD[3]                         ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB17     ; 144        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB18     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 3.3V                ; --           ;                 ; --       ; --           ;
 ; AB19     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB20     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 3.3V                ; --           ;                 ; --       ; --           ;
@@ -634,12 +636,12 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; AD4      ; 37         ; B0L            ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AD5      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AD6      ;            ; 3A             ; VREFB3AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
-; AD7      ; 62         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AD7      ; 62         ; 3A             ; ABCD[1]                         ; input  ; 3.3-V LVCMOS ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AD8      ;            ; 3A             ; VCCIO3A                         ; power  ;              ; 3.3V                ; --           ;                 ; --       ; --           ;
 ; AD9      ; 55         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AD10     ; 56         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AD11     ; 54         ; 3A             ; pwm_gpio                        ; output ; 3.3-V LVCMOS ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AD12     ; 80         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AD12     ; 80         ; 3A             ; ABCD[2]                         ; input  ; 3.3-V LVCMOS ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AD13     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 3.3V                ; --           ;                 ; --       ; --           ;
 ; AD14     ; 98         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AD15     ;            ;                ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -671,7 +673,7 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; AE11     ; 59         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AE12     ; 52         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AE13     ; 95         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AE14     ; 96         ; 3B             ; switches[8]                     ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AE14     ; 96         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AE15     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 3.3V                ; --           ;                 ; --       ; --           ;
 ; AE16     ; 139        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AE17     ; 135        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -727,7 +729,7 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; AG7      ; 68         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG8      ; 65         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG9      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AG10     ; 86         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AG10     ; 86         ; 3B             ; ABCD[0]                         ; input  ; 3.3-V LVCMOS ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AG11     ; 85         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG12     ; 103        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG13     ; 101        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -740,7 +742,7 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; AG20     ; 157        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG21     ; 143        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG22     ; 166        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AG23     ; 163        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AG23     ; 163        ; 4A             ; switches[8]                     ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AG24     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AG25     ; 190        ; 4A             ; leds[4]                         ; output ; 3.3-V LVCMOS ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AG26     ; 203        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -759,7 +761,7 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; AH9      ; 84         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH10     ; 118        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH11     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AH12     ; 126        ; 3B             ; switches[9]                     ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AH12     ; 126        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH13     ; 111        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH14     ; 109        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH15     ; 125        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -776,7 +778,7 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; AH26     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.3V                ; --           ;                 ; --       ; --           ;
 ; AH27     ; 201        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH28     ; 214        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AH29     ; 218        ; 5A             ; ABCD[0]                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AH29     ; 218        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AH30     ; 241        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AJ1      ; 79         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AJ2      ; 77         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -822,7 +824,7 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; AK13     ; 121        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AK14     ; 129        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AK15     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AK16     ; 140        ; 4A             ; ABCD[2]                         ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AK16     ; 140        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AK17     ;            ; 4A             ; VREFB4AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AK18     ; 149        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AK19     ; 153        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -835,7 +837,7 @@ The pin-out file can be found in C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_fil
 ; AK26     ; 185        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AK27     ; 193        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AK28     ; 198        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AK29     ; 196        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AK29     ; 196        ; 4A             ; switches[9]                     ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; B1       ; 509        ; 8A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B2       ; 507        ; 8A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B3       ; 513        ; 8A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -1417,7 +1419,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------+--------------------------------------+
 ; switches[8] ; Incomplete set of assignments        ;
 ; switches[9] ; Incomplete set of assignments        ;
-; ABCD[0]     ; Incomplete set of assignments        ;
 ; seg0[0]     ; Missing drive strength and slew rate ;
 ; seg0[1]     ; Missing drive strength and slew rate ;
 ; seg0[2]     ; Missing drive strength and slew rate ;
@@ -1436,15 +1437,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; leds[8]     ; Missing drive strength and slew rate ;
 ; leds[9]     ; Missing drive strength and slew rate ;
 ; pwm_gpio    ; Missing drive strength and slew rate ;
-; ABCD[2]     ; Incomplete set of assignments        ;
-; ABCD[3]     ; Incomplete set of assignments        ;
-; ABCD[1]     ; Incomplete set of assignments        ;
 ; switches[8] ; Missing location assignment          ;
 ; switches[9] ; Missing location assignment          ;
 ; ABCD[0]     ; Missing location assignment          ;
-; ABCD[2]     ; Missing location assignment          ;
-; ABCD[3]     ; Missing location assignment          ;
-; ABCD[1]     ; Missing location assignment          ;
 +-------------+--------------------------------------+
 
 
@@ -1453,17 +1448,17 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node        ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Entity Name    ; Library Name ;
 +-----------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------------+----------------+--------------+
-; |Topmodule                        ; 63.5 (0.5)           ; 66.0 (0.5)                       ; 2.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 101 (1)             ; 66 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 35   ; 0            ; |Topmodule                                                         ; Topmodule      ; work         ;
-;    |Enco_Four_Two:insenco|        ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|Enco_Four_Two:insenco                                   ; Enco_Four_Two  ; work         ;
-;    |HEX_SevenSeg:u_display|       ; 3.3 (3.3)            ; 3.3 (3.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|HEX_SevenSeg:u_display                                  ; HEX_SevenSeg   ; work         ;
-;    |UART:uart_inst|               ; 28.3 (23.3)          ; 29.5 (24.7)                      ; 1.2 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 41 (31)             ; 40 (40)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst                                          ; UART           ; work         ;
-;       |UART_FSM:fsm_inst|         ; 4.8 (1.2)            ; 4.8 (1.8)                        ; 0.0 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (3)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst                        ; UART_FSM       ; work         ;
-;          |Output_Logic:out_logic| ; 3.0 (3.0)            ; 3.0 (3.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic ; Output_Logic   ; work         ;
-;    |alu:u_alu|                    ; 10.7 (2.5)           ; 10.8 (2.5)                       ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 15 (4)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu                                               ; alu            ; work         ;
-;       |mul_op:u_mul|              ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mul_op:u_mul                                  ; mul_op         ; work         ;
-;       |mux4_1:u_mux|              ; 3.8 (3.8)            ; 3.8 (3.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mux4_1:u_mux                                  ; mux4_1         ; work         ;
+; |Topmodule                        ; 63.5 (0.5)           ; 69.0 (0.5)                       ; 5.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 101 (1)             ; 67 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 35   ; 0            ; |Topmodule                                                         ; Topmodule      ; work         ;
+;    |Enco_Four_Two:insenco|        ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|Enco_Four_Two:insenco                                   ; Enco_Four_Two  ; work         ;
+;    |HEX_SevenSeg:u_display|       ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|HEX_SevenSeg:u_display                                  ; HEX_SevenSeg   ; work         ;
+;    |UART:uart_inst|               ; 28.5 (22.8)          ; 31.3 (25.5)                      ; 2.8 (2.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 41 (31)             ; 42 (42)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst                                          ; UART           ; work         ;
+;       |UART_FSM:fsm_inst|         ; 5.7 (1.7)            ; 5.8 (1.7)                        ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (3)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst                        ; UART_FSM       ; work         ;
+;          |Output_Logic:out_logic| ; 4.0 (4.0)            ; 4.2 (4.2)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic ; Output_Logic   ; work         ;
+;    |alu:u_alu|                    ; 10.7 (2.3)           ; 11.8 (2.5)                       ; 1.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 15 (4)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu                                               ; alu            ; work         ;
+;       |mul_op:u_mul|              ; 2.5 (2.5)            ; 3.0 (3.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mul_op:u_mul                                  ; mul_op         ; work         ;
+;       |mux4_1:u_mux|              ; 4.2 (4.2)            ; 4.3 (4.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mux4_1:u_mux                                  ; mux4_1         ; work         ;
 ;       |sub_op:u_sub|              ; 1.7 (1.7)            ; 2.0 (2.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|sub_op:u_sub                                  ; sub_op         ; work         ;
-;    |pwm_controller:u_pwm|         ; 19.5 (19.5)          ; 20.8 (20.8)                      ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 35 (35)             ; 26 (26)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|pwm_controller:u_pwm                                    ; pwm_controller ; work         ;
+;    |pwm_controller:u_pwm|         ; 19.5 (19.5)          ; 21.0 (21.0)                      ; 1.5 (1.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 35 (35)             ; 25 (25)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Topmodule|pwm_controller:u_pwm                                    ; pwm_controller ; work         ;
 +-----------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1503,8 +1498,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; leds[9]     ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; pwm_gpio    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; ABCD[2]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; ABCD[3]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; ABCD[1]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; ABCD[3]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; ABCD[1]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; clk         ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; rst         ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; tx_esp      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1537,29 +1532,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - alu:u_alu|mux4_1:u_mux|Y[1]~4                                   ; 1                 ; 0       ;
 ;      - alu:u_alu|mux4_1:u_mux|Y~5                                      ; 1                 ; 0       ;
 ; ABCD[3]                                                                ;                   ;         ;
-;      - Enco_Four_Two:insenco|B[1]                                      ; 1                 ; 0       ;
-;      - Enco_Four_Two:insenco|B[0]                                      ; 1                 ; 0       ;
-;      - alu:u_alu|sub_op:u_sub|C2~0                                     ; 1                 ; 0       ;
-;      - alu:u_alu|mul_op:u_mul|Y[2]                                     ; 1                 ; 0       ;
-;      - alu:u_alu|sub_op:u_sub|C3                                       ; 1                 ; 0       ;
-;      - alu:u_alu|mul_op:u_mul|c2~0                                     ; 1                 ; 0       ;
-;      - alu:u_alu|mul_op:u_mul|Y[3]~0                                   ; 1                 ; 0       ;
-;      - alu:u_alu|mux4_1:u_mux|Y[0]~3                                   ; 1                 ; 0       ;
-;      - alu:u_alu|C~0                                                   ; 1                 ; 0       ;
-;      - alu:u_alu|mux4_1:u_mux|Y[1]~4                                   ; 1                 ; 0       ;
-;      - alu:u_alu|mux4_1:u_mux|Y~5                                      ; 1                 ; 0       ;
-;      - pwm_controller:u_pwm|LessThan0~3                                ; 1                 ; 0       ;
+;      - Enco_Four_Two:insenco|B[1]                                      ; 0                 ; 0       ;
+;      - Enco_Four_Two:insenco|B[0]                                      ; 0                 ; 0       ;
+;      - alu:u_alu|sub_op:u_sub|C2~0                                     ; 0                 ; 0       ;
+;      - alu:u_alu|mul_op:u_mul|Y[2]                                     ; 0                 ; 0       ;
+;      - alu:u_alu|sub_op:u_sub|C3                                       ; 0                 ; 0       ;
+;      - alu:u_alu|mul_op:u_mul|c2~0                                     ; 0                 ; 0       ;
+;      - alu:u_alu|mul_op:u_mul|Y[3]~0                                   ; 0                 ; 0       ;
+;      - alu:u_alu|mux4_1:u_mux|Y[0]~3                                   ; 0                 ; 0       ;
+;      - alu:u_alu|C~0                                                   ; 0                 ; 0       ;
+;      - alu:u_alu|mux4_1:u_mux|Y[1]~4                                   ; 0                 ; 0       ;
+;      - alu:u_alu|mux4_1:u_mux|Y~5                                      ; 0                 ; 0       ;
+;      - pwm_controller:u_pwm|LessThan0~3                                ; 0                 ; 0       ;
 ; ABCD[1]                                                                ;                   ;         ;
-;      - Enco_Four_Two:insenco|B[0]                                      ; 1                 ; 0       ;
-;      - alu:u_alu|sub_op:u_sub|C2~0                                     ; 1                 ; 0       ;
-;      - alu:u_alu|mul_op:u_mul|Y[2]                                     ; 1                 ; 0       ;
-;      - alu:u_alu|sub_op:u_sub|C3                                       ; 1                 ; 0       ;
-;      - alu:u_alu|mul_op:u_mul|c2~0                                     ; 1                 ; 0       ;
-;      - alu:u_alu|mul_op:u_mul|Y[3]~0                                   ; 1                 ; 0       ;
-;      - alu:u_alu|mux4_1:u_mux|Y[0]~3                                   ; 1                 ; 0       ;
-;      - alu:u_alu|C~0                                                   ; 1                 ; 0       ;
-;      - alu:u_alu|mux4_1:u_mux|Y~5                                      ; 1                 ; 0       ;
-;      - pwm_controller:u_pwm|LessThan0~3                                ; 1                 ; 0       ;
+;      - Enco_Four_Two:insenco|B[0]                                      ; 0                 ; 0       ;
+;      - alu:u_alu|sub_op:u_sub|C2~0                                     ; 0                 ; 0       ;
+;      - alu:u_alu|mul_op:u_mul|Y[2]                                     ; 0                 ; 0       ;
+;      - alu:u_alu|sub_op:u_sub|C3                                       ; 0                 ; 0       ;
+;      - alu:u_alu|mul_op:u_mul|c2~0                                     ; 0                 ; 0       ;
+;      - alu:u_alu|mul_op:u_mul|Y[3]~0                                   ; 0                 ; 0       ;
+;      - alu:u_alu|mux4_1:u_mux|Y[0]~3                                   ; 0                 ; 0       ;
+;      - alu:u_alu|C~0                                                   ; 0                 ; 0       ;
+;      - alu:u_alu|mux4_1:u_mux|Y~5                                      ; 0                 ; 0       ;
+;      - pwm_controller:u_pwm|LessThan0~3                                ; 0                 ; 0       ;
 ; clk                                                                    ;                   ;         ;
 ; rst                                                                    ;                   ;         ;
 ;      - pwm_controller:u_pwm|counter[0]                                 ; 0                 ; 0       ;
@@ -1584,10 +1579,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pwm_controller:u_pwm|clk_div[0]                                 ; 0                 ; 0       ;
 ;      - pwm_controller:u_pwm|clk_div[1]~DUPLICATE                       ; 0                 ; 0       ;
 ;      - pwm_controller:u_pwm|clk_div[0]~DUPLICATE                       ; 0                 ; 0       ;
-;      - pwm_controller:u_pwm|clk_div[10]~DUPLICATE                      ; 0                 ; 0       ;
-;      - pwm_controller:u_pwm|clk_div[9]~DUPLICATE                       ; 0                 ; 0       ;
 ;      - pwm_controller:u_pwm|clk_div[4]~DUPLICATE                       ; 0                 ; 0       ;
-;      - pwm_controller:u_pwm|clk_div[8]~DUPLICATE                       ; 0                 ; 0       ;
+;      - pwm_controller:u_pwm|clk_div[2]~DUPLICATE                       ; 0                 ; 0       ;
+;      - pwm_controller:u_pwm|counter[0]~DUPLICATE                       ; 0                 ; 0       ;
 ; tx_esp                                                                 ;                   ;         ;
 ;      - UART:uart_inst|rx_shift[2]~1                                    ; 1                 ; 0       ;
 ;      - UART:uart_inst|state[0]~0                                       ; 1                 ; 0       ;
@@ -1605,20 +1599,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                  ;
-+--------------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                               ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic|data_valid ; LABCELL_X56_Y1_N57  ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic|rst_clk    ; LABCELL_X56_Y1_N33  ; 16      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; UART:uart_inst|clk_count[15]~0                                     ; LABCELL_X55_Y1_N48  ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; UART:uart_inst|data_ready                                          ; FF_X55_Y1_N2        ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; clk                                                                ; PIN_AF14            ; 66      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; pwm_controller:u_pwm|Equal0~2                                      ; MLABCELL_X52_Y4_N42 ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; pwm_controller:u_pwm|Equal1~1                                      ; LABCELL_X53_Y4_N27  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; rst                                                                ; PIN_AJ4             ; 26      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-+--------------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                 ;
++--------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                               ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic|data_valid ; LABCELL_X50_Y1_N51 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic|rst_clk    ; LABCELL_X51_Y1_N48 ; 16      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; UART:uart_inst|clk_count[15]~0                                     ; MLABCELL_X52_Y1_N0 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; UART:uart_inst|data_ready                                          ; FF_X52_Y1_N32      ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; clk                                                                ; PIN_AF14           ; 67      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; pwm_controller:u_pwm|Equal0~2                                      ; LABCELL_X45_Y1_N42 ; 16      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; pwm_controller:u_pwm|Equal1~1                                      ; LABCELL_X46_Y1_N33 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; rst                                                                ; PIN_AJ4            ; 25      ; Async. clear ; no     ; --                   ; --               ; --                        ;
++--------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -1626,7 +1620,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_AF14 ; 66      ; Global Clock         ; GCLK6            ; --                        ;
+; clk  ; PIN_AF14 ; 67      ; Global Clock         ; GCLK6            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1635,14 +1629,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 140 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 1 / 13,420 ( < 1 % )    ;
-; C2 interconnects                            ; 11 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 26 / 56,300 ( < 1 % )   ;
+; Block interconnects                         ; 124 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 0 / 13,420 ( 0 % )      ;
+; C2 interconnects                            ; 13 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 10 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 49 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 39 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1698,12 +1692,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 56 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 62 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 14 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 14 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 47 / 130,992 ( < 1 % )  ;
-; R6 interconnects                            ; 51 / 266,960 ( < 1 % )  ;
+; R14 interconnects                           ; 16 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 16 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 48 / 130,992 ( < 1 % )  ;
+; R6 interconnects                            ; 57 / 266,960 ( < 1 % )  ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
@@ -1763,9 +1757,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 ; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass         ; 29           ; 0            ; 29           ; 0            ; 0            ; 35        ; 29           ; 0            ; 35        ; 35        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Pass         ; 32           ; 0            ; 32           ; 0            ; 0            ; 35        ; 32           ; 0            ; 35        ; 35        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable ; 6            ; 35           ; 6            ; 35           ; 35           ; 0         ; 6            ; 35           ; 0         ; 0         ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ;
+; Total Inapplicable ; 3            ; 35           ; 3            ; 35           ; 35           ; 0         ; 3            ; 35           ; 0         ; 0         ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; switches[0]        ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; switches[1]        ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
@@ -1796,9 +1790,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; leds[8]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; leds[9]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; pwm_gpio           ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; ABCD[2]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; ABCD[3]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; ABCD[1]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; ABCD[2]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; ABCD[3]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; ABCD[1]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; clk                ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; rst                ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; tx_esp             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
@@ -1853,7 +1847,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; clk             ; clk                  ; 3.3               ;
+; clk             ; clk                  ; 1.1               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1864,31 +1858,30 @@ This will disable optimization of problematic paths and expose them for further 
 +---------------------------------+---------------------------------+-------------------+
 ; Source Register                 ; Destination Register            ; Delay Added in ns ;
 +---------------------------------+---------------------------------+-------------------+
-; pwm_controller:u_pwm|counter[0] ; pwm_controller:u_pwm|counter[7] ; 0.361             ;
-; UART:uart_inst|state[0]         ; UART:uart_inst|state[1]         ; 0.244             ;
-; UART:uart_inst|bit_index[0]     ; UART:uart_inst|bit_index[1]     ; 0.225             ;
-; UART:uart_inst|state[1]         ; UART:uart_inst|state[0]         ; 0.223             ;
-; UART:uart_inst|clk_count[15]    ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[13]    ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[12]    ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[11]    ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[10]    ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[14]    ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[9]     ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[7]     ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[8]     ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[4]     ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[6]     ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[2]     ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[3]     ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[1]     ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[5]     ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|clk_count[0]     ; UART:uart_inst|state[0]         ; 0.216             ;
-; UART:uart_inst|bit_index[1]     ; UART:uart_inst|rx_shift[6]      ; 0.103             ;
-; UART:uart_inst|data_ready       ; UART:uart_inst|data_ready       ; 0.083             ;
-; UART:uart_inst|bit_index[2]     ; UART:uart_inst|bit_index[0]     ; 0.077             ;
+; pwm_controller:u_pwm|counter[0] ; pwm_controller:u_pwm|counter[7] ; 0.322             ;
+; UART:uart_inst|bit_index[0]     ; UART:uart_inst|bit_index[1]     ; 0.191             ;
+; UART:uart_inst|state[1]         ; UART:uart_inst|bit_index[2]     ; 0.182             ;
+; UART:uart_inst|clk_count[11]    ; UART:uart_inst|bit_index[2]     ; 0.138             ;
+; UART:uart_inst|bit_index[1]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|state[0]         ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[15]    ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[13]    ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[12]    ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[10]    ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[14]    ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[9]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[7]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[8]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[4]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[6]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[2]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[3]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[1]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[5]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|clk_count[0]     ; UART:uart_inst|bit_index[2]     ; 0.109             ;
+; UART:uart_inst|data_ready       ; UART:uart_inst|data_ready       ; 0.044             ;
 +---------------------------------+---------------------------------+-------------------+
-Note: This table only shows the top 23 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 22 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1902,7 +1895,7 @@ Info (21077): High junction temperature is 85 degrees C
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 6 pins of 35 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 3 pins of 35 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
     Info (11162): clk~inputCLKENA0 with 60 fanout uses global clock CLKCTRL_G6
@@ -1910,7 +1903,7 @@ Info (184021): Fitter periphery placement operations ending: elapsed time is 00:
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:06
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:07
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Topmodule.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
@@ -1918,7 +1911,7 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:03
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:06
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
@@ -1928,7 +1921,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.26 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1938,9 +1931,9 @@ Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments 
 Info (144001): Generated suppressed messages file C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_files/Topmodule.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 7121 megabytes
-    Info: Processing ended: Fri May 16 15:18:30 2025
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:01:46
+    Info: Processing ended: Fri May 16 16:05:26 2025
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:02:01
 
 
 +----------------------------+
