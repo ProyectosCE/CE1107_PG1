@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/jimmy/GitHub/CE1107_PG1/ALU/simulation/modelsim
 valu
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1747425356
+Z2 !s110 1747427944
 !i10b 1
 !s100 :eZHle3]Tl2f;V_iAfJz33
 I<BnGoWnFGUjHM0NaOUe9<0
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1747425355.000000
+Z6 !s108 1747427944.000000
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv|
 !i113 1
@@ -35,7 +35,7 @@ Z8 !s92 -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU
 Z9 tCvgOpt 0
 vand_op
 R1
-Z10 !s110 1747425355
+Z10 !s110 1747427943
 !i10b 1
 !s100 nEoa3WkHj2i;WRe1OWQEI3
 ILEGVMKOl_G68Y860idhgn3
@@ -51,165 +51,13 @@ R5
 r1
 !s85 0
 31
-R6
+Z11 !s108 1747427943.000000
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/and_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/and_op.sv|
 !i113 1
 R7
 R8
 R9
-vbit_index_next_logic
-R1
-R2
-!i10b 1
-!s100 3S_DKNPjbRV:@Mh:oRaef1
-IcHgYeSHmcFzZYPND7US7[1
-R3
-Z11 !s105 UART_sv_unit
-S1
-R0
-Z12 w1747425341
-Z13 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv
-Z14 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv
-L0 187
-R5
-r1
-!s85 0
-31
-Z15 !s108 1747425356.000000
-Z16 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv|
-Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv|
-!i113 1
-R7
-R8
-R9
-vclk_count_next_logic
-R1
-R2
-!i10b 1
-!s100 i]4iBPIT]J:99H8YKNjlM1
-IJdOlEjTVhf;H3TE3Wflg82
-R3
-R11
-S1
-R0
-R12
-R13
-R14
-L0 151
-R5
-r1
-!s85 0
-31
-R15
-R16
-R17
-!i113 1
-R7
-R8
-R9
-vd_latch
-R1
-Z18 !s110 1747425357
-!i10b 1
-!s100 OH=5Bf>Kbcd:Zo[0gbY>A1
-IhGNl?[0c6=3jg^Ib5eiKL3
-R3
-Z19 !s105 flip_flop_D_en_sv_unit
-S1
-R0
-Z20 w1747370772
-Z21 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv
-Z22 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv
-L0 67
-R5
-r1
-!s85 0
-31
-Z23 !s108 1747425357.000000
-Z24 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv|
-Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv|
-!i113 1
-R7
-R8
-R9
-vdecoder_3to8
-R1
-R18
-!i10b 1
-!s100 Rom3a_ejB4kg11nM_6<=43
-IOkOh>8^Y0YE1Cn<?ee6:n1
-R3
-Z26 !s105 shift_reg_8_sv_unit
-S1
-R0
-Z27 w1747370863
-Z28 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv
-Z29 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv
-L0 45
-R5
-r1
-!s85 0
-31
-R23
-Z30 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv|
-Z31 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv|
-!i113 1
-R7
-R8
-R9
-vFF_D
-R1
-R18
-!i10b 1
-!s100 CG_M^kN`zMi<LUO6P7]bj3
-I^42QbFEo7Z9QYmP[A0Gdj2
-R3
-R19
-S1
-R0
-R20
-R21
-R22
-L0 42
-R5
-r1
-!s85 0
-31
-R23
-R24
-R25
-!i113 1
-R7
-R8
-R9
-n@f@f_@d
-vflip_flop_D_en
-R1
-R18
-!i10b 1
-!s100 H`HKigg]4BL8<TO0OV9i]1
-IMF5_f=O43AbR7Z[^XXcfO3
-R3
-R19
-S1
-R0
-R20
-R21
-R22
-L0 2
-R5
-r1
-!s85 0
-31
-R23
-R24
-R25
-!i113 1
-R7
-R8
-R9
-nflip_flop_@d_en
 vHEX_SevenSeg
 R1
 R2
@@ -228,7 +76,7 @@ R5
 r1
 !s85 0
 31
-R15
+R6
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv|
 !i113 1
@@ -254,7 +102,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mul_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mul_op.sv|
 !i113 1
@@ -279,7 +127,7 @@ R5
 r1
 !s85 0
 31
-R15
+R6
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1.sv|
 !i113 1
@@ -304,7 +152,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux4_1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux4_1.sv|
 !i113 1
@@ -318,20 +166,20 @@ R2
 !s100 dD85GPaFAIl=:;5GO]01m1
 I@F`KXH^gn^9z1O2I7ETam3
 R3
-Z32 !s105 UART_FSM_sv_unit
+Z12 !s105 UART_FSM_sv_unit
 S1
 R0
-Z33 w1747363243
-Z34 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv
-Z35 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv
+Z13 w1747427791
+Z14 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv
+Z15 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv
 L0 105
 R5
 r1
 !s85 0
 31
-R15
-Z36 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv|
-Z37 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv|
+R6
+Z16 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv|
+Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv|
 !i113 1
 R7
 R8
@@ -355,59 +203,9 @@ R5
 r1
 !s85 0
 31
-R15
+R6
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv|
-!i113 1
-R7
-R8
-R9
-vreg_n
-R1
-R18
-!i10b 1
-!s100 7=Bn:IB=:082gFN_E>7aK3
-Ig5Qkb0UK?0e?HCi0B=Ne21
-R3
-!s105 reg_n_sv_unit
-S1
-R0
-w1747370820
-8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv
-FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv|
-!i113 1
-R7
-R8
-R9
-vshift_reg_8
-R1
-R18
-!i10b 1
-!s100 Uk^PeiT3;oG;;IV=OPgHN2
-Ia<EimCh2VS?elCnCe7C<N3
-R3
-R26
-S1
-R0
-R27
-R28
-R29
-L0 1
-R5
-r1
-!s85 0
-31
-R23
-R30
-R31
 !i113 1
 R7
 R8
@@ -419,20 +217,20 @@ R2
 !s100 NQ`U:?HjTEBA:=9E^kjaH1
 I9O8Z7IdfVOW@Y=dI0YCl=0
 R3
-R32
+R12
 S1
 R0
-R33
-R34
-R35
+R13
+R14
+R15
 L0 58
 R5
 r1
 !s85 0
 31
-R15
-R36
-R37
+R6
+R16
+R17
 !i113 1
 R7
 R8
@@ -448,7 +246,7 @@ R3
 !s105 sub_op_sv_unit
 S1
 R0
-Z38 w1747175506
+Z18 w1747175506
 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op.sv
 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op.sv
 L0 1
@@ -456,7 +254,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op.sv|
 !i113 1
@@ -465,7 +263,7 @@ R8
 R9
 vtb_UART
 R1
-R18
+R2
 !i10b 1
 !s100 9l73<MagOk<f<KBZ]a76a1
 IXG6hX?^XbQY;gl`d:B4I]0
@@ -481,7 +279,7 @@ R5
 r1
 !s85 0
 31
-R23
+R6
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART.sv|
 !i113 1
@@ -507,7 +305,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv|
 !i113 1
@@ -519,23 +317,23 @@ vUART
 R1
 R2
 !i10b 1
-!s100 ]0bO:>ImYFTi]f[gn1E_Z2
-I1SEYQ6SYIkGPB1QFlUSRZ2
+!s100 j7aKf_oEaS?O6jTVF8Y:n0
+I[e@cAW@VKf1GEW_fmmY@;0
 R3
-R11
+!s105 UART_sv_unit
 S1
 R0
-R12
-R13
-R14
+w1747427864
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R15
-R16
-R17
+R6
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv|
 !i113 1
 R7
 R8
@@ -548,20 +346,20 @@ R2
 !s100 ]a_@ZMe:L>lQCndOcOg9o3
 IN6RF8>b]l96kBJX]VGlzA3
 R3
-R32
+R12
 S1
 R0
-R33
-R34
-R35
+R13
+R14
+R15
 L0 1
 R5
 r1
 !s85 0
 31
-R15
-R36
-R37
+R6
+R16
+R17
 !i113 1
 R7
 R8
@@ -577,7 +375,7 @@ R3
 !s105 xor_op_sv_unit
 S1
 R0
-R38
+R18
 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op.sv
 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op.sv
 L0 5
@@ -585,7 +383,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op.sv|
 !i113 1

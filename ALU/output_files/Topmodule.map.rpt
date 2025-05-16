@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Topmodule
-Fri May 16 13:55:50 2025
+Fri May 16 14:38:54 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -12,58 +12,20 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   4. Parameter Settings for User Entity Instance: UART:uart_inst
   5. Parameter Settings for User Entity Instance: UART:uart_inst|UART_FSM:fsm_inst
   6. Parameter Settings for User Entity Instance: UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans
-  7. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:state_reg
-  8. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:clk_count_reg
-  9. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:bit_index_reg
- 10. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:data_reg
- 11. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:out_reg
- 12. Analysis & Elaboration Settings
- 13. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7"
- 14. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6"
- 15. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5"
- 16. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4"
- 17. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3"
- 18. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2"
- 19. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff1"
- 20. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff0"
- 21. Port Connectivity Checks: "UART:uart_inst|reg_n:bit_index_reg"
- 22. Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[2].mux_inst"
- 23. Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[1].mux_inst"
- 24. Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[0].mux_inst"
- 25. Port Connectivity Checks: "UART:uart_inst|reg_n:clk_count_reg"
- 26. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[15].mux_inst"
- 27. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[14].mux_inst"
- 28. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[13].mux_inst"
- 29. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[12].mux_inst"
- 30. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[11].mux_inst"
- 31. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[10].mux_inst"
- 32. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[9].mux_inst"
- 33. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[8].mux_inst"
- 34. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[7].mux_inst"
- 35. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[6].mux_inst"
- 36. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[5].mux_inst"
- 37. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[4].mux_inst"
- 38. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[3].mux_inst"
- 39. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[2].mux_inst"
- 40. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[1].mux_inst"
- 41. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[0].mux_inst"
- 42. Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave"
- 43. Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master"
- 44. Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_rst"
- 45. Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg"
- 46. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m10"
- 47. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m9"
- 48. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m8"
- 49. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m7"
- 50. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m6"
- 51. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m5"
- 52. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m4"
- 53. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m3"
- 54. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m2"
- 55. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m1"
- 56. Port Connectivity Checks: "UART:uart_inst"
- 57. Analysis & Elaboration Messages
- 58. Analysis & Elaboration Suppressed Messages
+  7. Analysis & Elaboration Settings
+  8. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m10"
+  9. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m9"
+ 10. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m8"
+ 11. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m7"
+ 12. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m6"
+ 13. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m5"
+ 14. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m4"
+ 15. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m3"
+ 16. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m2"
+ 17. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m1"
+ 18. Port Connectivity Checks: "UART:uart_inst"
+ 19. Analysis & Elaboration Messages
+ 20. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -89,7 +51,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri May 16 13:55:50 2025       ;
+; Analysis & Elaboration Status ; Successful - Fri May 16 14:38:54 2025       ;
 ; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                 ; Topmodule                                   ;
 ; Top-level Entity Name         ; Topmodule                                   ;
@@ -151,56 +113,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DATA           ; 10    ; Unsigned Binary                                                                ;
 ; STOP           ; 11    ; Unsigned Binary                                                                ;
 +----------------+-------+--------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:state_reg ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; N              ; 2     ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:clk_count_reg ;
-+----------------+-------+--------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                   ;
-+----------------+-------+--------------------------------------------------------+
-; N              ; 16    ; Signed Integer                                         ;
-+----------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:bit_index_reg ;
-+----------------+-------+--------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                   ;
-+----------------+-------+--------------------------------------------------------+
-; N              ; 3     ; Signed Integer                                         ;
-+----------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:data_reg ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; N              ; 8     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:out_reg ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; N              ; 8     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -289,303 +201,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
 ; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7" ;
-+------+-------+----------+-----------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                   ;
-+------+-------+----------+-----------------------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                              ;
-+------+-------+----------+-----------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6" ;
-+------+-------+----------+-----------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                   ;
-+------+-------+----------+-----------------------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                              ;
-+------+-------+----------+-----------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5" ;
-+------+-------+----------+-----------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                   ;
-+------+-------+----------+-----------------------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                              ;
-+------+-------+----------+-----------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4" ;
-+------+-------+----------+-----------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                   ;
-+------+-------+----------+-----------------------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                              ;
-+------+-------+----------+-----------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3" ;
-+------+-------+----------+-----------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                   ;
-+------+-------+----------+-----------------------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                              ;
-+------+-------+----------+-----------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2" ;
-+------+-------+----------+-----------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                   ;
-+------+-------+----------+-----------------------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                              ;
-+------+-------+----------+-----------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff1" ;
-+------+-------+----------+-----------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                   ;
-+------+-------+----------+-----------------------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                              ;
-+------+-------+----------+-----------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff0" ;
-+------+-------+----------+-----------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                   ;
-+------+-------+----------+-----------------------------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                                              ;
-+------+-------+----------+-----------------------------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|reg_n:bit_index_reg" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                         ;
-+------+-------+----------+--------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[2].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[1].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[0].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|reg_n:clk_count_reg" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                         ;
-+------+-------+----------+--------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[15].mux_inst" ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                           ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[14].mux_inst" ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                           ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[13].mux_inst" ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                           ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[12].mux_inst" ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                           ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[11].mux_inst" ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                           ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[10].mux_inst" ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                           ;
-+------+-------+----------+----------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[9].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[8].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[7].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[6].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[5].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[4].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[3].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[2].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[1].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[0].mux_inst" ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                               ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                          ;
-+------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave" ;
-+------+--------+----------+-----------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                           ;
-+------+--------+----------+-----------------------------------------------------------------------------------+
-; qn   ; Output ; Info     ; Explicitly unconnected                                                            ;
-+------+--------+----------+-----------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master"  ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_rst" ;
-+------+-------+----------+-----------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                     ;
-+------+-------+----------+-----------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                                                                ;
-+------+-------+----------+-----------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------+
-; Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg" ;
-+------+-------+----------+----------------------------------+
-; Port ; Type  ; Severity ; Details                          ;
-+------+-------+----------+----------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                     ;
-+------+-------+----------+----------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -693,7 +308,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri May 16 13:55:43 2025
+    Info: Processing started: Fri May 16 14:38:47 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_HDL -c Topmodule --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -729,10 +344,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file hex_sev
     Info (12023): Found entity 1: HEX_SevenSeg_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg_tb.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file topmodule_tb.sv
     Info (12023): Found entity 1: Topmodule_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule_tb.sv Line: 7
-Info (12021): Found 3 design units, including 3 entities, in source file uart.sv
+Info (12021): Found 1 design units, including 1 entities, in source file uart.sv
     Info (12023): Found entity 1: UART File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 1
-    Info (12023): Found entity 2: clk_count_next_logic File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 151
-    Info (12023): Found entity 3: bit_index_next_logic File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 187
 Info (12021): Found 1 design units, including 1 entities, in source file pwm_controller.sv
     Info (12023): Found entity 1: pwm_controller File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador4bit.sv
@@ -766,23 +379,12 @@ Info (12021): Found 3 design units, including 3 entities, in source file flip_fl
     Info (12023): Found entity 3: d_latch File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv Line: 67
 Info (12127): Elaborating entity "Topmodule" for the top level hierarchy
 Info (12128): Elaborating entity "UART" for hierarchy "UART:uart_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 30
-Info (12128): Elaborating entity "UART_FSM" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 64
+Warning (10230): Verilog HDL assignment warning at UART.sv(73): truncated value with size 32 to match size of target (16) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 73
+Warning (10230): Verilog HDL assignment warning at UART.sv(83): truncated value with size 32 to match size of target (3) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 83
+Info (12128): Elaborating entity "UART_FSM" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 56
 Info (12128): Elaborating entity "State_Transition" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv Line: 36
 Info (12128): Elaborating entity "mux2_1" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m1" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv Line: 84
 Info (12128): Elaborating entity "Output_Logic" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv Line: 52
-Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:state_reg" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 73
-Info (12128): Elaborating entity "flip_flop_D_en" for hierarchy "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv Line: 17
-Info (12128): Elaborating entity "FF_D" for hierarchy "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv Line: 34
-Info (12128): Elaborating entity "d_latch" for hierarchy "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv Line: 55
-Info (12128): Elaborating entity "clk_count_next_logic" for hierarchy "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 83
-Warning (10230): Verilog HDL assignment warning at UART.sv(160): truncated value with size 32 to match size of target (16) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 160
-Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:clk_count_reg" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 91
-Info (12128): Elaborating entity "bit_index_next_logic" for hierarchy "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 101
-Warning (10230): Verilog HDL assignment warning at UART.sv(196): truncated value with size 32 to match size of target (3) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 196
-Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:bit_index_reg" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 109
-Info (12128): Elaborating entity "shift_reg_8" for hierarchy "UART:uart_inst|shift_reg_8:shift_reg" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 119
-Info (12128): Elaborating entity "decoder_3to8" for hierarchy "UART:uart_inst|shift_reg_8:shift_reg|decoder_3to8:deco_3to8_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv Line: 16
-Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:data_reg" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 128
 Info (12128): Elaborating entity "alu" for hierarchy "alu:u_alu" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 43
 Info (12128): Elaborating entity "and_op" for hierarchy "alu:u_alu|and_op:u_and" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv Line: 16
 Info (12128): Elaborating entity "xor_op" for hierarchy "alu:u_alu|xor_op:u_xor" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv Line: 17
@@ -794,14 +396,12 @@ Info (12128): Elaborating entity "pwm_controller" for hierarchy "pwm_controller:
 Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(22): truncated value with size 32 to match size of target (12) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 22
 Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(34): truncated value with size 32 to match size of target (8) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 34
 Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(40): truncated value with size 32 to match size of target (8) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 40
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "UART:uart_inst|rst" is missing source, defaulting to GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 9
 Info (144001): Generated suppressed messages file C:/Users/jimmy/GitHub/CE1107_PG1/ALU/output_files/Topmodule.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4779 megabytes
-    Info: Processing ended: Fri May 16 13:55:50 2025
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Fri May 16 14:38:54 2025
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +--------------------------------------------+
