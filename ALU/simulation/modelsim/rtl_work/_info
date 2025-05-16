@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/jimmy/GitHub/CE1107_PG1/ALU/simulation/modelsim
 valu
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1747370940
+Z2 !s110 1747425356
 !i10b 1
 !s100 :eZHle3]Tl2f;V_iAfJz33
 I<BnGoWnFGUjHM0NaOUe9<0
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1747370939.000000
+Z6 !s108 1747425355.000000
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv|
 !i113 1
@@ -35,7 +35,7 @@ Z8 !s92 -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU
 Z9 tCvgOpt 0
 vand_op
 R1
-Z10 !s110 1747370939
+Z10 !s110 1747425355
 !i10b 1
 !s100 nEoa3WkHj2i;WRe1OWQEI3
 ILEGVMKOl_G68Y860idhgn3
@@ -68,7 +68,7 @@ R3
 Z11 !s105 UART_sv_unit
 S1
 R0
-Z12 w1747370823
+Z12 w1747425341
 Z13 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv
 Z14 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv
 L0 187
@@ -76,7 +76,7 @@ R5
 r1
 !s85 0
 31
-Z15 !s108 1747370940.000000
+Z15 !s108 1747425356.000000
 Z16 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv|
 Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv|
 !i113 1
@@ -110,7 +110,7 @@ R8
 R9
 vd_latch
 R1
-Z18 !s110 1747370941
+Z18 !s110 1747425357
 !i10b 1
 !s100 OH=5Bf>Kbcd:Zo[0gbY>A1
 IhGNl?[0c6=3jg^Ib5eiKL3
@@ -126,7 +126,7 @@ R5
 r1
 !s85 0
 31
-Z23 !s108 1747370941.000000
+Z23 !s108 1747425357.000000
 Z24 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv|
 Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv|
 !i113 1
@@ -380,7 +380,7 @@ R5
 r1
 !s85 0
 31
-R23
+R15
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv|
 !i113 1
@@ -467,13 +467,13 @@ vtb_UART
 R1
 R18
 !i10b 1
-!s100 iJ2e1XCQLOQ5ekI5O`7@f3
-IRQHkT?c0>Kc=5BbB6H`^z2
+!s100 9l73<MagOk<f<KBZ]a76a1
+IXG6hX?^XbQY;gl`d:B4I]0
 R3
 !s105 tb_UART_sv_unit
 S1
 R0
-w1747366031
+w1747383686
 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART.sv
 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART.sv
 L0 3
@@ -519,8 +519,8 @@ vUART
 R1
 R2
 !i10b 1
-!s100 BNLEf?KO:>m]=>DA`<3Zk2
-I;Bejb^CUJ74MQ>mVTB=:]2
+!s100 ]0bO:>ImYFTi]f[gn1E_Z2
+I1SEYQ6SYIkGPB1QFlUSRZ2
 R3
 R11
 S1

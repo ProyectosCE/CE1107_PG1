@@ -34,7 +34,7 @@ module tb_UART();
     initial begin
         clk = 0;
         rst_n = 0;
-        uart_rx = 1;  // Línea UART en reposo (idle)
+        uart_rx = 0;  // Línea UART en reposo (idle)
 
         expected_data[0] = 8'h5A;
         expected_data[1] = 8'hA3;
@@ -79,7 +79,7 @@ module tb_UART();
         integer j;
         begin
             // Bit de inicio (start bit)
-            uart_rx = 0;
+            uart_rx = 1;
             #(BIT_PERIOD);
 
             // Bits de datos (LSB primero)
@@ -89,7 +89,7 @@ module tb_UART();
             end
 
             // Bit de parada (stop bit)
-            uart_rx = 1;
+            uart_rx = 0;
             #(BIT_PERIOD);
         end
     endtask
