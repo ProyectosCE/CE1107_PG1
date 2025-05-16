@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Topmodule
-Fri May 16 15:18:02 2025
+Fri May 16 15:21:37 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,26 +13,66 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
  10. Parameter Settings for User Entity Instance: UART:uart_inst
  11. Parameter Settings for User Entity Instance: UART:uart_inst|UART_FSM:fsm_inst
  12. Parameter Settings for User Entity Instance: UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans
- 13. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m10"
- 14. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m9"
- 15. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m8"
- 16. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m7"
- 17. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m6"
- 18. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m5"
- 19. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m4"
- 20. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m3"
- 21. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m2"
- 22. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m1"
- 23. Port Connectivity Checks: "UART:uart_inst"
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
- 27. Analysis & Synthesis Suppressed Messages
+ 13. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:state_reg
+ 14. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:clk_count_reg
+ 15. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:bit_index_reg
+ 16. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:data_reg
+ 17. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:out_reg
+ 18. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7"
+ 19. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6"
+ 20. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5"
+ 21. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4"
+ 22. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3"
+ 23. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2"
+ 24. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff1"
+ 25. Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff0"
+ 26. Port Connectivity Checks: "UART:uart_inst|reg_n:bit_index_reg"
+ 27. Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[2].mux_inst"
+ 28. Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[1].mux_inst"
+ 29. Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[0].mux_inst"
+ 30. Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst"
+ 31. Port Connectivity Checks: "UART:uart_inst|reg_n:clk_count_reg"
+ 32. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[15].mux_inst"
+ 33. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[14].mux_inst"
+ 34. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[13].mux_inst"
+ 35. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[12].mux_inst"
+ 36. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[11].mux_inst"
+ 37. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[10].mux_inst"
+ 38. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[9].mux_inst"
+ 39. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[8].mux_inst"
+ 40. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[7].mux_inst"
+ 41. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[6].mux_inst"
+ 42. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[5].mux_inst"
+ 43. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[4].mux_inst"
+ 44. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[3].mux_inst"
+ 45. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[2].mux_inst"
+ 46. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[1].mux_inst"
+ 47. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[0].mux_inst"
+ 48. Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst"
+ 49. Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave"
+ 50. Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master"
+ 51. Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_rst"
+ 52. Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg"
+ 53. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m10"
+ 54. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m9"
+ 55. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m8"
+ 56. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m7"
+ 57. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m6"
+ 58. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m5"
+ 59. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m4"
+ 60. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m3"
+ 61. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m2"
+ 62. Port Connectivity Checks: "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m1"
+ 63. Port Connectivity Checks: "UART:uart_inst"
+ 64. Post-Synthesis Netlist Statistics for Top Partition
+ 65. Elapsed Time Per Partition
+ 66. Analysis & Synthesis Messages
+ 67. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -58,13 +98,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri May 16 15:18:02 2025       ;
+; Analysis & Synthesis Status     ; Successful - Fri May 16 15:21:37 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Topmodule                                   ;
 ; Top-level Entity Name           ; Topmodule                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 60                                          ;
+; Total registers                 ; 20                                          ;
 ; Total pins                      ; 35                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -199,6 +239,9 @@ refer to the applicable agreement for further details.
 ; pwm_controller.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv ;         ;
 ; UART_FSM.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv       ;         ;
 ; mux2_1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1.sv         ;         ;
+; reg_n.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv          ;         ;
+; shift_reg_8.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv    ;         ;
+; flip_flop_D_en.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv ;         ;
 ; Enco_Four_Two.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv  ;         ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
 
@@ -208,46 +251,293 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 64        ;
+; Estimate of Logic utilization (ALMs needed) ; 92        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 100       ;
-;     -- 7 input functions                    ; 1         ;
-;     -- 6 input functions                    ; 25        ;
-;     -- 5 input functions                    ; 14        ;
-;     -- 4 input functions                    ; 20        ;
-;     -- <=3 input functions                  ; 40        ;
+; Combinational ALUT usage for logic          ; 154       ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 30        ;
+;     -- 5 input functions                    ; 22        ;
+;     -- 4 input functions                    ; 17        ;
+;     -- <=3 input functions                  ; 85        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 60        ;
+; Dedicated logic registers                   ; 20        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 35        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 60        ;
-; Total fan-out                               ; 637       ;
-; Average fan-out                             ; 2.77      ;
+; Maximum fan-out                             ; 100       ;
+; Total fan-out                               ; 696       ;
+; Average fan-out                             ; 2.85      ;
 +---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Entity Name    ; Library Name ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+----------------+--------------+
-; |Topmodule                        ; 100 (0)             ; 60 (0)                    ; 0                 ; 0          ; 35   ; 0            ; |Topmodule                                                         ; Topmodule      ; work         ;
-;    |Enco_Four_Two:insenco|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|Enco_Four_Two:insenco                                   ; Enco_Four_Two  ; work         ;
-;    |HEX_SevenSeg:u_display|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|HEX_SevenSeg:u_display                                  ; HEX_SevenSeg   ; work         ;
-;    |UART:uart_inst|               ; 41 (31)             ; 40 (40)                   ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst                                          ; UART           ; work         ;
-;       |UART_FSM:fsm_inst|         ; 10 (3)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst                        ; UART_FSM       ; work         ;
-;          |Output_Logic:out_logic| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic ; Output_Logic   ; work         ;
-;    |alu:u_alu|                    ; 15 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu                                               ; alu            ; work         ;
-;       |mul_op:u_mul|              ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mul_op:u_mul                                  ; mul_op         ; work         ;
-;       |mux4_1:u_mux|              ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mux4_1:u_mux                                  ; mux4_1         ; work         ;
-;       |sub_op:u_sub|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|sub_op:u_sub                                  ; sub_op         ; work         ;
-;    |pwm_controller:u_pwm|         ; 35 (35)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|pwm_controller:u_pwm                                    ; pwm_controller ; work         ;
-+-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                    ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Entity Name      ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------+------------------+--------------+
+; |Topmodule                              ; 154 (0)             ; 20 (0)                    ; 0                 ; 0          ; 35   ; 0            ; |Topmodule                                                                                        ; Topmodule        ; work         ;
+;    |Enco_Four_Two:insenco|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|Enco_Four_Two:insenco                                                                  ; Enco_Four_Two    ; work         ;
+;    |HEX_SevenSeg:u_display|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|HEX_SevenSeg:u_display                                                                 ; HEX_SevenSeg     ; work         ;
+;    |UART:uart_inst|                     ; 101 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst                                                                         ; UART             ; work         ;
+;       |UART_FSM:fsm_inst|               ; 12 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst                                                       ; UART_FSM         ; work         ;
+;          |Output_Logic:out_logic|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic                                ; Output_Logic     ; work         ;
+;          |State_Transition:st_trans|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans                             ; State_Transition ; work         ;
+;       |flip_flop_D_en:data_ready_ff|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|flip_flop_D_en:data_ready_ff                                            ; flip_flop_D_en   ; work         ;
+;          |FF_D:ff|                      ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|flip_flop_D_en:data_ready_ff|FF_D:ff                                    ; FF_D             ; work         ;
+;             |d_latch:master|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|flip_flop_D_en:data_ready_ff|FF_D:ff|d_latch:master                     ; d_latch          ; work         ;
+;             |d_latch:slave|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|flip_flop_D_en:data_ready_ff|FF_D:ff|d_latch:slave                      ; d_latch          ; work         ;
+;       |reg_n:bit_index_reg|             ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg                                                     ; reg_n            ; work         ;
+;          |flip_flop_D_en:bit_ff[0].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master  ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[1].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:master  ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[2].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master  ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;       |reg_n:clk_count_reg|             ; 33 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg                                                     ; reg_n            ; work         ;
+;          |flip_flop_D_en:bit_ff[0].ff|  ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:master|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master  ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[10].ff| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff                        ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff|FF_D:ff                ; FF_D             ; work         ;
+;                |d_latch:slave|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff|FF_D:ff|d_latch:slave  ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[11].ff| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff                        ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff|FF_D:ff                ; FF_D             ; work         ;
+;                |d_latch:slave|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff|FF_D:ff|d_latch:slave  ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[12].ff| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff                        ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff|FF_D:ff                ; FF_D             ; work         ;
+;                |d_latch:slave|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff|FF_D:ff|d_latch:slave  ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[13].ff| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff                        ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff|FF_D:ff                ; FF_D             ; work         ;
+;                |d_latch:slave|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff|FF_D:ff|d_latch:slave  ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[14].ff| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff                        ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff|FF_D:ff                ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff|FF_D:ff|d_latch:master ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff|FF_D:ff|d_latch:slave  ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[15].ff| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff                        ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff|FF_D:ff                ; FF_D             ; work         ;
+;                |d_latch:slave|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff|FF_D:ff|d_latch:slave  ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[1].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:slave|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[2].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:slave|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[3].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:slave|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[4].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:master  ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[5].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:master  ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[6].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:master  ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[7].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:master  ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[8].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:slave|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[9].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff                         ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff|FF_D:ff                 ; FF_D             ; work         ;
+;                |d_latch:slave|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff|FF_D:ff|d_latch:slave   ; d_latch          ; work         ;
+;       |reg_n:data_reg|                  ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg                                                          ; reg_n            ; work         ;
+;          |flip_flop_D_en:bit_ff[2].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff                              ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff                      ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master       ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave        ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[3].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff                              ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff                      ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:master       ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:slave        ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[4].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff                              ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff                      ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:master       ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:slave        ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[5].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff                              ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff                      ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:master       ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:slave        ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[6].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff                              ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff                      ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:master       ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:slave        ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[7].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff                              ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff                      ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:master       ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:slave        ; d_latch          ; work         ;
+;       |reg_n:out_reg|                   ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg                                                           ; reg_n            ; work         ;
+;          |flip_flop_D_en:bit_ff[2].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff                               ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff                       ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master        ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave         ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[3].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff                               ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff                       ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:master        ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:slave         ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[4].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff                               ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff                       ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:master        ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:slave         ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[5].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff                               ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff                       ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:master        ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:slave         ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[6].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff                               ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff                       ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:master        ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:slave         ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[7].ff|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff                               ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff                       ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:master        ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:slave         ; d_latch          ; work         ;
+;       |reg_n:state_reg|                 ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg                                                         ; reg_n            ; work         ;
+;          |flip_flop_D_en:bit_ff[0].ff|  ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff                             ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff                     ; FF_D             ; work         ;
+;                |d_latch:master|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master      ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave       ; d_latch          ; work         ;
+;          |flip_flop_D_en:bit_ff[1].ff|  ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff                             ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff                     ; FF_D             ; work         ;
+;                |d_latch:master|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:master      ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave       ; d_latch          ; work         ;
+;       |shift_reg_8:shift_reg|           ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg                                                   ; shift_reg_8      ; work         ;
+;          |flip_flop_D_en:ff2|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2                                ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2|FF_D:ff                        ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2|FF_D:ff|d_latch:master         ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2|FF_D:ff|d_latch:slave          ; d_latch          ; work         ;
+;          |flip_flop_D_en:ff3|           ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3                                ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3|FF_D:ff                        ; FF_D             ; work         ;
+;                |d_latch:master|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3|FF_D:ff|d_latch:master         ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3|FF_D:ff|d_latch:slave          ; d_latch          ; work         ;
+;          |flip_flop_D_en:ff4|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4                                ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4|FF_D:ff                        ; FF_D             ; work         ;
+;                |d_latch:master|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4|FF_D:ff|d_latch:master         ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4|FF_D:ff|d_latch:slave          ; d_latch          ; work         ;
+;          |flip_flop_D_en:ff5|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5                                ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5|FF_D:ff                        ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5|FF_D:ff|d_latch:master         ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5|FF_D:ff|d_latch:slave          ; d_latch          ; work         ;
+;          |flip_flop_D_en:ff6|           ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6                                ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6|FF_D:ff                        ; FF_D             ; work         ;
+;                |d_latch:master|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6|FF_D:ff|d_latch:master         ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6|FF_D:ff|d_latch:slave          ; d_latch          ; work         ;
+;          |flip_flop_D_en:ff7|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7                                ; flip_flop_D_en   ; work         ;
+;             |FF_D:ff|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7|FF_D:ff                        ; FF_D             ; work         ;
+;                |d_latch:master|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7|FF_D:ff|d_latch:master         ; d_latch          ; work         ;
+;                |d_latch:slave|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7|FF_D:ff|d_latch:slave          ; d_latch          ; work         ;
+;    |alu:u_alu|                          ; 13 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu                                                                              ; alu              ; work         ;
+;       |mul_op:u_mul|                    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mul_op:u_mul                                                                 ; mul_op           ; work         ;
+;       |mux4_1:u_mux|                    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mux4_1:u_mux                                                                 ; mux4_1           ; work         ;
+;       |sub_op:u_sub|                    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|sub_op:u_sub                                                                 ; sub_op           ; work         ;
+;    |pwm_controller:u_pwm|               ; 31 (31)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|pwm_controller:u_pwm                                                                   ; pwm_controller   ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                                                    ;
++--------------------------------------------------------------------------------------------+----+
+; Logic Cell Name                                                                            ;    ;
++--------------------------------------------------------------------------------------------+----+
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave|q~0         ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:slave|q~0         ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:slave|q~0         ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:slave|q~0         ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:slave|q~0         ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:slave|q~0         ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master|q~0        ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:master|q~0        ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:master|q~0        ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:master|q~0        ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:master|q~0        ;    ;
+; UART:uart_inst|reg_n:out_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:master|q~0        ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave|q~0        ;    ;
+; UART:uart_inst|flip_flop_D_en:data_ready_ff|FF_D:ff|d_latch:slave|q~0                      ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:slave|q~0        ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:slave|q~0        ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:slave|q~0        ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:slave|q~0        ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:slave|q~0        ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master|q~0       ;    ;
+; UART:uart_inst|flip_flop_D_en:data_ready_ff|FF_D:ff|d_latch:master|q~0                     ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:master|q~0       ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:master|q~0       ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:master|q~0       ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:master|q~0       ;    ;
+; UART:uart_inst|reg_n:data_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:master|q~0       ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2|FF_D:ff|d_latch:slave|q~0          ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff|FF_D:ff|d_latch:slave|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff|FF_D:ff|d_latch:slave|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff|FF_D:ff|d_latch:slave|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff|FF_D:ff|d_latch:slave|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff|FF_D:ff|d_latch:slave|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff|FF_D:ff|d_latch:slave|q~0  ;    ;
+; UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave|q~0       ;    ;
+; UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave|q~0       ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3|FF_D:ff|d_latch:slave|q~0          ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5|FF_D:ff|d_latch:slave|q~0          ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4|FF_D:ff|d_latch:slave|q~0          ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6|FF_D:ff|d_latch:slave|q~0          ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7|FF_D:ff|d_latch:slave|q~0          ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2|FF_D:ff|d_latch:master|q~0         ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[3].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[4].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[5].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[6].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[7].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[8].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[9].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[10].ff|FF_D:ff|d_latch:master|q~0 ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[11].ff|FF_D:ff|d_latch:master|q~0 ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[12].ff|FF_D:ff|d_latch:master|q~0 ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[13].ff|FF_D:ff|d_latch:master|q~0 ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[14].ff|FF_D:ff|d_latch:master|q~0 ;    ;
+; UART:uart_inst|reg_n:clk_count_reg|flip_flop_D_en:bit_ff[15].ff|FF_D:ff|d_latch:master|q~0 ;    ;
+; UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master|q~0      ;    ;
+; UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:master|q~0      ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3|FF_D:ff|d_latch:master|q~0         ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5|FF_D:ff|d_latch:master|q~0         ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4|FF_D:ff|d_latch:master|q~0         ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6|FF_D:ff|d_latch:master|q~0         ;    ;
+; UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7|FF_D:ff|d_latch:master|q~0         ;    ;
+; UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:slave|q~0   ;    ;
+; UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[1].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; UART:uart_inst|reg_n:bit_index_reg|flip_flop_D_en:bit_ff[2].ff|FF_D:ff|d_latch:master|q~0  ;    ;
+; Number of logic cells representing combinational loops                                     ; 80 ;
++--------------------------------------------------------------------------------------------+----+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -255,24 +545,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 60    ;
-; Number of registers using Synchronous Clear  ; 28    ;
+; Total registers                              ; 20    ;
+; Number of registers using Synchronous Clear  ; 12    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 20    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 36    ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |Topmodule|UART:uart_inst|clk_count[15] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |Topmodule|UART:uart_inst|bit_index[0]  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -307,6 +587,373 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; STOP           ; 11    ; Unsigned Binary                                                                ;
 +----------------+-------+--------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:state_reg ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 2     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:clk_count_reg ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:bit_index_reg ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:data_reg ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 8     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:out_reg ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 8     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff7" ;
++------+-------+----------+-----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                   ;
++------+-------+----------+-----------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                              ;
++------+-------+----------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff6" ;
++------+-------+----------+-----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                   ;
++------+-------+----------+-----------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                              ;
++------+-------+----------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff5" ;
++------+-------+----------+-----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                   ;
++------+-------+----------+-----------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                              ;
++------+-------+----------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff4" ;
++------+-------+----------+-----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                   ;
++------+-------+----------+-----------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                              ;
++------+-------+----------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff3" ;
++------+-------+----------+-----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                   ;
++------+-------+----------+-----------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                              ;
++------+-------+----------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff2" ;
++------+-------+----------+-----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                   ;
++------+-------+----------+-----------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                              ;
++------+-------+----------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff1" ;
++------+-------+----------+-----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                   ;
++------+-------+----------+-----------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                              ;
++------+-------+----------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|shift_reg_8:shift_reg|flip_flop_D_en:ff0" ;
++------+-------+----------+-----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                   ;
++------+-------+----------+-----------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                              ;
++------+-------+----------+-----------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|reg_n:bit_index_reg"                                                                                                      ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                   ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                                                                                                              ;
+; d    ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "d[2..1]" will be connected to GND. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[2].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[1].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst|mux2_1:mux_rst[0].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst"                                                                                   ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                           ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------+
+; bit_index_next ; Output ; Warning  ; Output or bidir port (3 bits) is wider than the port expression (1 bits) it drives; bit(s) "bit_index_next[2..1]" have no fanouts ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|reg_n:clk_count_reg"                                                                                                        ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                                                                                                                ;
+; d    ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "d[15..1]" will be connected to GND. ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[15].mux_inst" ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[14].mux_inst" ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[13].mux_inst" ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[12].mux_inst" ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[11].mux_inst" ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[10].mux_inst" ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[9].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[8].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[7].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[6].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[5].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[4].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[3].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[2].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[1].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst|mux2_1:mux_rst[0].mux_inst" ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                               ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                          ;
++------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst"                                                                                     ;
++----------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------+
+; clk_count_next ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "clk_count_next[15..1]" have no fanouts ;
++----------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:slave" ;
++------+--------+----------+-----------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                           ;
++------+--------+----------+-----------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Explicitly unconnected                                                            ;
++------+--------+----------+-----------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master"  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|mux2_1:mux_rst" ;
++------+-------+----------+-----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                     ;
++------+-------+----------+-----------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                ;
++------+-------+----------+-----------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -413,30 +1060,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 60                          ;
+; arriav_ff             ; 20                          ;
 ;     CLR SCLR          ; 12                          ;
-;     ENA               ; 12                          ;
 ;     ENA CLR           ; 8                           ;
-;     ENA SCLR          ; 16                          ;
-;     plain             ; 12                          ;
-; arriav_lcell_comb     ; 110                         ;
-;     arith             ; 35                          ;
-;         1 data inputs ; 34                          ;
+; arriav_lcell_comb     ; 164                         ;
+;     arith             ; 19                          ;
+;         1 data inputs ; 18                          ;
 ;         2 data inputs ; 1                           ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 74                          ;
+;     normal            ; 145                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 20                          ;
-;         5 data inputs ; 14                          ;
-;         6 data inputs ; 25                          ;
+;         2 data inputs ; 22                          ;
+;         3 data inputs ; 43                          ;
+;         4 data inputs ; 17                          ;
+;         5 data inputs ; 22                          ;
+;         6 data inputs ; 30                          ;
 ; boundary_port         ; 35                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.52                        ;
+; Average LUT depth     ; 1.93                        ;
 +-----------------------+-----------------------------+
 
 
@@ -455,7 +1097,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri May 16 15:17:55 2025
+    Info: Processing started: Fri May 16 15:21:30 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_HDL -c Topmodule
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -491,8 +1133,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file hex_sev
     Info (12023): Found entity 1: HEX_SevenSeg_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg_tb.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file topmodule_tb.sv
     Info (12023): Found entity 1: Topmodule_tb File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule_tb.sv Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file uart.sv
+Info (12021): Found 3 design units, including 3 entities, in source file uart.sv
     Info (12023): Found entity 1: UART File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 1
+    Info (12023): Found entity 2: clk_count_next_logic File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 143
+    Info (12023): Found entity 3: bit_index_next_logic File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 179
 Info (12021): Found 1 design units, including 1 entities, in source file pwm_controller.sv
     Info (12023): Found entity 1: pwm_controller File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador4bit.sv
@@ -528,16 +1172,29 @@ Info (12021): Found 1 design units, including 1 entities, in source file enco_fo
     Info (12023): Found entity 1: Enco_Four_Two File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flip_flop_d.sv
     Info (12023): Found entity 1: Flip_Flop_D File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at UART.sv(74): created implicit net for "clk_count_next" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 74
+Warning (10236): Verilog HDL Implicit Net warning at UART.sv(92): created implicit net for "bit_index_next" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 92
 Info (12127): Elaborating entity "Topmodule" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at Topmodule.sv(15): object "B" assigned a value but never read File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 15
 Info (12128): Elaborating entity "Enco_Four_Two" for hierarchy "Enco_Four_Two:insenco" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 31
 Info (12128): Elaborating entity "UART" for hierarchy "UART:uart_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 38
-Warning (10230): Verilog HDL assignment warning at UART.sv(73): truncated value with size 32 to match size of target (16) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 73
-Warning (10230): Verilog HDL assignment warning at UART.sv(83): truncated value with size 32 to match size of target (3) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 83
 Info (12128): Elaborating entity "UART_FSM" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 56
 Info (12128): Elaborating entity "State_Transition" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv Line: 36
 Info (12128): Elaborating entity "mux2_1" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m1" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv Line: 84
 Info (12128): Elaborating entity "Output_Logic" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv Line: 52
+Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:state_reg" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 65
+Info (12128): Elaborating entity "flip_flop_D_en" for hierarchy "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv Line: 17
+Info (12128): Elaborating entity "FF_D" for hierarchy "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv Line: 34
+Info (12128): Elaborating entity "d_latch" for hierarchy "UART:uart_inst|reg_n:state_reg|flip_flop_D_en:bit_ff[0].ff|FF_D:ff|d_latch:master" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/flip_flop_D_en.sv Line: 55
+Info (12128): Elaborating entity "clk_count_next_logic" for hierarchy "UART:uart_inst|clk_count_next_logic:clk_count_logic_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 75
+Warning (10230): Verilog HDL assignment warning at UART.sv(152): truncated value with size 32 to match size of target (16) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 152
+Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:clk_count_reg" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 83
+Info (12128): Elaborating entity "bit_index_next_logic" for hierarchy "UART:uart_inst|bit_index_next_logic:bit_index_logic_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 93
+Warning (10230): Verilog HDL assignment warning at UART.sv(188): truncated value with size 32 to match size of target (3) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 188
+Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:bit_index_reg" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 101
+Info (12128): Elaborating entity "shift_reg_8" for hierarchy "UART:uart_inst|shift_reg_8:shift_reg" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 111
+Info (12128): Elaborating entity "decoder_3to8" for hierarchy "UART:uart_inst|shift_reg_8:shift_reg|decoder_3to8:deco_3to8_inst" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv Line: 16
+Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:data_reg" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv Line: 120
 Info (12128): Elaborating entity "alu" for hierarchy "alu:u_alu" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 51
 Info (12128): Elaborating entity "and_op" for hierarchy "alu:u_alu|and_op:u_and" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv Line: 16
 Info (12128): Elaborating entity "xor_op" for hierarchy "alu:u_alu|xor_op:u_xor" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv Line: 17
@@ -549,6 +1206,15 @@ Info (12128): Elaborating entity "pwm_controller" for hierarchy "pwm_controller:
 Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(22): truncated value with size 32 to match size of target (12) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 22
 Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(34): truncated value with size 32 to match size of target (8) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 34
 Warning (10230): Verilog HDL assignment warning at pwm_controller.sv(40): truncated value with size 32 to match size of target (8) File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv Line: 40
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "UART:uart_inst|_" is missing source, defaulting to GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 38
+    Warning (12110): Net "UART:uart_inst|_" is missing source, defaulting to GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 38
+    Warning (12110): Net "UART:uart_inst|_" is missing source, defaulting to GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 38
+    Warning (12110): Net "UART:uart_inst|_" is missing source, defaulting to GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 38
+    Warning (12110): Net "UART:uart_inst|_" is missing source, defaulting to GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 38
+    Warning (12110): Net "UART:uart_inst|_" is missing source, defaulting to GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 38
+    Warning (12110): Net "UART:uart_inst|_" is missing source, defaulting to GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 38
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "leds[4]" is stuck at GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 11
     Warning (13410): Pin "leds[5]" is stuck at GND File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 11
@@ -572,13 +1238,13 @@ Warning (21074): Design contains 11 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "switches[8]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 5
     Warning (15610): No output dependent on input pin "switches[9]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 5
     Warning (15610): No output dependent on input pin "ABCD[0]" File: C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv Line: 9
-Info (21057): Implemented 147 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 189 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 112 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4882 megabytes
-    Info: Processing ended: Fri May 16 15:18:02 2025
+    Info (21061): Implemented 154 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 4881 megabytes
+    Info: Processing ended: Fri May 16 15:21:37 2025
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:15
 
