@@ -3,8 +3,8 @@ switches[0] => ~NO_FANOUT~
 switches[1] => ~NO_FANOUT~
 switches[2] => ~NO_FANOUT~
 switches[3] => ~NO_FANOUT~
-switches[4] => B[0].IN1
-switches[5] => B[1].IN1
+switches[4] => ~NO_FANOUT~
+switches[5] => ~NO_FANOUT~
 switches[6] => ~NO_FANOUT~
 switches[7] => ~NO_FANOUT~
 switches[8] => ~NO_FANOUT~
@@ -12,24 +12,38 @@ switches[9] => ~NO_FANOUT~
 clk => clk.IN2
 tx_esp => tx_esp.IN1
 rst => rst.IN2
-seg0[0] << HEX_SevenSeg:u_display.seg0
-seg0[1] << HEX_SevenSeg:u_display.seg0
-seg0[2] << HEX_SevenSeg:u_display.seg0
-seg0[3] << HEX_SevenSeg:u_display.seg0
-seg0[4] << HEX_SevenSeg:u_display.seg0
-seg0[5] << HEX_SevenSeg:u_display.seg0
-seg0[6] << HEX_SevenSeg:u_display.seg0
-leds[0] << alu:u_alu.Z
-leds[1] << alu:u_alu.N
-leds[2] << alu:u_alu.C
-leds[3] << alu:u_alu.V
-leds[4] << <GND>
-leds[5] << <GND>
-leds[6] << <GND>
-leds[7] << <GND>
-leds[8] << <GND>
-leds[9] << <GND>
-pwm_gpio << pwm_controller:u_pwm.pwm_out
+ABCD[0] => ABCD[0].IN1
+ABCD[1] => ABCD[1].IN1
+ABCD[2] => ABCD[2].IN1
+ABCD[3] => ABCD[3].IN1
+seg0[0] <= HEX_SevenSeg:u_display.seg0
+seg0[1] <= HEX_SevenSeg:u_display.seg0
+seg0[2] <= HEX_SevenSeg:u_display.seg0
+seg0[3] <= HEX_SevenSeg:u_display.seg0
+seg0[4] <= HEX_SevenSeg:u_display.seg0
+seg0[5] <= HEX_SevenSeg:u_display.seg0
+seg0[6] <= HEX_SevenSeg:u_display.seg0
+leds[0] <= alu:u_alu.Z
+leds[1] <= alu:u_alu.N
+leds[2] <= alu:u_alu.C
+leds[3] <= alu:u_alu.V
+leds[4] <= <GND>
+leds[5] <= <GND>
+leds[6] <= <GND>
+leds[7] <= <GND>
+leds[8] <= <GND>
+leds[9] <= <GND>
+pwm_gpio <= pwm_controller:u_pwm.pwm_out
+
+
+|Topmodule|Enco_Four_Two:insenco
+A[0] => ~NO_FANOUT~
+A[1] => B.IN0
+A[2] => B.IN0
+A[3] => B.IN1
+A[3] => B.IN1
+B[0] <= B.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Topmodule|UART:uart_inst
