@@ -158,7 +158,6 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_UART_FSM
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_UART_FSM -section_id tb_UART_FSM
 set_global_assignment -name SYSTEMVERILOG_FILE reg_n.sv
 set_global_assignment -name SYSTEMVERILOG_FILE shift_reg_8.sv
-set_global_assignment -name SYSTEMVERILOG_FILE flip_flop_D_en.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Enco_Four_Two.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Flip_Flop_D.sv
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD[3]
