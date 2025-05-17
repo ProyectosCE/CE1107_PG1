@@ -39,7 +39,6 @@ module UART (
     // Instancia del módulo FSM
     UART_FSM #(.CLKS_PER_BIT(CLKS_PER_BIT)) fsm_inst (
         .clk(clk),
-        .rst(rst),
         .uart_rx(uart_rx),
         .state(state),
         .clk_count(clk_count),
@@ -55,66 +54,47 @@ module UART (
         .clr_data_ready(clr_data_ready)
     );
 
-    // Registro de estado (state register)
-    always_ff @(posedge clk or negedge rst) begin
-        if (!rst)
-            state <= IDLE;
-        else
-            state <= next_state;
-    end
+ // Registro de estado
+    always_ff @(posedge clk)
+        state <= next_state;
 
     // Registro de conteo de reloj
-    always_ff @(posedge clk or negedge rst) begin
-        if (!rst)
-            clk_count <= 0;
-        else if (rst_clk)
+    always_ff @(posedge clk) begin
+        if (rst_clk)
             clk_count <= 0;
         else if (inc_clk)
             clk_count <= clk_count + 1;
     end
 
     // Registro de índice de bit
-    always_ff @(posedge clk or negedge rst) begin
-        if (!rst)
-            bit_index <= 0;
-        else if (rst_bit)
+    always_ff @(posedge clk) begin
+        if (rst_bit)
             bit_index <= 0;
         else if (inc_bit)
             bit_index <= bit_index + 1;
     end
 
-    // Registro de desplazamiento (shift register)
-    always_ff @(posedge clk or negedge rst) begin
-        if (!rst)
-            rx_shift <= 8'b0;
-        else if (load_data)
+    // Registro de desplazamiento
+    always_ff @(posedge clk)
+        if (load_data)
             rx_shift[bit_index] <= uart_rx;
-    end
 
-    // Registro de salida final (buffer)
-    always_ff @(posedge clk or negedge rst) begin
-        if (!rst)
-            data <= 8'b0;
-        else if (data_valid)
+    // Registro de salida
+    always_ff @(posedge clk)
+        if (data_valid)
             data <= rx_shift;
-    end
 
     // Flag de datos listos
-    always_ff @(posedge clk or negedge rst) begin
-        if (!rst)
-            data_ready <= 0;
-        else if (clr_data_ready)
+    always_ff @(posedge clk) begin
+        if (clr_data_ready)
             data_ready <= 0;
         else if (data_valid)
             data_ready <= 1;
     end
 
     // Salida de datos
-    always_ff @(posedge clk or negedge rst) begin
-        if (!rst)
-            Out <= 8'b0;
-        else if (data_ready)
+    always_ff @(posedge clk)
+        if (data_ready)
             Out <= data;
-    end
 
 endmodule 

@@ -1,6 +1,5 @@
 module UART_FSM #(parameter CLKS_PER_BIT = 434)(
     input  logic        clk,
-    input  logic        rst,
     input  logic        uart_rx,
     input  logic [1:0]  state,
     input  logic [15:0] clk_count,

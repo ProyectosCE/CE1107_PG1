@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri May 16 16:05:26 2025
+Fitter Status : Successful - Fri May 16 21:12:08 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Topmodule
 Top-level Entity Name : Topmodule
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 64 / 41,910 ( < 1 % )
-Total registers : 67
+Logic utilization (in ALMs) : 63 / 41,910 ( < 1 % )
+Total registers : 68
 Total pins : 35 / 499 ( 7 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )
