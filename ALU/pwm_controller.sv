@@ -1,41 +1,36 @@
-// ======================================================
-// PWM estructural usando contador y comparador
-// ======================================================
-
-
 module pwm_controller (
-    input  logic clk,
+    input  logic clk,           // 50 MHz
     input  logic rst,
-    input  logic [3:0] duty,
+    input  logic [3:0] duty,    // 0 a 15
     output logic pwm_out
 );
 
-    logic tick;
+    logic clk_div;
     logic [3:0] counter;
-    logic menor;
+    logic duty_pick;
 
-    div_pwm #(
-        .CLK_FREQ(50_000_000),
-        .PWM_FREQ(5_000) //frecuencia de pwm
-    ) u_div_pwm (
-        .clk(clk),
-        .rst(rst),
-        .tick(tick)
+    // Divisor de reloj: genera ticks a 10kHz
+    clk_div_50M_to_10K clk_div_inst(
+        .clk_50MHz(clk),
+        .clk_out_10k(clk_div)
     );
 
-    contador4bit u_counter (
-        .clk(clk),
+    // Contador de 4 bits: cuenta de 0 a 15
+    contador4bit cont_inst(
+        .clk(clk_div),
         .rst(rst),
-        .en(tick),
+        .en(1'b1),       // contar siempre
         .Q(counter)
     );
 
-    comparador_menor u_cmp (
+    // Comparador: genera señal alta si counter < duty
+    comparador_menor comp_inst(
         .A(counter),
         .B(duty),
-        .menor(menor)
+        .menor(duty_pick)
     );
 
-    assign pwm_out = menor;
+    // Salida PWM
+    assign pwm_out = duty_pick;
 
 endmodule

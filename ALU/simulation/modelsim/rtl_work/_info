@@ -7,78 +7,155 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/josee/CE1107_PG1/ALU/simulation/modelsim
+Z0 dC:/Users/jimmy/GitHub/CE1107_PG1/ALU/simulation/modelsim
 valu
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1747076481
+Z2 !s110 1747465077
 !i10b 1
 !s100 :eZHle3]Tl2f;V_iAfJz33
-IjPAdNh`ehg:lSHTOk34RY3
+I<BnGoWnFGUjHM0NaOUe9<0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 alu_sv_unit
 S1
 R0
-Z4 w1747094463
-8C:/Users/josee/CE1107_PG1/ALU/alu.sv
-FC:/Users/josee/CE1107_PG1/ALU/alu.sv
+Z4 w1747175505
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv
 L0 4
 Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1747076481.000000
-!s107 C:/Users/josee/CE1107_PG1/ALU/alu.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/alu.sv|
+Z6 !s108 1747465076.000000
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv|
 !i113 1
 Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/josee/CE1107_PG1/ALU
+Z8 !s92 -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU
 Z9 tCvgOpt 0
 vand_op
 R1
-Z10 !s110 1747076480
+Z10 !s110 1747465076
 !i10b 1
 !s100 nEoa3WkHj2i;WRe1OWQEI3
-Ice6^Hg93Bol]g<fMP^;Mj0
+ILEGVMKOl_G68Y860idhgn3
 R3
 !s105 and_op_sv_unit
 S1
 R0
-w1747075135
-8C:/Users/josee/CE1107_PG1/ALU/and_op.sv
-FC:/Users/josee/CE1107_PG1/ALU/and_op.sv
+R4
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/and_op.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/and_op.sv
 L0 5
 R5
 r1
 !s85 0
 31
-Z11 !s108 1747076480.000000
-!s107 C:/Users/josee/CE1107_PG1/ALU/and_op.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/and_op.sv|
+R6
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/and_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/and_op.sv|
 !i113 1
 R7
 R8
 R9
+vdecoder_3to8
+R1
+R2
+!i10b 1
+!s100 4AJLVUVfbY=PQ<jl1Q5>03
+IbU0z5CKcOBGUWThiCA8331
+R3
+Z11 !s105 shift_reg_8_sv_unit
+S1
+R0
+Z12 w1747456551
+Z13 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv
+Z14 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv
+L0 42
+R5
+r1
+!s85 0
+31
+Z15 !s108 1747465077.000000
+Z16 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv|
+Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv|
+!i113 1
+R7
+R8
+R9
+vEnco_Four_Two
+R1
+R2
+!i10b 1
+!s100 1II=E[135`G8M8RI9KU543
+IzTz6h;O6YT0MCVSn^:9KG2
+R3
+!s105 Enco_Four_Two_sv_unit
+S1
+R0
+w1747456567
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv|
+!i113 1
+R7
+R8
+R9
+n@enco_@four_@two
+vFlip_Flop_D
+R1
+R2
+!i10b 1
+!s100 Mf7F]RPfA>^PKAI>hVz6g1
+IQFE9X2CM:m7Q5Wkd^PB^C3
+R3
+!s105 Flip_Flop_D_sv_unit
+S1
+R0
+w1747455102
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv|
+!i113 1
+R7
+R8
+R9
+n@flip_@flop_@d
 vHEX_SevenSeg
 R1
 R2
 !i10b 1
-!s100 gVfUlze:Ql6lfdlc3j3=Y1
-IC^mm@3^1kzDIfS?Va>^;D1
+!s100 `lH_hLAf9DMbC8=cTjWnk3
+I>A]N71Ag>Ig8PK4@<mL?S1
 R3
 !s105 HEX_SevenSeg_sv_unit
 S1
 R0
-w1747073673
-8C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv
-FC:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv
+R4
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv
 L0 2
 R5
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv|
+R15
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv|
 !i113 1
 R7
 R8
@@ -86,151 +163,381 @@ R9
 n@h@e@x_@seven@seg
 vmul_op
 R1
-R2
+R10
 !i10b 1
 !s100 :[VI9QEh<8VK>UFF;6[T=1
-I33T:91gRbbkRe92?1SbK?3
+ICA[lh^fR@fXdPPJS[4V6l0
 R3
 !s105 mul_op_sv_unit
 S1
 R0
-w1747075622
-8C:/Users/josee/CE1107_PG1/ALU/mul_op.sv
-FC:/Users/josee/CE1107_PG1/ALU/mul_op.sv
+R4
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mul_op.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/mul_op.sv
 L0 1
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/josee/CE1107_PG1/ALU/mul_op.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/mul_op.sv|
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mul_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mul_op.sv|
 !i113 1
 R7
 R8
 R9
-vmul_op_tb
+vmux2_1
 R1
 R2
 !i10b 1
-!s100 37;ej@lRJozXlKZhCN1P[1
-IDY48^H=@3A4nWz>WI<PnA2
+!s100 Z2bPj_=8nK03PJOkQ9NY33
+I1LeXGl:<URI;>l7oNl@5Z2
 R3
-!s105 mul_op_tb_sv_unit
+!s105 mux2_1_sv_unit
 S1
 R0
-w1747094471
-8C:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv
-FC:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv
-L0 7
+w1747433029
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1.sv
+L0 1
 R5
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv|
+R15
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1.sv|
+!i113 1
+R7
+R8
+R9
+vmux2_1_n
+R1
+R2
+!i10b 1
+!s100 Xnia`k:^di?62SL]XY`2F3
+I[kJL5mEIFTUDHbio;=>S[0
+R3
+!s105 mux2_1_n_sv_unit
+S1
+R0
+w1747456504
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1_n.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1_n.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1_n.sv|
 !i113 1
 R7
 R8
 R9
 vmux4_1
 R1
-R2
+R10
 !i10b 1
 !s100 eL179KRJdM0j_Xc[deOX20
-IL5WzGVZ?gJ`ZL@oQBk2e]1
+I9Y^W@RCZF0h[mA>]lh9Ec2
 R3
 !s105 mux4_1_sv_unit
 S1
 R0
-w1747075517
-8C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv
-FC:/Users/josee/CE1107_PG1/ALU/mux4_1.sv
+R4
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux4_1.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux4_1.sv
 L0 1
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv|
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux4_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux4_1.sv|
 !i113 1
 R7
 R8
 R9
-vsub_op
+vOutput_Logic
 R1
-R10
+R2
 !i10b 1
-!s100 @ICaKAQAc:9h8L>VmkT<U3
-Ia;3;5Z:6k`ZTe<6NSL3b:0
+!s100 Rd6Q=X<]oYYK<i]4l>O8f2
+IZb@7ZfAUFeLBn29QgdR;@3
 R3
-!s105 sub_op_sv_unit
+Z18 !s105 UART_FSM_sv_unit
 S1
 R0
-w1747075274
-8C:/Users/josee/CE1107_PG1/ALU/sub_op.sv
-FC:/Users/josee/CE1107_PG1/ALU/sub_op.sv
+Z19 w1747465061
+Z20 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv
+Z21 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv
+L0 92
+R5
+r1
+!s85 0
+31
+R15
+Z22 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv|
+Z23 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv|
+!i113 1
+R7
+R8
+R9
+n@output_@logic
+vpwm_controller
+R1
+R2
+!i10b 1
+!s100 >YO_aA2675j:]e^;nXahz1
+I?T:Nb9_BjliKo2R>G[Oz>1
+R3
+!s105 pwm_controller_sv_unit
+S1
+R0
+w1747285933
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/josee/CE1107_PG1/ALU/sub_op.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/sub_op.sv|
+R15
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv|
 !i113 1
 R7
 R8
 R9
+vreg_n
+R1
+R2
+!i10b 1
+!s100 RYhYoU2MhmW[G<?c3kLJ23
+IPRe6Y285Ha12>4Y9JjlgZ3
+R3
+!s105 reg_n_sv_unit
+S1
+R0
+w1747455689
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv|
+!i113 1
+R7
+R8
+R9
+vshift_reg_8
+R1
+R2
+!i10b 1
+!s100 kWSWAPNi6n8a<UA_12_GW0
+IM2H[C5em^;R:>?X2;7DQC3
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 1
+R7
+R8
+R9
+vState_Transition
+R1
+R2
+!i10b 1
+!s100 Ai7^jU?hDo;V91;oQ1VEJ0
+IFdcfcJ4A7md3PJ:7Tzhd62
+R3
+R18
+S1
+R0
+R19
+R20
+R21
+L0 57
+R5
+r1
+!s85 0
+31
+R15
+R22
+R23
+!i113 1
+R7
+R8
+R9
+n@state_@transition
+vsub_op
+R1
+R10
+!i10b 1
+!s100 @ICaKAQAc:9h8L>VmkT<U3
+IF[?8Z^kF2n;@2Vf0S][Tn3
+R3
+!s105 sub_op_sv_unit
+S1
+R0
+Z24 w1747175506
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/sub_op.sv|
+!i113 1
+R7
+R8
+R9
+vtb_UART_FSM
+R1
+R2
+!i10b 1
+!s100 KA=d]z[SNO:]lbd2Q>``E0
+I>o_j=hhi=MQol`DK;90e:0
+R3
+!s105 tb_UART_FSM_sv_unit
+S1
+R0
+w1747462485
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv|
+!i113 1
+R7
+R8
+R9
+ntb_@u@a@r@t_@f@s@m
 vTopmodule
 R1
 R10
 !i10b 1
-!s100 50_HUY2PG`4;j4]69CobH1
-I0@m9f768i=7H[2iMT2;;k2
+!s100 BbWBNfVDImc[XeY<DaMn=2
+IH8M;fMkH0gIL?lO_Jhc8]0
 R3
 !s105 Topmodule_sv_unit
 S1
 R0
-R4
-8C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv
-FC:/Users/josee/CE1107_PG1/ALU/Topmodule.sv
+w1747458278
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv
 L0 4
 R5
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv|
+R6
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv|
 !i113 1
 R7
 R8
 R9
 n@topmodule
+vUART
+R1
+R2
+!i10b 1
+!s100 ST`eldK[OF>0B9:]]e4580
+IalbdFOmz1lL2_V=Pez[^@0
+R3
+!s105 UART_sv_unit
+S1
+R0
+w1747458287
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv|
+!i113 1
+R7
+R8
+R9
+n@u@a@r@t
+vUART_FSM
+R1
+R2
+!i10b 1
+!s100 X0HSU9jNN?eE:QFC]52fQ0
+IoaMfS5Fg[e151^nZ5lml>2
+R3
+R18
+S1
+R0
+R19
+R20
+R21
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+R22
+R23
+!i113 1
+R7
+R8
+R9
+n@u@a@r@t_@f@s@m
 vxor_op
 R1
 R10
 !i10b 1
 !s100 [^AUF0hFjMn=hKfZ9ODQ>3
-IIYcgB24DShH7Z`VTDo`2m2
+I`U:bTK_eQYm0OhSW4`I9?1
 R3
 !s105 xor_op_sv_unit
 S1
 R0
-w1747075140
-8C:/Users/josee/CE1107_PG1/ALU/xor_op.sv
-FC:/Users/josee/CE1107_PG1/ALU/xor_op.sv
+R24
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op.sv
 L0 5
 R5
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/josee/CE1107_PG1/ALU/xor_op.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE1107_PG1/ALU|C:/Users/josee/CE1107_PG1/ALU/xor_op.sv|
+R6
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/xor_op.sv|
 !i113 1
 R7
 R8

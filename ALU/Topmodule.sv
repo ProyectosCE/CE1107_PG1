@@ -6,6 +6,7 @@ module Topmodule(
 	 input logic clk,
 	 input tx_esp,
 	 input rst,
+	 input [3:0] ABCD,
     output logic [6:0] seg0,          // display de 7 segmentos (HEX0)
     output logic [9:0] leds,         // leds[3:0] = flags Z, N, C, V (de derecha a izquierda)
 	 output logic pwm_gpio
@@ -21,19 +22,25 @@ module Topmodule(
     assign B   = switches[5:4];
     assign sel = Outs_uart[3:2];
 	 
+	logic [1:0] four_two_out;
+		
+	Enco_Four_Two insenco(
+	.A(ABCD),
+	.B(four_two_out)
+
+	); 
 	 
-	 UART uart_inst(
-    .clk(clk),              // Reloj FPGA (50 MHz)
-    .rst_n(~rst),            // Botón de reset ACTIVO BAJO
-    .uart_rx(tx_esp),          // Entrada UART RX desde Arduino
-    .Out(Outs_uart)         // salida conectada a esp
-);
-	 
+	UART uart_inst(
+		.clk(clk),              // Reloj FPGA (50 MHz)
+		.uart_rx(tx_esp),          // Entrada UART RX desde Arduino
+		.Out(Outs_uart)         // salida conectada a esp
+	);
+
 
     // Instancia de la ALU
     alu u_alu(
         .A(A),
-        .B(B),
+        .B(four_two_out),
         .sel(sel),
         .Y(Y),
         .Z(Z),

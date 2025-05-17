@@ -1,0 +1,181 @@
+`timescale 1ns / 1ps
+
+module tb_UART_FSM();
+
+    // Parámetros
+    parameter CLKS_PER_BIT = 434;
+    parameter CLOCK_FREQ = 50000000; // 50 MHz (no estrictamente usado aquí)
+    parameter BAUD_RATE = 115200;
+    parameter BIT_PERIOD = 1000000000 / BAUD_RATE; // ns (solo referencia)
+
+    // Entradas
+    logic clk;
+    logic rst;
+    logic uart_rx;
+    logic [15:0] clk_count;
+    logic [2:0] bit_index;
+
+    // Salidas
+    logic [1:0] state;
+    logic data_ready;
+    logic enable_baud;
+    logic reset_baud;
+    logic reset_bit_index;
+    logic enable_bit_index;
+    logic enable_rx_shift;
+
+    // Instancia DUT
+    UART_FSM #(.CLKS_PER_BIT(CLKS_PER_BIT)) dut (
+        .clk(clk),
+        .rst(rst),
+        .uart_rx(uart_rx),
+        .clk_count(clk_count),
+        .bit_index(bit_index),
+        .state(state),
+        .data_ready(data_ready),
+        .enable_baud(enable_baud),
+        .reset_baud(reset_baud),
+        .reset_bit_index(reset_bit_index),
+        .enable_bit_index(enable_bit_index),
+        .enable_rx_shift(enable_rx_shift)
+    );
+
+    // Reloj 50 MHz
+    always #10 clk = ~clk;
+
+    // Variables de prueba
+    int errors = 0;
+
+    // Inicialización y prueba
+    initial begin
+        clk = 0;
+        rst = 1;
+        uart_rx = 1; // idle
+        clk_count = 0;
+        bit_index = 0;
+
+        #50;
+        rst = 0;
+
+        // -------------------
+        // Test 1: Reset mantiene estado IDLE (00)
+        #20;
+        if (state !== 2'b00) begin
+            $display("ERROR: Estado después de reset no es IDLE");
+            errors++;
+        end
+
+        // -------------------
+        // Test 2: Detectar Start bit (uart_rx=0) -> estado START (01)
+        uart_rx = 0;
+        clk_count = 0;
+        bit_index = 0;
+        #20;
+        if (state !== 2'b00) begin
+            // El estado cambia solo después de clk_count
+            $display("INFO: Estado aún IDLE porque clk_count no ha llegado a mitad");
+        end
+
+        // Simular clk_count == CLKS_PER_BIT/2 para cambio a START
+        clk_count = CLKS_PER_BIT/2;
+        #20;
+        if (state !== 2'b01) begin
+            $display("ERROR: No se cambió a START con start bit y clk_count mitad");
+            errors++;
+        end else begin
+            $display("OK: Transición a START correcta");
+        end
+
+        // -------------------
+        // Test 3: START a DATA con uart_rx=0 y clk_count mitad
+        uart_rx = 0;
+        clk_count = CLKS_PER_BIT/2;
+        #20;
+        if (state !== 2'b10) begin
+            $display("ERROR: No se cambió a DATA en clk_count mitad durante START");
+            errors++;
+        end else begin
+            $display("OK: Transición a DATA correcta");
+        end
+
+        // -------------------
+        // Test 4: DATA mantiene estado y avanza bit_index
+        bit_index = 0;
+        clk_count = CLKS_PER_BIT - 1;
+        uart_rx = 1'b1;
+        #20;
+        if (state !== 2'b10) begin
+            $display("ERROR: DATA no mantiene estado antes de full_clk");
+            errors++;
+        end
+
+        clk_count = CLKS_PER_BIT;
+        #20;
+        if (state !== 2'b10 && bit_index < 7) begin
+            $display("ERROR: DATA debería mantener estado y avanzar bit_index");
+            errors++;
+        end else begin
+            $display("OK: DATA mantiene estado y avanza bit_index");
+        end
+
+        // -------------------
+        // Test 5: DATA a STOP con bit_index=7 y clk_count full
+        bit_index = 7;
+        clk_count = CLKS_PER_BIT;
+        uart_rx = 1'b1;
+        #20;
+        if (state !== 2'b11) begin
+            $display("ERROR: No se cambió a STOP cuando bit_index=7 y clk_count full");
+            errors++;
+        end else begin
+            $display("OK: Transición a STOP correcta");
+        end
+
+        // -------------------
+        // Test 6: STOP a IDLE al terminar clk_count full
+        clk_count = CLKS_PER_BIT - 1;
+        #20;
+        if (state !== 2'b11) begin
+            $display("ERROR: STOP no mantiene estado antes de clk_count full");
+            errors++;
+        end
+
+        clk_count = CLKS_PER_BIT;
+        #20;
+        if (state !== 2'b00) begin
+            $display("ERROR: STOP no volvió a IDLE después de clk_count full");
+            errors++;
+        end else begin
+            $display("OK: Transición STOP a IDLE correcta");
+        end
+
+        // -------------------
+        // Test 7: Señales de control en IDLE
+        if (!reset_baud) begin
+            $display("ERROR: reset_baud debe estar activo en IDLE");
+            errors++;
+        end
+
+        // Test 8: Señales de control en START
+        rst = 0;
+        uart_rx = 0;
+        clk_count = CLKS_PER_BIT / 2;
+        bit_index = 0;
+        #20; // avance a START
+        if (!(enable_baud)) begin
+            $display("ERROR: enable_baud debe estar activo en START");
+            errors++;
+        end
+        if (!(reset_bit_index)) begin
+            $display("ERROR: reset_bit_index debe activarse en START mitad");
+            errors++;
+        end
+
+        // Resultado final
+        if (errors == 0) $display("\nTODAS LAS PRUEBAS PASARON");
+        else $display("\n%d PRUEBA(S) FALLARON", errors);
+
+        $finish;
+    end
+
+endmodule

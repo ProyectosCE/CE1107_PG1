@@ -5,7 +5,7 @@
 module comparador_menor (
     input  logic [3:0] A,
     input  logic [3:0] B,
-    output logic menor
+    output logic menor 
 );
     logic eq0, eq1, eq2;
     logic lt0, lt1, lt2, lt3;
