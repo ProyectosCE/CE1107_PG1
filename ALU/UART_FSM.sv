@@ -62,38 +62,26 @@ module State_Transition (
     input  logic bit_index_eq_7,
     output logic [1:0] next_state
 );
-    parameter IDLE  = 2'b00;
-    parameter START = 2'b01;
-    parameter DATA  = 2'b10;
-    parameter STOP  = 2'b11;
+	 
+	logic s1, s0, rx, ch, cf, b7;
+	assign s1 = state[1];
+	assign s0 = state[0];
+	assign rx = uart_rx;
+	assign ch = clk_count_eq_half;
+	assign cf = clk_count_eq_full;
+	assign b7 = bit_index_eq_7;
+	
+	assign next_state[1] = (~s1 & s0 & ~rx & ch) |
+					           (s1 & ~s0 & cf & ~b7) |
+					           (s1 & ~s0 & cf & b7)  |
+					           (s1 & ~s0 & ~cf)      |
+					           (s1 & s0 & ~cf);
+					  
+	assign next_state[0] = (~s1 & ~s0 & ~rx)      |
+								  (~s1 & s0 & ~rx & ~ch) |
+								  (s1 & ~s0 & cf & b7)   |
+								  (s1 & s0 & ~cf);
 
-    // Condiciones
-    logic to_start, to_data, stay_data, to_stop, to_idle;
-
-    assign to_start    = (state == IDLE)  & ~uart_rx;
-    assign to_data     = (state == START) & clk_count_eq_half & ~uart_rx;
-    assign stay_data   = (state == DATA)  & clk_count_eq_full & ~bit_index_eq_7;
-    assign to_stop     = (state == DATA)  & clk_count_eq_full &  bit_index_eq_7;
-    assign to_idle     = (state == STOP)  & clk_count_eq_full;
-
-    // Selecciones con mux2_1 anidados (2 bits separados)
-    logic [1:0] ns0, ns1, ns2, ns3, ns4;
-
-    // Nivel 1
-    mux2_1 m1 (.sel(to_idle),     .a(state[0]), .b(IDLE[0]),  .y(ns0[0]));
-    mux2_1 m2 (.sel(to_idle),     .a(state[1]), .b(IDLE[1]),  .y(ns0[1]));
-
-    mux2_1 m3 (.sel(to_stop),     .a(ns0[0]),   .b(STOP[0]),  .y(ns1[0]));
-    mux2_1 m4 (.sel(to_stop),     .a(ns0[1]),   .b(STOP[1]),  .y(ns1[1]));
-
-    mux2_1 m5 (.sel(stay_data),   .a(ns1[0]),   .b(DATA[0]),  .y(ns2[0]));
-    mux2_1 m6 (.sel(stay_data),   .a(ns1[1]),   .b(DATA[1]),  .y(ns2[1]));
-
-    mux2_1 m7 (.sel(to_data),     .a(ns2[0]),   .b(DATA[0]),  .y(ns3[0]));
-    mux2_1 m8 (.sel(to_data),     .a(ns2[1]),   .b(DATA[1]),  .y(ns3[1]));
-
-    mux2_1 m9 (.sel(to_start),    .a(ns3[0]),   .b(START[0]), .y(next_state[0]));
-    mux2_1 m10(.sel(to_start),    .a(ns3[1]),   .b(START[1]), .y(next_state[1]));
 
 endmodule
 
@@ -116,19 +104,37 @@ module Output_Logic (
     output logic clr_data_ready
 );
 
-    logic idle, start, data, stop;
-    assign idle  = (state == 2'd0);
-    assign start = (state == 2'd1);
-    assign data  = (state == 2'd2);
-    assign stop  = (state == 2'd3);
-
-    assign load_data  = data & clk_count_eq_full;  // Se carga cada vez que termina un bit
-    assign inc_clk    = (start & ~clk_count_eq_half) | (data & ~clk_count_eq_full) | (stop & ~clk_count_eq_full);
-    assign rst_clk    = (idle & ~uart_rx) | (start & clk_count_eq_half) | (data & clk_count_eq_full) | (stop & clk_count_eq_full);
-    assign inc_bit    = data & clk_count_eq_full & ~bit_index_eq_7;
-    assign rst_bit = (start & clk_count_eq_half & ~uart_rx) | (stop & clk_count_eq_full);
-    assign data_valid = stop & clk_count_eq_full;
-    assign clr_data_ready = idle;
+	logic s1, s0, rx, ch, cf, b7;
+	assign s1 = state[1];
+	assign s0 = state[0];
+	assign rx = uart_rx;
+	assign ch = clk_count_eq_half;
+	assign cf = clk_count_eq_full;
+	assign b7 = bit_index_eq_7;
+	
+	
+    assign load_data = (s1 & ~s0 & cf & ~b7) |
+							  (s1 & ~s0 & cf & b7);
+	 
+    assign inc_clk = (~s1 & s0 & ~rx & ~ch) |
+							(s1 & ~s0 & ~cf)       |
+							(s1 & s0 & ~cf);
+	 
+    assign rst_clk = (~s1 & ~s0 & ~rx)     |
+	                  (~s1 & s0 & ~rx & ch) |
+							(s1 & ~s0 & cf & ~b7) |
+							(s1 & ~s0 & cf & b7)  |
+							(s1 & s0 & cf);
+	 
+    assign inc_bit = (s1 & ~s0 & cf & ~b7);
+	 
+    assign rst_bit = (~s1 & s0 & ~rx & ch) |
+						   (s1 & s0 & cf);
+	 
+    assign data_valid = (s1 & s0 & cf);
+	 
+    assign clr_data_ready = (~s1 & ~s0 & ~rx) |
+									 (~s1 & ~s0 & rx);
 
 endmodule
 

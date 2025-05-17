@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/jimmy/GitHub/CE1107_PG1/ALU/simulation/modelsim
 valu
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1747458135
+Z2 !s110 1747465077
 !i10b 1
 !s100 :eZHle3]Tl2f;V_iAfJz33
 I<BnGoWnFGUjHM0NaOUe9<0
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1747458134.000000
+Z6 !s108 1747465076.000000
 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/alu.sv|
 !i113 1
@@ -35,7 +35,7 @@ Z8 !s92 -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU
 Z9 tCvgOpt 0
 vand_op
 R1
-Z10 !s110 1747458134
+Z10 !s110 1747465076
 !i10b 1
 !s100 nEoa3WkHj2i;WRe1OWQEI3
 ILEGVMKOl_G68Y860idhgn3
@@ -76,7 +76,7 @@ R5
 r1
 !s85 0
 31
-Z15 !s108 1747458135.000000
+Z15 !s108 1747465077.000000
 Z16 !s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv|
 Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv|
 !i113 1
@@ -265,16 +265,16 @@ vOutput_Logic
 R1
 R2
 !i10b 1
-!s100 gkTj]R>megmjBVMBUCe:N0
-I;HNXA=;h`5diQnmK5?GMi2
+!s100 Rd6Q=X<]oYYK<i]4l>O8f2
+IZb@7ZfAUFeLBn29QgdR;@3
 R3
 Z18 !s105 UART_FSM_sv_unit
 S1
 R0
-Z19 w1747456594
+Z19 w1747465061
 Z20 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv
 Z21 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv
-L0 104
+L0 92
 R5
 r1
 !s85 0
@@ -366,8 +366,8 @@ vState_Transition
 R1
 R2
 !i10b 1
-!s100 N[0:]nC6ezU04Eb1UJTkZ2
-IW=FlLahiS3VRPQa`lBW2?3
+!s100 Ai7^jU?hDo;V91;oQ1VEJ0
+IFdcfcJ4A7md3PJ:7Tzhd62
 R3
 R18
 S1
@@ -413,43 +413,43 @@ R6
 R7
 R8
 R9
-vtb_UART
+vtb_UART_FSM
 R1
 R2
 !i10b 1
-!s100 _Ez7LHb@l0@PGXh@PQe9H0
-I?mhM9B?gzik8JBn[99UeI3
+!s100 KA=d]z[SNO:]lbd2Q>``E0
+I>o_j=hhi=MQol`DK;90e:0
 R3
-!s105 tb_UART_sv_unit
+!s105 tb_UART_FSM_sv_unit
 S1
 R0
-w1747457998
-8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART.sv
-FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART.sv
+w1747462485
+8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv
+FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv
 L0 3
 R5
 r1
 !s85 0
 31
 R15
-!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART.sv|
+!s107 C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU|C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv|
 !i113 1
 R7
 R8
 R9
-ntb_@u@a@r@t
+ntb_@u@a@r@t_@f@s@m
 vTopmodule
 R1
 R10
 !i10b 1
-!s100 9]dbm@TR2YA1J2Q`Rog?02
-IVaaFM@Vn7fM_8==??`2dd2
+!s100 BbWBNfVDImc[XeY<DaMn=2
+IH8M;fMkH0gIL?lO_Jhc8]0
 R3
 !s105 Topmodule_sv_unit
 S1
 R0
-w1747457927
+w1747458278
 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv
 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/Topmodule.sv
 L0 4
@@ -469,13 +469,13 @@ vUART
 R1
 R2
 !i10b 1
-!s100 4izm`N`fHjG@;]RQMSg1k2
-INcZml0_jmEgDJUVcT;cc80
+!s100 ST`eldK[OF>0B9:]]e4580
+IalbdFOmz1lL2_V=Pez[^@0
 R3
 !s105 UART_sv_unit
 S1
 R0
-w1747458112
+w1747458287
 8C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv
 FC:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART.sv
 L0 1

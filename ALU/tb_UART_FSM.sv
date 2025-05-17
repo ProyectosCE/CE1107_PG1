@@ -7,7 +7,6 @@ module tb_UART_FSM;
 
     // Señales
     logic clk;
-    logic rst;
     logic uart_rx;
     logic [1:0] state;
     logic [15:0] clk_count;
@@ -25,7 +24,6 @@ module tb_UART_FSM;
     // Instanciar el DUT
     UART_FSM #(CLKS_PER_BIT) dut (
         .clk(clk),
-        .rst(rst),
         .uart_rx(uart_rx),
         .state(state),
         .clk_count(clk_count),
@@ -50,15 +48,10 @@ module tb_UART_FSM;
 
     // Inicialización
     initial begin
-        // Reset inicial
-        rst = 1;
         state = 0;
         clk_count = 0;
         bit_index = 0;
         uart_rx = 1;  // Línea idle (alta)
-
-        @(posedge clk);
-        rst = 0;
 
         // Estado IDLE: uart_rx=1, clr_data_ready = 1 esperado
         #1; // Delay pequeño para evaluación combinacional

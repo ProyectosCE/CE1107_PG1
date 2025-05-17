@@ -16,24 +16,24 @@ ABCD[0] => ABCD[0].IN1
 ABCD[1] => ABCD[1].IN1
 ABCD[2] => ABCD[2].IN1
 ABCD[3] => ABCD[3].IN1
-seg0[0] <= HEX_SevenSeg:u_display.seg0
-seg0[1] <= HEX_SevenSeg:u_display.seg0
-seg0[2] <= HEX_SevenSeg:u_display.seg0
-seg0[3] <= HEX_SevenSeg:u_display.seg0
-seg0[4] <= HEX_SevenSeg:u_display.seg0
-seg0[5] <= HEX_SevenSeg:u_display.seg0
-seg0[6] <= HEX_SevenSeg:u_display.seg0
-leds[0] <= alu:u_alu.Z
-leds[1] <= alu:u_alu.N
-leds[2] <= alu:u_alu.C
-leds[3] <= alu:u_alu.V
-leds[4] <= <GND>
-leds[5] <= <GND>
-leds[6] <= <GND>
-leds[7] <= <GND>
-leds[8] <= <GND>
-leds[9] <= <GND>
-pwm_gpio <= pwm_controller:u_pwm.pwm_out
+seg0[0] << HEX_SevenSeg:u_display.seg0
+seg0[1] << HEX_SevenSeg:u_display.seg0
+seg0[2] << HEX_SevenSeg:u_display.seg0
+seg0[3] << HEX_SevenSeg:u_display.seg0
+seg0[4] << HEX_SevenSeg:u_display.seg0
+seg0[5] << HEX_SevenSeg:u_display.seg0
+seg0[6] << HEX_SevenSeg:u_display.seg0
+leds[0] << alu:u_alu.Z
+leds[1] << alu:u_alu.N
+leds[2] << alu:u_alu.C
+leds[3] << alu:u_alu.V
+leds[4] << <GND>
+leds[5] << <GND>
+leds[6] << <GND>
+leds[7] << <GND>
+leds[8] << <GND>
+leds[9] << <GND>
+pwm_gpio << pwm_controller:u_pwm.pwm_out
 
 
 |Topmodule|Enco_Four_Two:insenco
@@ -111,125 +111,54 @@ clr_data_ready <= Output_Logic:out_logic.clr_data_ready
 
 
 |Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans
-state[0] => state[0].IN1
-state[1] => state[1].IN1
-uart_rx => to_start.IN1
-uart_rx => to_data.IN1
-clk_count_eq_half => to_data.IN1
-clk_count_eq_full => stay_data.IN1
-clk_count_eq_full => to_stop.IN1
-clk_count_eq_full => to_idle.IN1
-bit_index_eq_7 => to_stop.IN1
-bit_index_eq_7 => stay_data.IN1
-next_state[0] <= mux2_1:m9.y
-next_state[1] <= mux2_1:m10.y
-
-
-|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m1
-sel => y.IN0
-sel => y.IN0
-a => y.IN1
-b => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m2
-sel => y.IN0
-sel => y.IN0
-a => y.IN1
-b => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m3
-sel => y.IN0
-sel => y.IN0
-a => y.IN1
-b => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m4
-sel => y.IN0
-sel => y.IN0
-a => y.IN1
-b => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m5
-sel => y.IN0
-sel => y.IN0
-a => y.IN1
-b => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m6
-sel => y.IN0
-sel => y.IN0
-a => y.IN1
-b => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m7
-sel => y.IN0
-sel => y.IN0
-a => y.IN1
-b => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m8
-sel => y.IN0
-sel => y.IN0
-a => y.IN1
-b => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m9
-sel => y.IN0
-sel => y.IN0
-a => y.IN1
-b => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans|mux2_1:m10
-sel => y.IN0
-sel => y.IN0
-a => y.IN1
-b => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
+state[0] => next_state.IN0
+state[0] => next_state.IN0
+state[0] => next_state.IN0
+state[0] => next_state.IN0
+state[1] => next_state.IN1
+state[1] => next_state.IN1
+state[1] => next_state.IN1
+state[1] => next_state.IN1
+uart_rx => next_state.IN1
+uart_rx => next_state.IN1
+clk_count_eq_half => next_state.IN1
+clk_count_eq_half => next_state.IN1
+clk_count_eq_full => next_state.IN1
+clk_count_eq_full => next_state.IN1
+clk_count_eq_full => next_state.IN1
+bit_index_eq_7 => next_state.IN1
+bit_index_eq_7 => next_state.IN1
+next_state[0] <= next_state.DB_MAX_OUTPUT_PORT_TYPE
+next_state[1] <= next_state.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Topmodule|UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic
-state[0] => Equal0.IN1
-state[0] => Equal1.IN0
-state[0] => Equal2.IN1
-state[0] => Equal3.IN1
-state[1] => Equal0.IN0
-state[1] => Equal1.IN1
-state[1] => Equal2.IN0
-state[1] => Equal3.IN0
+state[0] => inc_clk.IN0
+state[0] => inc_clk.IN0
+state[0] => load_data.IN0
+state[0] => rst_clk.IN0
+state[1] => load_data.IN1
+state[1] => inc_clk.IN1
+state[1] => inc_clk.IN1
+state[1] => rst_clk.IN1
+uart_rx => clr_data_ready.IN1
+uart_rx => inc_clk.IN1
 uart_rx => rst_clk.IN1
-uart_rx => rst_bit.IN1
 clk_count_eq_half => rst_clk.IN1
 clk_count_eq_half => inc_clk.IN1
 clk_count_eq_full => load_data.IN1
 clk_count_eq_full => rst_clk.IN1
 clk_count_eq_full => inc_clk.IN1
 clk_count_eq_full => inc_clk.IN1
-bit_index_eq_7 => inc_bit.IN1
+bit_index_eq_7 => load_data.IN1
+bit_index_eq_7 => load_data.IN1
 load_data <= load_data.DB_MAX_OUTPUT_PORT_TYPE
 inc_clk <= inc_clk.DB_MAX_OUTPUT_PORT_TYPE
 rst_clk <= rst_clk.DB_MAX_OUTPUT_PORT_TYPE
-inc_bit <= inc_bit.DB_MAX_OUTPUT_PORT_TYPE
+inc_bit <= load_data.DB_MAX_OUTPUT_PORT_TYPE
 rst_bit <= rst_bit.DB_MAX_OUTPUT_PORT_TYPE
 data_valid <= rst_clk.DB_MAX_OUTPUT_PORT_TYPE
-clr_data_ready <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+clr_data_ready <= clr_data_ready.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Topmodule|UART:uart_inst|reg_n:state_reg
