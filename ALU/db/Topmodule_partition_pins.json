@@ -68,10 +68,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
-					"strict" : false
-				},
-				{
 					"name" : "tx_esp",
 					"strict" : false
 				}

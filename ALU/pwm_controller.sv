@@ -5,45 +5,32 @@ module pwm_controller (
     output logic pwm_out
 );
 
-    logic tick;
-    logic [11:0] clk_div;       // divisor para tick (12 bits es suficiente)
-    logic [7:0] counter;        // contador de 8 bits
-    logic [7:0] duty_scaled;
+    logic clk_div;
+    logic [3:0] counter;
+    logic duty_pick;
 
-    // ===============================
-    // Divisor de reloj para PWM ≈ 20kHz
-    // ===============================
-    always_ff @(posedge clk or posedge rst) begin
-        if (rst)
-            clk_div <= 0;
-        else if (clk_div == 2499)
-            clk_div <= 0;
-        else
-            clk_div <= clk_div + 1;
-    end
+    // Divisor de reloj: genera ticks a 10kHz
+    clk_div_50M_to_10K clk_div_inst(
+        .clk_50MHz(clk),
+        .clk_out_10k(clk_div)
+    );
 
-    assign tick = (clk_div == 0); // un tick cada 2500 ciclos → 20 kHz
+    // Contador de 4 bits: cuenta de 0 a 15
+    contador4bit cont_inst(
+        .clk(clk_div),
+        .rst(rst),
+        .en(1'b1),       // contar siempre
+        .Q(counter)
+    );
 
-    // ===============================
-    // Contador de 8 bits para ciclo PWM
-    // ===============================
-    always_ff @(posedge clk or posedge rst) begin
-        if (rst)
-            counter <= 0;
-        else if (tick)
-            counter <= counter + 1;
-    end
+    // Comparador: genera señal alta si counter < duty
+    comparador_menor comp_inst(
+        .A(counter),
+        .B(duty),
+        .menor(duty_pick)
+    );
 
-    // ===============================
-    // Escalado de entrada duty de 4 bits a 8 bits (0–255)
-    // ===============================
-    assign duty_scaled = duty * 17; // 0*17 = 0, 15*17 = 255
-
-    // ===============================
-    // Comparador para salida PWM
-    // ===============================
-    always_comb begin
-        pwm_out = (counter < duty_scaled);
-    end
+    // Salida PWM
+    assign pwm_out = duty_pick;
 
 endmodule
