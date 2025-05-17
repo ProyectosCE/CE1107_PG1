@@ -1,6 +1,5 @@
 module shift_reg_8 (
     input logic clk,
-    input logic rst,
     input logic load,
     input logic uart_rx,
     input logic [2:0] bit_index,
@@ -18,9 +17,7 @@ module shift_reg_8 (
     // Señales para d_next para cada bit
     logic [7:0] d_next;
 
-    // Para cada bit i, sin usar condicionales:
-    // d_next[i] = (load AND bit_index_decoded[i] AND uart_rx) OR (NOT (load AND bit_index_decoded[i]) AND q[i])
-
+    // Para cada bit i
     assign d_next[0] = (load & bit_index_decoded[0] & uart_rx) | (~(load & bit_index_decoded[0]) & q[0]);
     assign d_next[1] = (load & bit_index_decoded[1] & uart_rx) | (~(load & bit_index_decoded[1]) & q[1]);
     assign d_next[2] = (load & bit_index_decoded[2] & uart_rx) | (~(load & bit_index_decoded[2]) & q[2]);
@@ -30,15 +27,15 @@ module shift_reg_8 (
     assign d_next[6] = (load & bit_index_decoded[6] & uart_rx) | (~(load & bit_index_decoded[6]) & q[6]);
     assign d_next[7] = (load & bit_index_decoded[7] & uart_rx) | (~(load & bit_index_decoded[7]) & q[7]);
 
-    // Instanciar 8 flip_flop_D (debes tener el módulo flip_flop_D estructural)
-    flip_flop_D_en ff0 (.clk(clk), .rst(rst), .en(1'b1), .d(d_next[0]), .q(q[0]));
-    flip_flop_D_en ff1 (.clk(clk), .rst(rst), .en(1'b1), .d(d_next[1]), .q(q[1]));
-    flip_flop_D_en ff2 (.clk(clk), .rst(rst), .en(1'b1), .d(d_next[2]), .q(q[2]));
-    flip_flop_D_en ff3 (.clk(clk), .rst(rst), .en(1'b1), .d(d_next[3]), .q(q[3]));
-    flip_flop_D_en ff4 (.clk(clk), .rst(rst), .en(1'b1), .d(d_next[4]), .q(q[4]));
-    flip_flop_D_en ff5 (.clk(clk), .rst(rst), .en(1'b1), .d(d_next[5]), .q(q[5]));
-    flip_flop_D_en ff6 (.clk(clk), .rst(rst), .en(1'b1), .d(d_next[6]), .q(q[6]));
-    flip_flop_D_en ff7 (.clk(clk), .rst(rst), .en(1'b1), .d(d_next[7]), .q(q[7]));
+    // Instanciar 8 Flip_Flop_D
+    Flip_Flop_D ff0 (.clk(clk), .d(d_next[0]), .q(q[0]));
+    Flip_Flop_D ff1 (.clk(clk), .d(d_next[1]), .q(q[1]));
+    Flip_Flop_D ff2 (.clk(clk), .d(d_next[2]), .q(q[2]));
+    Flip_Flop_D ff3 (.clk(clk), .d(d_next[3]), .q(q[3]));
+    Flip_Flop_D ff4 (.clk(clk), .d(d_next[4]), .q(q[4]));
+    Flip_Flop_D ff5 (.clk(clk), .d(d_next[5]), .q(q[5]));
+    Flip_Flop_D ff6 (.clk(clk), .d(d_next[6]), .q(q[6]));
+    Flip_Flop_D ff7 (.clk(clk), .d(d_next[7]), .q(q[7]));
 
 endmodule
 
@@ -56,4 +53,4 @@ module decoder_3to8 (
     assign out[6] =  in[2] &  in[1] & ~in[0];
     assign out[7] =  in[2] &  in[1] &  in[0];
 
-endmodule
+endmodule 

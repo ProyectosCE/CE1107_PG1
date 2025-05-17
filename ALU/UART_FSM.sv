@@ -52,8 +52,8 @@ module UART_FSM #(parameter CLKS_PER_BIT = 434)(
 
 endmodule
 
-// --------------------------------------------------
-// Módulo de transición de estados (sin if, case, else)
+// --------------------------------
+// Módulo de transición de estados 
 module State_Transition (
     input  logic [1:0] state,
     input  logic uart_rx,
@@ -99,8 +99,8 @@ endmodule
 
 
 
-// --------------------------------------------------
-// Módulo para señales de control (sin if, case, else)
+// ------------------------------
+// Módulo para señales de control 
 module Output_Logic (
     input logic [1:0] state,
     input logic uart_rx,

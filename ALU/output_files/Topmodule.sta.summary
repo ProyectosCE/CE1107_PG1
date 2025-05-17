@@ -2,52 +2,100 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1100mV 85C Model Setup 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : -4.769
+TNS   : -26.200
+
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -2.186
-TNS   : -111.080
+Slack : -4.271
+TNS   : -111.375
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : 0.366
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : 3.453
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -0.394
-TNS   : -45.481
+TNS   : -38.543
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : -4.873
+TNS   : -26.900
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -2.142
-TNS   : -108.969
+Slack : -4.149
+TNS   : -108.964
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
 Slack : 0.368
 TNS   : 0.000
 
+Type  : Slow 1100mV 0C Model Hold 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : 3.525
+TNS   : 0.000
+
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -0.394
-TNS   : -41.403
+TNS   : -34.879
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : 0.406
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -0.764
-TNS   : -32.375
+Slack : -2.663
+TNS   : -35.683
+
+Type  : Fast 1100mV 85C Model Setup 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : -2.271
+TNS   : -12.262
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : 0.180
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : 2.024
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.401
-TNS   : -30.478
+Slack : -0.400
+TNS   : -25.806
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : -2.172
+TNS   : -11.822
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -0.633
-TNS   : -25.785
+Slack : -2.102
+TNS   : -28.715
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
 Slack : 0.171
 TNS   : 0.000
 
+Type  : Fast 1100mV 0C Model Hold 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : 1.969
+TNS   : 0.000
+
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.436
-TNS   : -36.192
+Slack : -0.438
+TNS   : -30.992
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff|q'
+Slack : 0.457
+TNS   : 0.000
 
 ------------------------------------------------------------

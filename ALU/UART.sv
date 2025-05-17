@@ -1,14 +1,8 @@
 module UART (
     input  logic clk,              // Reloj FPGA (50 MHz)
-    input  logic rst_n,            // Botón de reset ACTIVO BAJO
     input  logic uart_rx,          // Entrada UART RX desde Arduino
     output logic [7:0] Out         // Salida de datos recibidos
 );
-
-    // Reset activo alto interno
-    logic rst;
-    //assign rst = ~rst_n;
-
     // Parámetros de configuración
     parameter BAUD_RATE = 115200;
     parameter CLOCK_FREQ = 50000000;
@@ -27,6 +21,7 @@ module UART (
     logic [7:0] data;
     logic data_ready;
 
+
     // Señales de control desde la FSM
     logic load_data;
     logic inc_clk;
@@ -35,6 +30,12 @@ module UART (
     logic rst_bit;
     logic data_valid;
     logic clr_data_ready;
+	 
+	 // Otros señales para los mux
+	 logic [15:0] clk_count_next, clk_count_next_1;
+	 logic [2:0]  bit_index_next, bit_index_next_1;
+	 logic        data_ready_next, data_ready_next_1;
+	 logic [7:0] data_next;
 
     // Instancia del módulo FSM
     UART_FSM #(.CLKS_PER_BIT(CLKS_PER_BIT)) fsm_inst (
@@ -54,47 +55,114 @@ module UART (
         .clr_data_ready(clr_data_ready)
     );
 
- // Registro de estado
-    always_ff @(posedge clk)
-        state <= next_state;
+
+    // Registro de estado
+    reg_n #(.N(2)) state_reg (
+        .clk(clk),
+        .d(next_state),
+        .en(1'b1),
+        .q(state)
+    );
 
     // Registro de conteo de reloj
-    always_ff @(posedge clk) begin
-        if (rst_clk)
-            clk_count <= 0;
-        else if (inc_clk)
-            clk_count <= clk_count + 1;
-    end
+    logic [15:0] clk_inc;
+    assign clk_inc = clk_count + 1;
+	 mux2_1_n #(.N(16)) clk_mux1 (
+		 .sel(inc_clk), 
+		 .a(clk_count), 
+		 .b(clk_inc), 
+		 .y(clk_count_next_1)
+	 );
+	 mux2_1_n #(.N(16)) clk_mux2 (
+		 .sel(rst_clk), 
+		 .a(clk_count_next_1), 
+		 .b(16'd0), 
+		 .y(clk_count_next)
+	 );
+    reg_n #(.N(16)) clk_count_reg (
+		 .clk(clk), 
+		 .d(clk_count_next), 
+		 .en(1'b1), 
+		 .q(clk_count)
+	 );
+
 
     // Registro de índice de bit
-    always_ff @(posedge clk) begin
-        if (rst_bit)
-            bit_index <= 0;
-        else if (inc_bit)
-            bit_index <= bit_index + 1;
-    end
+    logic [2:0] bit_inc;
+    assign bit_inc = bit_index + 1;
+	 mux2_1_n #(.N(3)) bit_mux1 (
+	    .sel(inc_bit), 
+	    .a(bit_index), 
+	    .b(bit_inc), 
+		 .y(bit_index_next_1)
+	 );
+	 mux2_1_n #(.N(3)) bit_mux2 (
+		 .sel(rst_bit), 
+		 .a(bit_index_next_1), 
+	    .b(3'd0), 
+		 .y(bit_index_next)
+	 );
+    reg_n #(.N(3)) bit_index_reg (
+		 .clk(clk), 
+		 .d(bit_index_next), 
+		 .en(1'b1), 
+		 .q(bit_index)
+	 );
+
 
     // Registro de desplazamiento
-    always_ff @(posedge clk)
-        if (load_data)
-            rx_shift[bit_index] <= uart_rx;
+    shift_reg_8 rx_shift_reg (
+        .clk(clk),
+        .load(load_data),
+        .uart_rx(uart_rx),
+        .bit_index(bit_index),
+        .q(rx_shift)
+    );
 
+	 
     // Registro de salida
-    always_ff @(posedge clk)
-        if (data_valid)
-            data <= rx_shift;
+    mux2_1_n #(.N(8)) data_mux (
+		 .sel(data_valid), 
+		 .a(data), 
+		 .b(rx_shift), 
+		 .y(data_next)
+	 );
+    reg_n #(.N(8)) data_reg (
+		 .clk(clk), 
+		 .d(data_next), 
+		 .en(1'b1), 
+		 .q(data)
+	 );
+
 
     // Flag de datos listos
-    always_ff @(posedge clk) begin
-        if (clr_data_ready)
-            data_ready <= 0;
-        else if (data_valid)
-            data_ready <= 1;
-    end
+    logic data_ready_set;
+    assign data_ready_set = 1'b1;
+	 mux2_1 data_ready_mux1 (
+		 .sel(data_valid), 
+		 .a(data_ready), 
+		 .b(data_ready_set), 
+		 .y(data_ready_next_1)
+	 );
+	 mux2_1 data_ready_mux2 (
+		 .sel(clr_data_ready), 
+		 .a(data_ready_next_1), 
+		 .b(1'b0), 
+		 .y(data_ready_next)
+	 );
+    reg_n #(.N(1)) data_ready_reg (
+		 .clk(clk), 
+		 .d(data_ready_next), 
+		 .en(1'b1), 
+		 .q(data_ready)
+	 );
 
     // Salida de datos
-    always_ff @(posedge clk)
-        if (data_ready)
-            Out <= data;
-
+    mux2_1_n #(.N(8)) out_mux (
+		 .sel(data_ready), 
+		 .a(Out), 
+		 .b(data), 
+		 .y(Out)
+	 );
+	 
 endmodule 

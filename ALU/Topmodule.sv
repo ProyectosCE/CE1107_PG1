@@ -32,7 +32,6 @@ module Topmodule(
 	 
 	UART uart_inst(
 		.clk(clk),              // Reloj FPGA (50 MHz)
-		.rst_n(rst),            // Botón de reset ACTIVO BAJO
 		.uart_rx(tx_esp),          // Entrada UART RX desde Arduino
 		.Out(Outs_uart)         // salida conectada a esp
 	);

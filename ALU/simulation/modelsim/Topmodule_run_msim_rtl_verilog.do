@@ -17,6 +17,11 @@ vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU {C:/Users/jimmy
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU {C:/Users/jimmy/GitHub/CE1107_PG1/ALU/pwm_controller.sv}
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU {C:/Users/jimmy/GitHub/CE1107_PG1/ALU/UART_FSM.sv}
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU {C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1.sv}
+vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU {C:/Users/jimmy/GitHub/CE1107_PG1/ALU/reg_n.sv}
+vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU {C:/Users/jimmy/GitHub/CE1107_PG1/ALU/shift_reg_8.sv}
+vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU {C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv}
+vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU {C:/Users/jimmy/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv}
+vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU {C:/Users/jimmy/GitHub/CE1107_PG1/ALU/mux2_1_n.sv}
 
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE1107_PG1/ALU {C:/Users/jimmy/GitHub/CE1107_PG1/ALU/tb_UART.sv}
 
