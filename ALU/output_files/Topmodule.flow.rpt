@@ -1,6 +1,6 @@
 Flow report for Topmodule
-Sat May 17 13:21:00 2025
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Sun May 18 09:02:25 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,33 +33,34 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat May 17 13:21:00 2025       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; Topmodule                                   ;
-; Top-level Entity Name           ; Topmodule                                   ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CSXFC6D6F31C6                              ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 52 / 41,910 ( < 1 % )                       ;
-; Total registers                 ; 34                                          ;
-; Total pins                      ; 35 / 499 ( 7 % )                            ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                       ;
-; Total DSP Blocks                ; 0 / 112 ( 0 % )                             ;
-; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                               ;
-; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                               ;
-; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                               ;
-; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                               ;
-; Total PLLs                      ; 0 / 15 ( 0 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
-+---------------------------------+---------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++---------------------------------+------------------------------------------------+
+; Flow Status                     ; Successful - Sun May 18 09:02:25 2025          ;
+; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                   ; Topmodule                                      ;
+; Top-level Entity Name           ; Topmodule                                      ;
+; Family                          ; Cyclone V                                      ;
+; Device                          ; 5CSXFC6D6F31C6                                 ;
+; Timing Models                   ; Final                                          ;
+; Logic utilization (in ALMs)     ; 52 / 41,910 ( < 1 % )                          ;
+; Total registers                 ; 34                                             ;
+; Total pins                      ; 35 / 499 ( 7 % )                               ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                          ;
+; Total DSP Blocks                ; 0 / 112 ( 0 % )                                ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                  ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                  ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                  ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                  ;
+; Total PLLs                      ; 0 / 15 ( 0 % )                                 ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
++---------------------------------+------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -67,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/17/2025 13:19:36 ;
+; Start date & time ; 05/18/2025 09:00:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Topmodule           ;
 +-------------------+---------------------+
@@ -78,7 +79,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 153951931180250.174750957620100        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 53671021772497.174758043503748         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_UART                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_UART_FSM                       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; mul_op_tb                         ;
@@ -88,7 +89,7 @@ refer to the applicable agreement for further details.
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_UART_FSM                            ; --            ; --          ; eda_simulation                    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --                                ;
+; EDA_SIMULATION_TOOL                  ; Questa Intel FPGA (SystemVerilog)      ; <None>        ; --          ; --                                ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_FILE                  ; tb_UART.sv                             ; --            ; --          ; tb_UART                           ;
 ; EDA_TEST_BENCH_FILE                  ; tb_UART_FSM.sv                         ; --            ; --          ; tb_UART_FSM                       ;
@@ -116,12 +117,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4832 MB             ; 00:00:31                           ;
-; Fitter               ; 00:00:48     ; 1.0                     ; 6616 MB             ; 00:01:31                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 4827 MB             ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.1                     ; 5136 MB             ; 00:00:07                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4743 MB             ; 00:00:02                           ;
-; Total                ; 00:01:20     ; --                      ; --                  ; 00:02:19                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4863 MB             ; 00:00:34                           ;
+; Fitter               ; 00:01:12     ; 1.0                     ; 6835 MB             ; 00:03:34                           ;
+; Assembler            ; 00:00:09     ; 1.0                     ; 4869 MB             ; 00:00:09                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.2                     ; 5158 MB             ; 00:00:07                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4719 MB             ; 00:00:01                           ;
+; Total                ; 00:01:44     ; --                      ; --                  ; 00:04:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -130,11 +131,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DellCE           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DellCE           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DellCE           ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DellCE           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DellCE           ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-O3JV5RJ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-O3JV5RJ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-O3JV5RJ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-O3JV5RJ  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-O3JV5RJ  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
