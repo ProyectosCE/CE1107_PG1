@@ -1,6 +1,6 @@
 EDA Netlist Writer report for Topmodule
-Sat May 17 13:21:00 2025
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Sun May 18 17:46:46 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -17,9 +17,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -29,14 +29,15 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat May 17 13:21:00 2025 ;
+; EDA Netlist Writer Status ; Successful - Sun May 18 17:46:46 2025 ;
 ; Revision Name             ; Topmodule                             ;
 ; Top-level Entity Name     ; Topmodule                             ;
 ; Family                    ; Cyclone V                             ;
@@ -44,35 +45,34 @@ refer to the applicable agreement for further details.
 +---------------------------+---------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                                 ;
-+---------------------------------------------------------------------------------------------------+---------------------------------+
-; Option                                                                                            ; Setting                         ;
-+---------------------------------------------------------------------------------------------------+---------------------------------+
-; Tool Name                                                                                         ; ModelSim-Altera (SystemVerilog) ;
-; Generate functional simulation netlist                                                            ; Off                             ;
-; Time scale                                                                                        ; 1 ps                            ;
-; Truncate long hierarchy paths                                                                     ; Off                             ;
-; Map illegal HDL characters                                                                        ; Off                             ;
-; Flatten buses into individual nodes                                                               ; Off                             ;
-; Maintain hierarchy                                                                                ; Off                             ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                             ;
-; Enable glitch filtering                                                                           ; Off                             ;
-; Do not write top level VHDL entity                                                                ; Off                             ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                             ;
-; Architecture name in VHDL output netlist                                                          ; structure                       ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                             ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                             ;
-+---------------------------------------------------------------------------------------------------+---------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                                   ;
++---------------------------------------------------------------------------------------------------+-----------------------------------+
+; Option                                                                                            ; Setting                           ;
++---------------------------------------------------------------------------------------------------+-----------------------------------+
+; Tool Name                                                                                         ; Questa Intel FPGA (SystemVerilog) ;
+; Generate functional simulation netlist                                                            ; On                                ;
+; Truncate long hierarchy paths                                                                     ; Off                               ;
+; Map illegal HDL characters                                                                        ; Off                               ;
+; Flatten buses into individual nodes                                                               ; Off                               ;
+; Maintain hierarchy                                                                                ; Off                               ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                               ;
+; Enable glitch filtering                                                                           ; Off                               ;
+; Do not write top level VHDL entity                                                                ; Off                               ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                               ;
+; Architecture name in VHDL output netlist                                                          ; structure                         ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                               ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                               ;
++---------------------------------------------------------------------------------------------------+-----------------------------------+
 
 
-+-----------------------------------------------------------------+
-; Simulation Generated Files                                      ;
-+-----------------------------------------------------------------+
-; Generated Files                                                 ;
-+-----------------------------------------------------------------+
-; C:/Users/josee/CE1107_PG1/ALU/simulation/modelsim/Topmodule.svo ;
-+-----------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Simulation Generated Files                                                  ;
++-----------------------------------------------------------------------------+
+; Generated Files                                                             ;
++-----------------------------------------------------------------------------+
+; C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/simulation/questa/Topmodule.svo ;
++-----------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,16 +80,15 @@ refer to the applicable agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat May 17 13:20:59 2025
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Sun May 18 17:46:45 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off ALU_HDL -c Topmodule
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
-Info (204019): Generated file Topmodule.svo in folder "C:/Users/josee/CE1107_PG1/ALU/simulation/modelsim/" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4743 megabytes
-    Info: Processing ended: Sat May 17 13:21:01 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info (204019): Generated file Topmodule.svo in folder "C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/simulation/questa/" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4720 megabytes
+    Info: Processing ended: Sun May 18 17:46:46 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

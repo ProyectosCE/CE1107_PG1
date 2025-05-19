@@ -42,10 +42,10 @@ set_global_assignment -name DEVICE 5CSXFC6D6F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY Topmodule
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 23.1STD.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:12:48  MAY 11, 2025"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "Cyclone V SoC Development Kit"
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (SystemVerilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
@@ -60,9 +60,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE mul_op.sv
 set_global_assignment -name SYSTEMVERILOG_FILE mux4_1.sv
 set_global_assignment -name SYSTEMVERILOG_FILE alu.sv
 set_global_assignment -name SYSTEMVERILOG_FILE HEX_SevenSeg.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
@@ -92,14 +89,47 @@ set_location_assignment PIN_AG16 -to seg0[3]
 set_location_assignment PIN_AH17 -to seg0[4]
 set_location_assignment PIN_AG18 -to seg0[5]
 set_location_assignment PIN_AH18 -to seg0[6]
-set_global_assignment -name SYSTEMVERILOG_FILE and_op_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE xor_op_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE sub_op_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE mul_op_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE mux4_1_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE alu_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE HEX_SevenSeg_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Topmodule_tb.sv
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_UART_FSM -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME mul_op_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id mul_op_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME mul_op_tb -section_id mul_op_tb
+set_global_assignment -name SYSTEMVERILOG_FILE UART.sv
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_W15 -to tx_esp
+set_location_assignment PIN_AJ4 -to rst
+set_global_assignment -name SYSTEMVERILOG_FILE pwm_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE contador4bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE comparador_menor.sv
+set_location_assignment PIN_AD11 -to pwm_gpio
+set_global_assignment -name SYSTEMVERILOG_FILE clk_div_50M_to_10K.sv
+set_global_assignment -name SYSTEMVERILOG_FILE UART_FSM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux2_1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb_UART.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_UART -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_UART
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_UART -section_id tb_UART
+set_global_assignment -name SYSTEMVERILOG_FILE tb_UART_FSM.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_UART_FSM -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_UART_FSM
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_UART_FSM -section_id tb_UART_FSM
+set_global_assignment -name SYSTEMVERILOG_FILE reg_n.sv
+set_global_assignment -name SYSTEMVERILOG_FILE shift_reg_8.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Enco_Four_Two.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Flip_Flop_D.sv
+set_location_assignment PIN_AA12 -to ABCD[3]
+set_location_assignment PIN_AD12 -to ABCD[2]
+set_location_assignment PIN_AD7 -to ABCD[1]
+set_global_assignment -name SYSTEMVERILOG_FILE mux2_1_n.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb_alu.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb_pwm_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb_HEX_SevenSeg.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME alu -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id alu
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME alu_tb -section_id alu
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to switches[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to switches[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to switches[2]
@@ -125,51 +155,35 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to seg0[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to seg0[4]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to seg0[5]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to seg0[6]
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_UART_FSM -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME mul_op_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id mul_op_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME mul_op_tb -section_id mul_op_tb
-set_global_assignment -name SYSTEMVERILOG_FILE UART.sv
-set_location_assignment PIN_AF14 -to clk
-set_location_assignment PIN_W15 -to tx_esp
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to tx_esp
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to clk
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rst
-set_location_assignment PIN_AJ4 -to rst
-set_global_assignment -name SYSTEMVERILOG_FILE pwm_controller.sv
-set_global_assignment -name SYSTEMVERILOG_FILE contador4bit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE comparador_menor.sv
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to pwm_gpio
-set_location_assignment PIN_AD11 -to pwm_gpio
-set_global_assignment -name SYSTEMVERILOG_FILE contador8bit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE div_pwn.sv
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to leds
-set_global_assignment -name SYSTEMVERILOG_FILE clk_div_50M_to_10K.sv
-set_global_assignment -name SYSTEMVERILOG_FILE UART_FSM.sv
-set_global_assignment -name SYSTEMVERILOG_FILE mux2_1.sv
-set_global_assignment -name SYSTEMVERILOG_FILE tb_UART.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_UART -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_UART
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_UART -section_id tb_UART
-set_global_assignment -name SYSTEMVERILOG_FILE tb_UART_FSM.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_UART_FSM -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_UART_FSM
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_UART_FSM -section_id tb_UART_FSM
-set_global_assignment -name SYSTEMVERILOG_FILE reg_n.sv
-set_global_assignment -name SYSTEMVERILOG_FILE shift_reg_8.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Enco_Four_Two.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Flip_Flop_D.sv
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABCD
-set_location_assignment PIN_AA12 -to ABCD[3]
-set_location_assignment PIN_AD12 -to ABCD[2]
-set_location_assignment PIN_AD7 -to ABCD[1]
-set_global_assignment -name SYSTEMVERILOG_FILE mux2_1_n.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_pwm_controller -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_pwm_controller
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_pwm_controller -section_id tb_pwm_controller
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_hex_sevenseg -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_hex_sevenseg
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_hex_sevenseg -section_id tb_hex_sevenseg
 set_global_assignment -name EDA_TEST_BENCH_FILE mul_op_tb.sv -section_id mul_op_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_UART.sv -section_id tb_UART
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_UART_FSM.sv -section_id tb_UART_FSM
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_UART.sv -section_id tb_UART_FSM
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_alu.sv -section_id alu
+set_global_assignment -name EDA_TEST_BENCH_FILE and_op.sv -section_id alu
+set_global_assignment -name EDA_TEST_BENCH_FILE mul_op.sv -section_id alu
+set_global_assignment -name EDA_TEST_BENCH_FILE sub_op.sv -section_id alu
+set_global_assignment -name EDA_TEST_BENCH_FILE xor_op.sv -section_id alu
+set_global_assignment -name EDA_TEST_BENCH_FILE mux4_1.sv -section_id alu
+set_global_assignment -name EDA_TEST_BENCH_FILE mux2_1.sv -section_id alu
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_pwm_controller.sv -section_id tb_pwm_controller
+set_global_assignment -name EDA_TEST_BENCH_FILE pwm_controller.sv -section_id tb_pwm_controller
+set_global_assignment -name EDA_TEST_BENCH_FILE HEX_SevenSeg.sv -section_id tb_hex_sevenseg
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_HEX_SevenSeg.sv -section_id tb_hex_sevenseg
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

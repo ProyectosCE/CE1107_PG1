@@ -1,58 +1,50 @@
-Analysis & Synthesis report for Topmodule
-Sat May 17 13:19:50 2025
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Analysis & Elaboration report for Topmodule
+Sun May 18 18:34:35 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Logic Cells Representing Combinational Loops
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: UART:uart_inst
- 12. Parameter Settings for User Entity Instance: UART:uart_inst|UART_FSM:fsm_inst
- 13. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:state_reg
- 14. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:clk_mux1
- 15. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:clk_mux2
- 16. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:clk_count_reg
- 17. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:bit_mux1
- 18. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:bit_mux2
- 19. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:bit_index_reg
- 20. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:data_mux
- 21. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:data_reg
- 22. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:data_ready_reg
- 23. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:out_mux
- 24. Port Connectivity Checks: "pwm_controller:u_pwm|contador4bit:cont_inst"
- 25. Port Connectivity Checks: "UART:uart_inst|reg_n:data_ready_reg"
- 26. Port Connectivity Checks: "UART:uart_inst|mux2_1:data_ready_mux2"
- 27. Port Connectivity Checks: "UART:uart_inst|mux2_1:data_ready_mux1"
- 28. Port Connectivity Checks: "UART:uart_inst|reg_n:data_reg"
- 29. Port Connectivity Checks: "UART:uart_inst|reg_n:bit_index_reg"
- 30. Port Connectivity Checks: "UART:uart_inst|mux2_1_n:bit_mux2"
- 31. Port Connectivity Checks: "UART:uart_inst|reg_n:clk_count_reg"
- 32. Port Connectivity Checks: "UART:uart_inst|mux2_1_n:clk_mux2"
- 33. Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg"
- 34. Port Connectivity Checks: "UART:uart_inst"
- 35. Post-Synthesis Netlist Statistics for Top Partition
- 36. Elapsed Time Per Partition
- 37. Analysis & Synthesis Messages
- 38. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: UART:uart_inst
+  5. Parameter Settings for User Entity Instance: UART:uart_inst|UART_FSM:fsm_inst
+  6. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:state_reg
+  7. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:clk_mux1
+  8. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:clk_mux2
+  9. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:clk_count_reg
+ 10. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:bit_mux1
+ 11. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:bit_mux2
+ 12. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:bit_index_reg
+ 13. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:data_mux
+ 14. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:data_reg
+ 15. Parameter Settings for User Entity Instance: UART:uart_inst|reg_n:data_ready_reg
+ 16. Parameter Settings for User Entity Instance: UART:uart_inst|mux2_1_n:out_mux
+ 17. Analysis & Elaboration Settings
+ 18. Port Connectivity Checks: "pwm_controller:u_pwm|contador4bit:cont_inst"
+ 19. Port Connectivity Checks: "UART:uart_inst|reg_n:data_ready_reg"
+ 20. Port Connectivity Checks: "UART:uart_inst|mux2_1:data_ready_mux2"
+ 21. Port Connectivity Checks: "UART:uart_inst|mux2_1:data_ready_mux1"
+ 22. Port Connectivity Checks: "UART:uart_inst|reg_n:data_reg"
+ 23. Port Connectivity Checks: "UART:uart_inst|reg_n:bit_index_reg"
+ 24. Port Connectivity Checks: "UART:uart_inst|mux2_1_n:bit_mux2"
+ 25. Port Connectivity Checks: "UART:uart_inst|reg_n:clk_count_reg"
+ 26. Port Connectivity Checks: "UART:uart_inst|mux2_1_n:clk_mux2"
+ 27. Port Connectivity Checks: "UART:uart_inst|reg_n:state_reg"
+ 28. Port Connectivity Checks: "UART:uart_inst"
+ 29. Analysis & Elaboration Messages
+ 30. Analysis & Elaboration Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -62,118 +54,27 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat May 17 13:19:50 2025       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; Topmodule                                   ;
-; Top-level Entity Name           ; Topmodule                                   ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 34                                          ;
-; Total pins                      ; 35                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; Topmodule          ; Topmodule          ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sun May 18 18:34:35 2025          ;
+; Quartus Prime Version         ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                 ; Topmodule                                      ;
+; Top-level Entity Name         ; Topmodule                                      ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
 
 
 +------------------------------------------+
@@ -181,191 +82,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                            ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
-; Topmodule.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv          ;         ;
-; and_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/and_op.sv             ;         ;
-; xor_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/xor_op.sv             ;         ;
-; sub_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/sub_op.sv             ;         ;
-; mul_op.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/mul_op.sv             ;         ;
-; mux4_1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv             ;         ;
-; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/alu.sv                ;         ;
-; HEX_SevenSeg.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv       ;         ;
-; UART.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/UART.sv               ;         ;
-; pwm_controller.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/pwm_controller.sv     ;         ;
-; contador4bit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/contador4bit.sv       ;         ;
-; comparador_menor.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/comparador_menor.sv   ;         ;
-; clk_div_50M_to_10K.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/clk_div_50M_to_10K.sv ;         ;
-; UART_FSM.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/UART_FSM.sv           ;         ;
-; mux2_1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/mux2_1.sv             ;         ;
-; reg_n.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/reg_n.sv              ;         ;
-; shift_reg_8.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/shift_reg_8.sv        ;         ;
-; Enco_Four_Two.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/Enco_Four_Two.sv      ;         ;
-; Flip_Flop_D.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/Flip_Flop_D.sv        ;         ;
-; mux2_1_n.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE1107_PG1/ALU/mux2_1_n.sv           ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
-
-
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 52        ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 76        ;
-;     -- 7 input functions                    ; 1         ;
-;     -- 6 input functions                    ; 26        ;
-;     -- 5 input functions                    ; 5         ;
-;     -- 4 input functions                    ; 13        ;
-;     -- <=3 input functions                  ; 31        ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 34        ;
-;                                             ;           ;
-; I/O pins                                    ; 35        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 34        ;
-; Total fan-out                               ; 464       ;
-; Average fan-out                             ; 2.58      ;
-+---------------------------------------------+-----------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                           ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name      ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+------------------+--------------+
-; |Topmodule                             ; 76 (0)              ; 34 (0)                    ; 0                 ; 0          ; 35   ; 0            ; |Topmodule                                                                ; Topmodule        ; work         ;
-;    |Enco_Four_Two:insenco|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|Enco_Four_Two:insenco                                          ; Enco_Four_Two    ; work         ;
-;    |HEX_SevenSeg:u_display|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|HEX_SevenSeg:u_display                                         ; HEX_SevenSeg     ; work         ;
-;    |UART:uart_inst|                    ; 54 (15)             ; 34 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst                                                 ; UART             ; work         ;
-;       |UART_FSM:fsm_inst|              ; 19 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst                               ; UART_FSM         ; work         ;
-;          |Output_Logic:out_logic|      ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic        ; Output_Logic     ; work         ;
-;          |State_Transition:st_trans|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans     ; State_Transition ; work         ;
-;       |mux2_1:data_ready_mux2|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1:data_ready_mux2                          ; mux2_1           ; work         ;
-;       |mux2_1_n:bit_mux1|              ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:bit_mux1                               ; mux2_1_n         ; work         ;
-;          |mux2_1:mux_loop[0].m|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:bit_mux1|mux2_1:mux_loop[0].m          ; mux2_1           ; work         ;
-;       |mux2_1_n:bit_mux2|              ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:bit_mux2                               ; mux2_1_n         ; work         ;
-;          |mux2_1:mux_loop[0].m|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:bit_mux2|mux2_1:mux_loop[0].m          ; mux2_1           ; work         ;
-;          |mux2_1:mux_loop[1].m|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:bit_mux2|mux2_1:mux_loop[1].m          ; mux2_1           ; work         ;
-;          |mux2_1:mux_loop[2].m|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:bit_mux2|mux2_1:mux_loop[2].m          ; mux2_1           ; work         ;
-;       |mux2_1_n:clk_mux2|              ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:clk_mux2                               ; mux2_1_n         ; work         ;
-;          |mux2_1:mux_loop[0].m|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:clk_mux2|mux2_1:mux_loop[0].m          ; mux2_1           ; work         ;
-;       |mux2_1_n:out_mux|               ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:out_mux                                ; mux2_1_n         ; work         ;
-;          |mux2_1:mux_loop[2].m|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[2].m           ; mux2_1           ; work         ;
-;          |mux2_1:mux_loop[3].m|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[3].m           ; mux2_1           ; work         ;
-;          |mux2_1:mux_loop[4].m|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[4].m           ; mux2_1           ; work         ;
-;          |mux2_1:mux_loop[5].m|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[5].m           ; mux2_1           ; work         ;
-;          |mux2_1:mux_loop[6].m|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[6].m           ; mux2_1           ; work         ;
-;          |mux2_1:mux_loop[7].m|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[7].m           ; mux2_1           ; work         ;
-;       |reg_n:bit_index_reg|            ; 0 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg                             ; reg_n            ; work         ;
-;          |Flip_Flop_D:reg_loop[0].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|Flip_Flop_D:reg_loop[0].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[1].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|Flip_Flop_D:reg_loop[1].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[2].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:bit_index_reg|Flip_Flop_D:reg_loop[2].ff  ; Flip_Flop_D      ; work         ;
-;       |reg_n:clk_count_reg|            ; 1 (0)               ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg                             ; reg_n            ; work         ;
-;          |Flip_Flop_D:reg_loop[0].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[0].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[10].ff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[10].ff ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[11].ff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[11].ff ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[12].ff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[12].ff ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[13].ff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[13].ff ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[14].ff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[14].ff ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[15].ff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[15].ff ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[1].ff|  ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[1].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[2].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[2].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[3].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[3].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[4].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[4].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[5].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[5].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[6].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[6].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[7].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[7].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[8].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[8].ff  ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[9].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:clk_count_reg|Flip_Flop_D:reg_loop[9].ff  ; Flip_Flop_D      ; work         ;
-;       |reg_n:data_ready_reg|           ; 0 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_ready_reg                            ; reg_n            ; work         ;
-;          |Flip_Flop_D:reg_loop[0].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_ready_reg|Flip_Flop_D:reg_loop[0].ff ; Flip_Flop_D      ; work         ;
-;       |reg_n:data_reg|                 ; 0 (0)               ; 6 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg                                  ; reg_n            ; work         ;
-;          |Flip_Flop_D:reg_loop[2].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|Flip_Flop_D:reg_loop[2].ff       ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[3].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|Flip_Flop_D:reg_loop[3].ff       ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[4].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|Flip_Flop_D:reg_loop[4].ff       ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[5].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|Flip_Flop_D:reg_loop[5].ff       ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[6].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|Flip_Flop_D:reg_loop[6].ff       ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[7].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:data_reg|Flip_Flop_D:reg_loop[7].ff       ; Flip_Flop_D      ; work         ;
-;       |reg_n:state_reg|                ; 0 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg                                 ; reg_n            ; work         ;
-;          |Flip_Flop_D:reg_loop[0].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg|Flip_Flop_D:reg_loop[0].ff      ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:reg_loop[1].ff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|reg_n:state_reg|Flip_Flop_D:reg_loop[1].ff      ; Flip_Flop_D      ; work         ;
-;       |shift_reg_8:rx_shift_reg|       ; 6 (0)               ; 6 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:rx_shift_reg                        ; shift_reg_8      ; work         ;
-;          |Flip_Flop_D:ff2|             ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:rx_shift_reg|Flip_Flop_D:ff2        ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:ff3|             ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:rx_shift_reg|Flip_Flop_D:ff3        ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:ff4|             ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:rx_shift_reg|Flip_Flop_D:ff4        ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:ff5|             ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:rx_shift_reg|Flip_Flop_D:ff5        ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:ff6|             ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:rx_shift_reg|Flip_Flop_D:ff6        ; Flip_Flop_D      ; work         ;
-;          |Flip_Flop_D:ff7|             ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|UART:uart_inst|shift_reg_8:rx_shift_reg|Flip_Flop_D:ff7        ; Flip_Flop_D      ; work         ;
-;    |alu:u_alu|                         ; 13 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu                                                      ; alu              ; work         ;
-;       |mul_op:u_mul|                   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mul_op:u_mul                                         ; mul_op           ; work         ;
-;       |mux4_1:u_mux|                   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|mux4_1:u_mux                                         ; mux4_1           ; work         ;
-;       |sub_op:u_sub|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Topmodule|alu:u_alu|sub_op:u_sub                                         ; sub_op           ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------+
-; Logic Cells Representing Combinational Loops                 ;
-+----------------------------------------------------------+---+
-; Logic Cell Name                                          ;   ;
-+----------------------------------------------------------+---+
-; UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[2].m|y~0 ;   ;
-; UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[3].m|y~0 ;   ;
-; UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[5].m|y~0 ;   ;
-; UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[4].m|y~0 ;   ;
-; UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[6].m|y~0 ;   ;
-; UART:uart_inst|mux2_1_n:out_mux|mux2_1:mux_loop[7].m|y~0 ;   ;
-; Number of logic cells representing combinational loops   ; 6 ;
-+----------------------------------------------------------+---+
-Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                   ;
-+---------------------------------------------------------------+--------------------------------------+
-; Register name                                                 ; Reason for Removal                   ;
-+---------------------------------------------------------------+--------------------------------------+
-; pwm_controller:u_pwm|contador4bit:cont_inst|Flip_Flop_D:ff3|q ; Stuck at GND due to stuck port clock ;
-; pwm_controller:u_pwm|contador4bit:cont_inst|Flip_Flop_D:ff2|q ; Stuck at GND due to stuck port clock ;
-; pwm_controller:u_pwm|contador4bit:cont_inst|Flip_Flop_D:ff1|q ; Stuck at GND due to stuck port clock ;
-; pwm_controller:u_pwm|contador4bit:cont_inst|Flip_Flop_D:ff0|q ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 4                         ;                                      ;
-+---------------------------------------------------------------+--------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 34    ;
-; Number of registers using Synchronous Clear  ; 15    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 21    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
 
 
 +-------------------------------------------------------------+
@@ -499,6 +224,93 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
+; Top-level entity name                                                           ; Topmodule          ; Topmodule          ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
 +-------------------------------------------------------------------------+
 ; Port Connectivity Checks: "pwm_controller:u_pwm|contador4bit:cont_inst" ;
 +------+-------+----------+-----------------------------------------------+
@@ -598,195 +410,115 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 34                          ;
-;     ENA               ; 6                           ;
-;     ENA SCLR          ; 15                          ;
-;     plain             ; 13                          ;
-; arriav_lcell_comb     ; 86                          ;
-;     arith             ; 15                          ;
-;         1 data inputs ; 14                          ;
-;         2 data inputs ; 1                           ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 70                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 13                          ;
-;         5 data inputs ; 5                           ;
-;         6 data inputs ; 26                          ;
-; boundary_port         ; 35                          ;
-;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.68                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat May 17 13:19:35 2025
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_HDL -c Topmodule
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Sun May 18 18:34:26 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_HDL -c Topmodule --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file topmodule.sv
-    Info (12023): Found entity 1: Topmodule File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 4
+    Info (12023): Found entity 1: Topmodule File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file and_op.sv
-    Info (12023): Found entity 1: and_op File: C:/Users/josee/CE1107_PG1/ALU/and_op.sv Line: 5
+    Info (12023): Found entity 1: and_op File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/and_op.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file xor_op.sv
-    Info (12023): Found entity 1: xor_op File: C:/Users/josee/CE1107_PG1/ALU/xor_op.sv Line: 5
+    Info (12023): Found entity 1: xor_op File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/xor_op.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file sub_op.sv
-    Info (12023): Found entity 1: sub_op File: C:/Users/josee/CE1107_PG1/ALU/sub_op.sv Line: 1
+    Info (12023): Found entity 1: sub_op File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/sub_op.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mul_op.sv
-    Info (12023): Found entity 1: mul_op File: C:/Users/josee/CE1107_PG1/ALU/mul_op.sv Line: 1
+    Info (12023): Found entity 1: mul_op File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mul_op.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux4_1.sv
-    Info (12023): Found entity 1: mux4_1 File: C:/Users/josee/CE1107_PG1/ALU/mux4_1.sv Line: 1
+    Info (12023): Found entity 1: mux4_1 File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux4_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: alu File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 4
+    Info (12023): Found entity 1: alu File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file hex_sevenseg.sv
-    Info (12023): Found entity 1: HEX_SevenSeg File: C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg.sv Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file and_op_tb.sv
-    Info (12023): Found entity 1: and_op_tb File: C:/Users/josee/CE1107_PG1/ALU/and_op_tb.sv Line: 9
-Info (12021): Found 1 design units, including 1 entities, in source file xor_op_tb.sv
-    Info (12023): Found entity 1: xor_op_tb File: C:/Users/josee/CE1107_PG1/ALU/xor_op_tb.sv Line: 8
-Info (12021): Found 1 design units, including 1 entities, in source file sub_op_tb.sv
-    Info (12023): Found entity 1: sub_op_tb File: C:/Users/josee/CE1107_PG1/ALU/sub_op_tb.sv Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file mul_op_tb.sv
-    Info (12023): Found entity 1: mul_op_tb File: C:/Users/josee/CE1107_PG1/ALU/mul_op_tb.sv Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file mux4_1_tb.sv
-    Info (12023): Found entity 1: mux4_1_tb File: C:/Users/josee/CE1107_PG1/ALU/mux4_1_tb.sv Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
-    Info (12023): Found entity 1: alu_tb File: C:/Users/josee/CE1107_PG1/ALU/alu_tb.sv Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file hex_sevenseg_tb.sv
-    Info (12023): Found entity 1: HEX_SevenSeg_tb File: C:/Users/josee/CE1107_PG1/ALU/HEX_SevenSeg_tb.sv Line: 7
-Info (12021): Found 1 design units, including 1 entities, in source file topmodule_tb.sv
-    Info (12023): Found entity 1: Topmodule_tb File: C:/Users/josee/CE1107_PG1/ALU/Topmodule_tb.sv Line: 7
+    Info (12023): Found entity 1: HEX_SevenSeg File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/HEX_SevenSeg.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file uart.sv
-    Info (12023): Found entity 1: UART File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 1
+    Info (12023): Found entity 1: UART File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pwm_controller.sv
-    Info (12023): Found entity 1: pwm_controller File: C:/Users/josee/CE1107_PG1/ALU/pwm_controller.sv Line: 1
+    Info (12023): Found entity 1: pwm_controller File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/pwm_controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador4bit.sv
-    Info (12023): Found entity 1: contador4bit File: C:/Users/josee/CE1107_PG1/ALU/contador4bit.sv Line: 1
+    Info (12023): Found entity 1: contador4bit File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/contador4bit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file comparador_menor.sv
-    Info (12023): Found entity 1: comparador_menor File: C:/Users/josee/CE1107_PG1/ALU/comparador_menor.sv Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file contador8bit.sv
-    Info (12023): Found entity 1: contador8bit File: C:/Users/josee/CE1107_PG1/ALU/contador8bit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file div_pwn.sv
-    Info (12023): Found entity 1: div_pwm File: C:/Users/josee/CE1107_PG1/ALU/div_pwn.sv Line: 5
+    Info (12023): Found entity 1: comparador_menor File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/comparador_menor.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file clk_div_50m_to_10k.sv
-    Info (12023): Found entity 1: clk_div_50M_to_10K File: C:/Users/josee/CE1107_PG1/ALU/clk_div_50M_to_10K.sv Line: 1
+    Info (12023): Found entity 1: clk_div_50M_to_10K File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/clk_div_50M_to_10K.sv Line: 1
 Info (12021): Found 3 design units, including 3 entities, in source file uart_fsm.sv
-    Info (12023): Found entity 1: UART_FSM File: C:/Users/josee/CE1107_PG1/ALU/UART_FSM.sv Line: 1
-    Info (12023): Found entity 2: State_Transition File: C:/Users/josee/CE1107_PG1/ALU/UART_FSM.sv Line: 57
-    Info (12023): Found entity 3: Output_Logic File: C:/Users/josee/CE1107_PG1/ALU/UART_FSM.sv Line: 92
+    Info (12023): Found entity 1: UART_FSM File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART_FSM.sv Line: 1
+    Info (12023): Found entity 2: State_Transition File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART_FSM.sv Line: 57
+    Info (12023): Found entity 3: Output_Logic File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART_FSM.sv Line: 92
 Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.sv
-    Info (12023): Found entity 1: mux2_1 File: C:/Users/josee/CE1107_PG1/ALU/mux2_1.sv Line: 1
+    Info (12023): Found entity 1: mux2_1 File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_uart.sv
-    Info (12023): Found entity 1: tb_UART File: C:/Users/josee/CE1107_PG1/ALU/tb_UART.sv Line: 3
+    Info (12023): Found entity 1: tb_UART File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file tb_uart_fsm.sv
-    Info (12023): Found entity 1: tb_UART_FSM File: C:/Users/josee/CE1107_PG1/ALU/tb_UART_FSM.sv Line: 3
+    Info (12023): Found entity 1: tb_UART_FSM File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART_FSM.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file reg_n.sv
-    Info (12023): Found entity 1: reg_n File: C:/Users/josee/CE1107_PG1/ALU/reg_n.sv Line: 1
+    Info (12023): Found entity 1: reg_n File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/reg_n.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file shift_reg_8.sv
-    Info (12023): Found entity 1: shift_reg_8 File: C:/Users/josee/CE1107_PG1/ALU/shift_reg_8.sv Line: 1
-    Info (12023): Found entity 2: decoder_3to8 File: C:/Users/josee/CE1107_PG1/ALU/shift_reg_8.sv Line: 42
+    Info (12023): Found entity 1: shift_reg_8 File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/shift_reg_8.sv Line: 1
+    Info (12023): Found entity 2: decoder_3to8 File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/shift_reg_8.sv Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file enco_four_two.sv
-    Info (12023): Found entity 1: Enco_Four_Two File: C:/Users/josee/CE1107_PG1/ALU/Enco_Four_Two.sv Line: 1
+    Info (12023): Found entity 1: Enco_Four_Two File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Enco_Four_Two.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flip_flop_d.sv
-    Info (12023): Found entity 1: Flip_Flop_D File: C:/Users/josee/CE1107_PG1/ALU/Flip_Flop_D.sv Line: 1
+    Info (12023): Found entity 1: Flip_Flop_D File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Flip_Flop_D.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2_1_n.sv
-    Info (12023): Found entity 1: mux2_1_n File: C:/Users/josee/CE1107_PG1/ALU/mux2_1_n.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at clk_div_50M_to_10K.sv(47): created implicit net for "clk_out_500" File: C:/Users/josee/CE1107_PG1/ALU/clk_div_50M_to_10K.sv Line: 47
+    Info (12023): Found entity 1: mux2_1_n File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1_n.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_alu.sv
+    Info (12023): Found entity 1: alu_tb File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_alu.sv Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file tb_pwm_controller.sv
+    Info (12023): Found entity 1: tb_pwm_controller File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_pwm_controller.sv Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file tb_hex_sevenseg.sv
+    Info (12023): Found entity 1: tb_hex_sevenseg File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_HEX_SevenSeg.sv Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at clk_div_50M_to_10K.sv(47): created implicit net for "clk_out_500" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/clk_div_50M_to_10K.sv Line: 47
 Info (12127): Elaborating entity "Topmodule" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Topmodule.sv(15): object "B" assigned a value but never read File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 15
-Info (12128): Elaborating entity "Enco_Four_Two" for hierarchy "Enco_Four_Two:insenco" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 31
-Info (12128): Elaborating entity "UART" for hierarchy "UART:uart_inst" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 37
-Warning (10230): Verilog HDL assignment warning at UART.sv(69): truncated value with size 32 to match size of target (16) File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 69
-Warning (10230): Verilog HDL assignment warning at UART.sv(92): truncated value with size 32 to match size of target (3) File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 92
-Info (12128): Elaborating entity "UART_FSM" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 56
-Info (12128): Elaborating entity "State_Transition" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans" File: C:/Users/josee/CE1107_PG1/ALU/UART_FSM.sv Line: 35
-Info (12128): Elaborating entity "Output_Logic" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic" File: C:/Users/josee/CE1107_PG1/ALU/UART_FSM.sv Line: 51
-Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:state_reg" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 65
-Info (12128): Elaborating entity "mux2_1" for hierarchy "UART:uart_inst|reg_n:state_reg|mux2_1:reg_loop[0].sel_mux" File: C:/Users/josee/CE1107_PG1/ALU/reg_n.sv Line: 16
-Info (12128): Elaborating entity "Flip_Flop_D" for hierarchy "UART:uart_inst|reg_n:state_reg|Flip_Flop_D:reg_loop[0].ff" File: C:/Users/josee/CE1107_PG1/ALU/reg_n.sv Line: 21
-Info (12128): Elaborating entity "mux2_1_n" for hierarchy "UART:uart_inst|mux2_1_n:clk_mux1" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 75
-Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:clk_count_reg" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 87
-Info (12128): Elaborating entity "mux2_1_n" for hierarchy "UART:uart_inst|mux2_1_n:bit_mux1" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 98
-Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:bit_index_reg" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 110
-Info (12128): Elaborating entity "shift_reg_8" for hierarchy "UART:uart_inst|shift_reg_8:rx_shift_reg" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 120
-Info (12128): Elaborating entity "decoder_3to8" for hierarchy "UART:uart_inst|shift_reg_8:rx_shift_reg|decoder_3to8:deco_3to8_inst" File: C:/Users/josee/CE1107_PG1/ALU/shift_reg_8.sv Line: 15
-Info (12128): Elaborating entity "mux2_1_n" for hierarchy "UART:uart_inst|mux2_1_n:data_mux" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 129
-Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:data_reg" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 135
-Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:data_ready_reg" File: C:/Users/josee/CE1107_PG1/ALU/UART.sv Line: 158
-Info (12128): Elaborating entity "alu" for hierarchy "alu:u_alu" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 50
-Info (12128): Elaborating entity "and_op" for hierarchy "alu:u_alu|and_op:u_and" File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 16
-Info (12128): Elaborating entity "xor_op" for hierarchy "alu:u_alu|xor_op:u_xor" File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 17
-Info (12128): Elaborating entity "sub_op" for hierarchy "alu:u_alu|sub_op:u_sub" File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 18
-Info (12128): Elaborating entity "mul_op" for hierarchy "alu:u_alu|mul_op:u_mul" File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 19
-Info (12128): Elaborating entity "mux4_1" for hierarchy "alu:u_alu|mux4_1:u_mux" File: C:/Users/josee/CE1107_PG1/ALU/alu.sv Line: 28
-Info (12128): Elaborating entity "HEX_SevenSeg" for hierarchy "HEX_SevenSeg:u_display" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 56
-Info (12128): Elaborating entity "pwm_controller" for hierarchy "pwm_controller:u_pwm" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 74
-Info (12128): Elaborating entity "clk_div_50M_to_10K" for hierarchy "pwm_controller:u_pwm|clk_div_50M_to_10K:clk_div_inst" File: C:/Users/josee/CE1107_PG1/ALU/pwm_controller.sv Line: 16
-Warning (10036): Verilog HDL or VHDL warning at clk_div_50M_to_10K.sv(47): object "clk_out_500" assigned a value but never read File: C:/Users/josee/CE1107_PG1/ALU/clk_div_50M_to_10K.sv Line: 47
-Warning (10034): Output port "clk_out_10k" at clk_div_50M_to_10K.sv(4) has no driver File: C:/Users/josee/CE1107_PG1/ALU/clk_div_50M_to_10K.sv Line: 4
-Info (12128): Elaborating entity "contador4bit" for hierarchy "pwm_controller:u_pwm|contador4bit:cont_inst" File: C:/Users/josee/CE1107_PG1/ALU/pwm_controller.sv Line: 24
-Info (12128): Elaborating entity "comparador_menor" for hierarchy "pwm_controller:u_pwm|comparador_menor:comp_inst" File: C:/Users/josee/CE1107_PG1/ALU/pwm_controller.sv Line: 31
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 11
-    Warning (13410): Pin "leds[5]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 11
-    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 11
-    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 11
-    Warning (13410): Pin "leds[8]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 11
-    Warning (13410): Pin "leds[9]" is stuck at GND File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 11
-Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/josee/CE1107_PG1/ALU/output_files/Topmodule.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "switches[0]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[1]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[2]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[3]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[4]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[5]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[6]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[7]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[8]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "switches[9]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 5
-    Warning (15610): No output dependent on input pin "rst" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 8
-    Warning (15610): No output dependent on input pin "ABCD[0]" File: C:/Users/josee/CE1107_PG1/ALU/Topmodule.sv Line: 9
-Info (21057): Implemented 117 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 17 input pins
-    Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 82 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
-    Info: Peak virtual memory: 4832 megabytes
-    Info: Processing ended: Sat May 17 13:19:50 2025
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:32
+Warning (10036): Verilog HDL or VHDL warning at Topmodule.sv(15): object "B" assigned a value but never read File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv Line: 15
+Info (12128): Elaborating entity "Enco_Four_Two" for hierarchy "Enco_Four_Two:insenco" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv Line: 31
+Info (12128): Elaborating entity "UART" for hierarchy "UART:uart_inst" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv Line: 37
+Warning (10230): Verilog HDL assignment warning at UART.sv(69): truncated value with size 32 to match size of target (16) File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 69
+Warning (10230): Verilog HDL assignment warning at UART.sv(92): truncated value with size 32 to match size of target (3) File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 92
+Info (12128): Elaborating entity "UART_FSM" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 56
+Info (12128): Elaborating entity "State_Transition" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst|State_Transition:st_trans" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART_FSM.sv Line: 35
+Info (12128): Elaborating entity "Output_Logic" for hierarchy "UART:uart_inst|UART_FSM:fsm_inst|Output_Logic:out_logic" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART_FSM.sv Line: 51
+Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:state_reg" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 65
+Info (12128): Elaborating entity "mux2_1" for hierarchy "UART:uart_inst|reg_n:state_reg|mux2_1:reg_loop[0].sel_mux" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/reg_n.sv Line: 16
+Info (12128): Elaborating entity "Flip_Flop_D" for hierarchy "UART:uart_inst|reg_n:state_reg|Flip_Flop_D:reg_loop[0].ff" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/reg_n.sv Line: 21
+Info (12128): Elaborating entity "mux2_1_n" for hierarchy "UART:uart_inst|mux2_1_n:clk_mux1" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 75
+Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:clk_count_reg" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 87
+Info (12128): Elaborating entity "mux2_1_n" for hierarchy "UART:uart_inst|mux2_1_n:bit_mux1" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 98
+Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:bit_index_reg" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 110
+Info (12128): Elaborating entity "shift_reg_8" for hierarchy "UART:uart_inst|shift_reg_8:rx_shift_reg" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 120
+Info (12128): Elaborating entity "decoder_3to8" for hierarchy "UART:uart_inst|shift_reg_8:rx_shift_reg|decoder_3to8:deco_3to8_inst" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/shift_reg_8.sv Line: 15
+Info (12128): Elaborating entity "mux2_1_n" for hierarchy "UART:uart_inst|mux2_1_n:data_mux" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 129
+Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:data_reg" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 135
+Info (12128): Elaborating entity "reg_n" for hierarchy "UART:uart_inst|reg_n:data_ready_reg" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv Line: 158
+Info (12128): Elaborating entity "alu" for hierarchy "alu:u_alu" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv Line: 50
+Info (12128): Elaborating entity "and_op" for hierarchy "alu:u_alu|and_op:u_and" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv Line: 16
+Info (12128): Elaborating entity "xor_op" for hierarchy "alu:u_alu|xor_op:u_xor" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv Line: 17
+Info (12128): Elaborating entity "sub_op" for hierarchy "alu:u_alu|sub_op:u_sub" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv Line: 18
+Info (12128): Elaborating entity "mul_op" for hierarchy "alu:u_alu|mul_op:u_mul" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv Line: 19
+Info (12128): Elaborating entity "mux4_1" for hierarchy "alu:u_alu|mux4_1:u_mux" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv Line: 28
+Info (12128): Elaborating entity "HEX_SevenSeg" for hierarchy "HEX_SevenSeg:u_display" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv Line: 56
+Info (12128): Elaborating entity "pwm_controller" for hierarchy "pwm_controller:u_pwm" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv Line: 74
+Info (12128): Elaborating entity "clk_div_50M_to_10K" for hierarchy "pwm_controller:u_pwm|clk_div_50M_to_10K:clk_div_inst" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/pwm_controller.sv Line: 16
+Warning (10036): Verilog HDL or VHDL warning at clk_div_50M_to_10K.sv(47): object "clk_out_500" assigned a value but never read File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/clk_div_50M_to_10K.sv Line: 47
+Warning (10034): Output port "clk_out_10k" at clk_div_50M_to_10K.sv(4) has no driver File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/clk_div_50M_to_10K.sv Line: 4
+Info (12128): Elaborating entity "contador4bit" for hierarchy "pwm_controller:u_pwm|contador4bit:cont_inst" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/pwm_controller.sv Line: 24
+Info (12128): Elaborating entity "comparador_menor" for hierarchy "pwm_controller:u_pwm|comparador_menor:comp_inst" File: C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/pwm_controller.sv Line: 31
+Info (144001): Generated suppressed messages file C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/output_files/Topmodule.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Sun May 18 18:34:35 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/josee/CE1107_PG1/ALU/output_files/Topmodule.map.smsg.
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/output_files/Topmodule.map.smsg.
 
 
