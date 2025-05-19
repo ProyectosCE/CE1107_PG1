@@ -1,0 +1,71 @@
+// ========================================================================
+// Testbench: alu_tb
+// Descripción:
+//     Verifica el módulo ALU estructural con operaciones:
+//     00: MUL, 01: SUB, 10: AND, 11: XOR
+//     Además valida banderas: Z, N, C, V
+// ========================================================================
+
+`timescale 1ps
+
+module alu_tb();
+    // Entradas
+    logic [3:0] A;
+    logic [1:0] B;
+    logic [1:0] sel;
+
+    // Salidas
+    logic [3:0] Y;
+    logic Z, N, C, V;
+
+    // DUT
+    alu dut(
+        .A(A),
+        .B(B),
+        .sel(sel),
+        .Y(Y),
+        .Z(Z),
+        .N(N),
+        .C(C),
+        .V(V)
+    );
+
+    // Secuencia de prueba
+    initial begin
+        // Caso 0: Valores iniciales
+        A = 4'b0000; B = 2'b00;
+        sel = 2'b00; #10;  // MUL
+        sel = 2'b01; #10;  // SUB
+        sel = 2'b10; #10;  // AND
+        sel = 2'b11; #10;  // XOR
+
+        // Caso 1: Valores pequeños
+        A = 4'b0011; B = 2'b01;
+        sel = 2'b00; #10;
+        sel = 2'b01; #10;
+        sel = 2'b10; #10;
+        sel = 2'b11; #10;
+
+        // Caso 2: Valores medios
+        A = 4'b0101; B = 2'b10;
+        sel = 2'b00; #10;
+        sel = 2'b01; #10;
+        sel = 2'b10; #10;
+        sel = 2'b11; #10;
+
+        // Caso 3: Valores grandes
+        A = 4'b1010; B = 2'b11;
+        sel = 2'b00; #10;
+        sel = 2'b01; #10;
+        sel = 2'b10; #10;
+        sel = 2'b11; #10;
+
+        // Caso 4: Valor máximo
+        A = 4'b1111; B = 2'b11;
+        sel = 2'b00; #10;
+        sel = 2'b01; #10;
+        sel = 2'b10; #10;
+        sel = 2'b11; #10;
+    end
+
+endmodule
