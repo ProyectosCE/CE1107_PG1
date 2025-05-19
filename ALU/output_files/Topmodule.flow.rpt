@@ -1,5 +1,5 @@
 Flow report for Topmodule
-Sun May 18 09:02:25 2025
+Sun May 18 18:34:35 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -38,29 +38,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Flow Summary                                                                     ;
-+---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Sun May 18 09:02:25 2025          ;
-; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
-; Revision Name                   ; Topmodule                                      ;
-; Top-level Entity Name           ; Topmodule                                      ;
-; Family                          ; Cyclone V                                      ;
-; Device                          ; 5CSXFC6D6F31C6                                 ;
-; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 52 / 41,910 ( < 1 % )                          ;
-; Total registers                 ; 34                                             ;
-; Total pins                      ; 35 / 499 ( 7 % )                               ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                          ;
-; Total DSP Blocks                ; 0 / 112 ( 0 % )                                ;
-; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                  ;
-; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                  ;
-; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                  ;
-; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                  ;
-; Total PLLs                      ; 0 / 15 ( 0 % )                                 ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
-+---------------------------------+------------------------------------------------+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++-----------------------------+------------------------------------------------+
+; Flow Status                 ; Successful - Sun May 18 18:34:35 2025          ;
+; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name               ; Topmodule                                      ;
+; Top-level Entity Name       ; Topmodule                                      ;
+; Family                      ; Cyclone V                                      ;
+; Device                      ; 5CSXFC6D6F31C6                                 ;
+; Timing Models               ; Final                                          ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
+; Total registers             ; N/A until Partition Merge                      ;
+; Total pins                  ; N/A until Partition Merge                      ;
+; Total virtual pins          ; N/A until Partition Merge                      ;
+; Total block memory bits     ; N/A until Partition Merge                      ;
+; Total PLLs                  ; N/A until Partition Merge                      ;
+; Total DLLs                  ; N/A until Partition Merge                      ;
++-----------------------------+------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/18/2025 09:00:35 ;
+; Start date & time ; 05/18/2025 18:34:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Topmodule           ;
 +-------------------+---------------------+
@@ -79,27 +74,42 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 53671021772497.174758043503748         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 4931007164039.174761486733636          ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_pwm_controller                 ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_UART                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_UART_FSM                       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; mul_op_tb                         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; alu                               ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_UART_FSM                            ; --            ; --          ; eda_simulation                    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_pwm_controller                      ; --            ; --          ; eda_simulation                    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                  ; Questa Intel FPGA (SystemVerilog)      ; <None>        ; --          ; --                                ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; tb_pwm_controller.sv                   ; --            ; --          ; tb_pwm_controller                 ;
+; EDA_TEST_BENCH_FILE                  ; pwm_controller.sv                      ; --            ; --          ; tb_pwm_controller                 ;
 ; EDA_TEST_BENCH_FILE                  ; tb_UART.sv                             ; --            ; --          ; tb_UART                           ;
 ; EDA_TEST_BENCH_FILE                  ; tb_UART_FSM.sv                         ; --            ; --          ; tb_UART_FSM                       ;
 ; EDA_TEST_BENCH_FILE                  ; mul_op_tb.sv                           ; --            ; --          ; mul_op_tb                         ;
+; EDA_TEST_BENCH_FILE                  ; tb_alu.sv                              ; --            ; --          ; alu                               ;
+; EDA_TEST_BENCH_FILE                  ; and_op.sv                              ; --            ; --          ; alu                               ;
+; EDA_TEST_BENCH_FILE                  ; mul_op.sv                              ; --            ; --          ; alu                               ;
+; EDA_TEST_BENCH_FILE                  ; sub_op.sv                              ; --            ; --          ; alu                               ;
+; EDA_TEST_BENCH_FILE                  ; xor_op.sv                              ; --            ; --          ; alu                               ;
+; EDA_TEST_BENCH_FILE                  ; mux4_1.sv                              ; --            ; --          ; alu                               ;
+; EDA_TEST_BENCH_FILE                  ; mux2_1.sv                              ; --            ; --          ; alu                               ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_pwm_controller                      ; --            ; --          ; tb_pwm_controller                 ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_UART                                ; --            ; --          ; tb_UART                           ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_UART_FSM                            ; --            ; --          ; tb_UART_FSM                       ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; mul_op_tb                              ; --            ; --          ; mul_op_tb                         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; alu_tb                                 ; --            ; --          ; alu                               ;
 ; EDA_TEST_BENCH_NAME                  ; mul_op_tb                              ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; tb_UART                                ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; tb_UART_FSM                            ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; alu                                    ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; tb_pwm_controller                      ; --            ; --          ; eda_simulation                    ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
@@ -112,41 +122,29 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4863 MB             ; 00:00:34                           ;
-; Fitter               ; 00:01:12     ; 1.0                     ; 6835 MB             ; 00:03:34                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 4869 MB             ; 00:00:09                           ;
-; Timing Analyzer      ; 00:00:07     ; 1.2                     ; 5158 MB             ; 00:00:07                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4719 MB             ; 00:00:01                           ;
-; Total                ; 00:01:44     ; --                      ; --                  ; 00:04:25                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 4778 MB             ; 00:00:19                           ;
+; Total                  ; 00:00:09     ; --                      ; --                  ; 00:00:19                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-O3JV5RJ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-O3JV5RJ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-O3JV5RJ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-O3JV5RJ  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-O3JV5RJ  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; ALEXTW           ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off ALU_HDL -c Topmodule
-quartus_fit --read_settings_files=off --write_settings_files=off ALU_HDL -c Topmodule
-quartus_asm --read_settings_files=off --write_settings_files=off ALU_HDL -c Topmodule
-quartus_sta ALU_HDL -c Topmodule
-quartus_eda --read_settings_files=off --write_settings_files=off ALU_HDL -c Topmodule
+quartus_map --read_settings_files=on --write_settings_files=off ALU_HDL -c Topmodule --analysis_and_elaboration
 
 
 

@@ -1,10 +1,14 @@
 m255
 K4
 z2
-!s12c _opt1
-Z0 !s99 nomlopt
-!s12c _opt
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
 R0
+R1
+R0
+R1
+!s12c _opt
+R1
 !s11f vlog 2023.3 2023.07, Jul 17 2023
 13
 !s112 1.1
@@ -12,688 +16,690 @@ R0
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 dC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/simulation/questa
+Z2 dC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/simulation/questa
 T_opt
-!s110 1747579134
-V;C]f9_jK9aV4m2JPba=X51
-04 11 4 work tb_UART_FSM fast 0
-=1-30d0422ffed1-6829f0fe-1cb-25b0
-R0
-Z2 !s12b OEM100
-!s124 OEM10U4 
-o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
-Z3 tCvgOpt 0
-n@_opt
-Z4 OL;O;2023.3;77
+!s110 1747614888
+VAIh31^CaJLa<_1k<kjnji0
+04 17 4 work tb_pwm_controller fast 0
+=1-047c16ee2e87-682a7ca7-2cc-7d0c
 R1
-T_opt1
-!s110 1747579337
-VzZZVR9nfG1KQcEPDb3zj?1
-04 6 4 work alu_tb fast 0
-=1-30d0422ffed1-6829f1c8-348-1810
-R0
+Z3 !s12b OEM100
+!s124 OEM10U26 
+Z4 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2023.3;77
 R2
-!s124 OEM10U7 
-o-quiet -auto_acc_if_foreign -work rtl_work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+T_opt1
+!s110 1747615636
+VWzb`Q]VAUUm:=T]2cC<JA0
+04 11 4 work tb_UART_FSM fast 0
+=1-047c16ee2e87-682a7f94-267-401c
+R1
 R3
-n@_opt1
+!s124 OEM10U4 
 R4
+R5
+n@_opt1
+R6
 valu
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu.sv
-Z5 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z6 !s110 1747579130
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1747615632
 !i10b 1
 !s100 EI8zI=IjN>4hcgUBWEM>i2
-I]A=e?6ML@G:Z7gHn@:z0i2
+Ido53E>I@l0d?JjT5>XSnd0
 S1
-R1
-Z7 w1747576654
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu.sv
+R2
+Z9 w1747607438
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv
 !i122 6
 L0 4 38
-Z8 VDg1SIo80bB@j0V0VzS_@n1
-Z9 OL;L;2023.3;77
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z10 !s108 1747579130.000000
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu.sv|
+Z12 !s108 1747615632.000000
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/alu.sv|
 !i113 0
-Z11 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z12 !s92 -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R3
-valu_tb
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu_tb.sv
+Z13 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 !s92 -sv -work work +incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R5
-!s110 1747579223
-!i10b 1
-!s100 a=SW=NLF@YQObl4mfj2;71
-ITKS@[:@leV6?fSQ5W3J^>3
-S1
-R1
-w1747578435
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu_tb.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu_tb.sv
-!i122 21
-L0 11 50
-R8
-R9
-r1
-!s85 0
-31
-!s108 1747579223.000000
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu_tb.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/alu_tb.sv|
-!i113 0
-o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R3
 vand_op
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/and_op.sv
-R5
-Z13 !s110 1747579129
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/and_op.sv
+R7
+Z15 !s110 1747615631
 !i10b 1
 !s100 hnTP]D52i_<V67:`K^X0h3
-I^AeB^mdI>:lmiVj5]7?gj0
+IaIYg=mfOmkVE>>lzB=egJ0
 S1
-R1
-R7
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/and_op.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/and_op.sv
-!i122 1
-Z14 L0 5 10
-R8
+R2
 R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/and_op.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/and_op.sv
+!i122 1
+Z16 L0 5 10
+R10
+R11
 r1
 !s85 0
 31
-Z15 !s108 1747579129.000000
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/and_op.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/and_op.sv|
+Z17 !s108 1747615631.000000
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/and_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/and_op.sv|
 !i113 0
-R11
-R12
-R3
-vclk_div_50M_to_10K
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/clk_div_50M_to_10K.sv
+R13
+R14
 R5
-Z16 !s110 1747579131
+vclk_div_50M_to_10K
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/clk_div_50M_to_10K.sv
+R7
+Z18 !s110 1747615633
 !i10b 1
 !s100 ;gk7V`m?6czPQ0f>Vb;Gb2
-I[lRQghN`o3NP;iGN`E`3T1
+IKIBL43?mSSfz;4l>I;mfW2
 S1
-R1
-R7
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/clk_div_50M_to_10K.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/clk_div_50M_to_10K.sv
+R2
+R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/clk_div_50M_to_10K.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/clk_div_50M_to_10K.sv
 !i122 12
 L0 1 49
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-Z17 !s108 1747579131.000000
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/clk_div_50M_to_10K.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/clk_div_50M_to_10K.sv|
+Z19 !s108 1747615633.000000
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/clk_div_50M_to_10K.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/clk_div_50M_to_10K.sv|
 !i113 0
-R11
-R12
-R3
+R13
+R14
+R5
 nclk_div_50@m_to_10@k
 vcomparador_menor
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/comparador_menor.sv
-R5
-R16
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/comparador_menor.sv
+R7
+R18
 !i10b 1
 !s100 ]hRJ=D>>HPQIWhRag19R82
-ImA]M;Ul1aBTVCmAP_OX3U1
+INRJbg[a5ZdK?DWK9aR]NY3
 S1
-R1
-R7
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/comparador_menor.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/comparador_menor.sv
+R2
+R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/comparador_menor.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/comparador_menor.sv
 !i122 11
 L0 5 20
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/comparador_menor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/comparador_menor.sv|
+R19
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/comparador_menor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/comparador_menor.sv|
 !i113 0
-R11
-R12
-R3
-vcontador4bit
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/contador4bit.sv
+R13
+R14
 R5
-R16
+vcontador4bit
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/contador4bit.sv
+R7
+R18
 !i10b 1
 !s100 nPoJbhXOE:985[PZWAaF51
-I5gE_;4ORAnNPJV>RFfb@K1
+II>V76PO1Wf2KE<>US8TWW1
 S1
-R1
-R7
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/contador4bit.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/contador4bit.sv
+R2
+R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/contador4bit.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/contador4bit.sv
 !i122 10
 L0 1 35
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/contador4bit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/contador4bit.sv|
+R19
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/contador4bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/contador4bit.sv|
 !i113 0
-R11
-R12
-R3
-vdecoder_3to8
-Z18 2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/shift_reg_8.sv
+R13
+R14
 R5
-Z19 !s110 1747579132
+vdecoder_3to8
+Z20 2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/shift_reg_8.sv
+R7
+R18
 !i10b 1
 !s100 ;CoC6_@R<K0h`SQWDXGh62
-I8ZkodKDgG]CFUQcG8`Cn@3
+I7D];Rk5dM5cI9IFPV:I4W2
 S1
-R1
-Z20 w1747576657
-Z21 8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/shift_reg_8.sv
-Z22 FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/shift_reg_8.sv
+R2
+Z21 w1747607439
+Z22 8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/shift_reg_8.sv
+Z23 FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/shift_reg_8.sv
 !i122 16
 L0 42 15
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-Z23 !s108 1747579132.000000
-Z24 !s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/shift_reg_8.sv|
-Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/shift_reg_8.sv|
-!i113 0
-R11
-R12
-R3
-vEnco_Four_Two
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv
-R5
 R19
+Z24 !s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/shift_reg_8.sv|
+Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/shift_reg_8.sv|
+!i113 0
+R13
+R14
+R5
+vEnco_Four_Two
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Enco_Four_Two.sv
+R7
+R18
 !i10b 1
 !s100 S=ThVVNfo@SHSg`L90Ek91
-I:bLK:3Q_aH3_<AcX=gF`V1
+I?C9j@dT8[NKdCmdX>V6bS1
 S1
-R1
-R7
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv
+R2
+R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Enco_Four_Two.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Enco_Four_Two.sv
 !i122 17
 L0 1 10
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R23
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Enco_Four_Two.sv|
+R19
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Enco_Four_Two.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Enco_Four_Two.sv|
 !i113 0
-R11
-R12
-R3
+R13
+R14
+R5
 n@enco_@four_@two
 vFlip_Flop_D
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv
-R5
-R19
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Flip_Flop_D.sv
+R7
+Z26 !s110 1747615634
 !i10b 1
 !s100 @JcR7A`fdQV9BU5XBLEI;1
-IZG_mgeR8Ncga2`AK:]k_21
+IQ6>kVD:UKCLMIBcC9nnOo0
 S1
-R1
-R7
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv
-!i122 18
-Z26 L0 1 8
-R8
+R2
 R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Flip_Flop_D.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Flip_Flop_D.sv
+!i122 18
+Z27 L0 1 8
+R10
+R11
 r1
 !s85 0
 31
-R23
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Flip_Flop_D.sv|
+R19
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Flip_Flop_D.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Flip_Flop_D.sv|
 !i113 0
-R11
-R12
-R3
+R13
+R14
+R5
 n@flip_@flop_@d
 vHEX_SevenSeg
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv
-R5
-R6
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/HEX_SevenSeg.sv
+R7
+R8
 !i10b 1
 !s100 >IULHZTHo[>4GZiSIeoRS0
-I2XLGB_P1GdoMlXA0I]UX03
+IOmD:V:L<c9n4L_:Yg3igY0
 S1
-R1
-R7
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv
+R2
+R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/HEX_SevenSeg.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/HEX_SevenSeg.sv
 !i122 7
 L0 2 32
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R10
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/HEX_SevenSeg.sv|
-!i113 0
-R11
 R12
-R3
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/HEX_SevenSeg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/HEX_SevenSeg.sv|
+!i113 0
+R13
+R14
+R5
 n@h@e@x_@seven@seg
 vmul_op
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mul_op.sv
-R5
-R6
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mul_op.sv
+R7
+R8
 !i10b 1
 !s100 [cc<0o4HB?jhPWjJPZFzK0
-IN6Dl2C162C4CRzM>X6RW12
+IfoF2T[iU_I`6b4W5CO1X10
 S1
-R1
-Z27 w1747576656
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mul_op.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mul_op.sv
+R2
+R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mul_op.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mul_op.sv
 !i122 4
 L0 1 42
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R10
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mul_op.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mul_op.sv|
-!i113 0
-R11
 R12
-R3
-vmux2_1
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux2_1.sv
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mul_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mul_op.sv|
+!i113 0
+R13
+R14
 R5
-R16
+vmux2_1
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1.sv
+R7
+R18
 !i10b 1
 !s100 Y9RSN]@a`=laz4m3McfU`3
-IoP5fcaXdE:d<VBh71D0QD3
+IeAm85JNiL7Jk9Wh7kW4PF2
 S1
-R1
-R27
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux2_1.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux2_1.sv
-!i122 14
-R26
-R8
+R2
 R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1.sv
+!i122 14
+R27
+R10
+R11
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux2_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux2_1.sv|
-!i113 0
-R11
-R12
-R3
-vmux2_1_n
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux2_1_n.sv
-R5
 R19
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1.sv|
+!i113 0
+R13
+R14
+R5
+vmux2_1_n
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1_n.sv
+R7
+R26
 !i10b 1
 !s100 _edEG6K;IYmcOO]?H5n7@1
-I>?bl`a_f?L1[V6UCigmP;0
+IcSZKfC1Nh]jY_l@_?L66_1
 S1
-R1
-R27
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux2_1_n.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux2_1_n.sv
+R2
+R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1_n.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1_n.sv
 !i122 19
 L0 1 13
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R23
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux2_1_n.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux2_1_n.sv|
+Z28 !s108 1747615634.000000
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux2_1_n.sv|
 !i113 0
-R11
-R12
-R3
-vmux4_1
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux4_1.sv
+R13
+R14
 R5
-R6
+vmux4_1
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux4_1.sv
+R7
+R8
 !i10b 1
 !s100 ZIN5G:L6gMEYT]cT`GYo30
-IY]TfkIWZeZabV=oaTWH?b0
+IY_hVz`QdEeBO7j=FUIbO02
 S1
-R1
-R27
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux4_1.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux4_1.sv
+R2
+R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux4_1.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux4_1.sv
 !i122 5
 L0 1 20
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R10
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux4_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/mux4_1.sv|
-!i113 0
-R11
 R12
-R3
-vOutput_Logic
-Z28 2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/UART_FSM.sv
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux4_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/mux4_1.sv|
+!i113 0
+R13
+R14
 R5
-R16
+vOutput_Logic
+Z29 2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART_FSM.sv
+R7
+R18
 !i10b 1
 !s100 gKPYdhMH9<7f?<?L>X8S00
-I>zi_[5>SGnoo9DA?L?hk93
+IF?9XMS]3SQg_ZOWWd1I0f3
 S1
-R1
-R7
-Z29 8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/UART_FSM.sv
-Z30 FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/UART_FSM.sv
+R2
+R9
+Z30 8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART_FSM.sv
+Z31 FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART_FSM.sv
 !i122 13
 L0 92 48
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R17
-Z31 !s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/UART_FSM.sv|
-Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/UART_FSM.sv|
+R19
+Z32 !s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART_FSM.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART_FSM.sv|
 !i113 0
-R11
-R12
-R3
+R13
+R14
+R5
 n@output_@logic
 vpwm_controller
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/pwm_controller.sv
-R5
-R16
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/pwm_controller.sv
+R7
+R18
 !i10b 1
 !s100 ziimQ9<DdlN0b3OV7Hd>A2
-Ia9[jE4Pa[@VfcF^lWJ^X`3
+IDIR_Q`fiJnC>EVm0MI?682
 S1
-R1
-R20
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/pwm_controller.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/pwm_controller.sv
+R2
+R21
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/pwm_controller.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/pwm_controller.sv
 !i122 9
 L0 1 36
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R10
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/pwm_controller.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/pwm_controller.sv|
-!i113 0
-R11
 R12
-R3
-vreg_n
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/reg_n.sv
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/pwm_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/pwm_controller.sv|
+!i113 0
+R13
+R14
 R5
-R19
+vreg_n
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/reg_n.sv
+R7
+R18
 !i10b 1
 !s100 znj2:3F2]ZFUFYE?0DeWS3
-I^E;A]Yl@E7fPS2D5A3;VI2
+I:26_a1<R^?;7V0o^>cJKQ1
 S1
-R1
-R20
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/reg_n.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/reg_n.sv
+R2
+R21
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/reg_n.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/reg_n.sv
 !i122 15
 L0 1 24
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R23
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/reg_n.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/reg_n.sv|
-!i113 0
-R11
-R12
-R3
-vshift_reg_8
-R18
-R5
 R19
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/reg_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/reg_n.sv|
+!i113 0
+R13
+R14
+R5
+vshift_reg_8
+R20
+R7
+R18
 !i10b 1
 !s100 JT=f3a:[6TzUQfe]`RRO41
-Io^M0@7V;BEc48oQFeIdHX3
+IPjXOmgaIV]fN15`AB7PT@1
 S1
-R1
-R20
+R2
 R21
 R22
+R23
 !i122 16
 L0 1 40
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R23
+R19
 R24
 R25
 !i113 0
-R11
-R12
-R3
-vState_Transition
-R28
+R13
+R14
 R5
-R16
+vState_Transition
+R29
+R7
+R18
 !i10b 1
 !s100 bd7^`8iCQPE>QDPzIZL`Z0
-I4Ce3X2h<`XaQhUe^NH@hk1
+I4TgKAiD62a;O;HzT]T1:b0
 S1
-R1
-R7
-R29
+R2
+R9
 R30
+R31
 !i122 13
 L0 57 30
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R17
-R31
+R19
 R32
+R33
 !i113 0
-R11
-R12
-R3
+R13
+R14
+R5
 n@state_@transition
 vsub_op
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/sub_op.sv
-R5
-R6
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/sub_op.sv
+R7
+R8
 !i10b 1
 !s100 D;@PHLRl?Hf71dmaG>omL3
-I8V;B62H<lbfE]816oCXem2
+IgmU8S5E<NmkTMRd1HJCEY2
 S1
-R1
-R20
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/sub_op.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/sub_op.sv
+R2
+R21
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/sub_op.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/sub_op.sv
 !i122 3
 L0 1 29
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/sub_op.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/sub_op.sv|
-!i113 0
-R11
 R12
-R3
-vtb_UART_FSM
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/sub_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/sub_op.sv|
+!i113 0
+R13
+R14
 R5
-!s110 1747579133
+vtb_UART
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART.sv
+R7
+R26
+!i10b 1
+!s100 Bf0lzCn[;=GRgGOfB=i<B0
+IQK:;[M<bXS6DZH]VoUYF`0
+S1
+R2
+R21
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART.sv
+!i122 21
+L0 3 84
+R10
+R11
+r1
+!s85 0
+31
+R28
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART.sv|
+!i113 0
+R13
+R14
+R5
+ntb_@u@a@r@t
+vtb_UART_FSM
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART_FSM.sv
+R7
+R26
 !i10b 1
 !s100 Fj<j78MW>h0Z?PH6Nl9ih3
-IR3]:<K<Web<9d9lGMMGJo3
+INm9b<JjW60DQnYYMF;Qgn2
 S1
-R1
-R20
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv
+R2
+R21
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART_FSM.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART_FSM.sv
 !i122 20
 L0 3 145
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R23
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/tb_UART_FSM.sv|
+R28
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART_FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/tb_UART_FSM.sv|
 !i113 0
-R11
-R12
-R3
+R13
+R14
+R5
 ntb_@u@a@r@t_@f@s@m
 vTopmodule
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Topmodule.sv
-R5
-R13
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv
+R7
+R15
 !i10b 1
 !s100 _U_9oXMBN]hYNFCA<3Il@1
-IzIIlZ^^d>8<0iGb5_5K2S2
+I_6L5MQ4DGUdmW8G<K>TU00
 S1
-R1
-R7
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Topmodule.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Topmodule.sv
+R2
+R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv
 !i122 0
 L0 4 74
-R8
-R9
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Topmodule.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/Topmodule.sv|
-!i113 0
-R11
-R12
-R3
-n@topmodule
-vUART
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/UART.sv
-R5
-R6
-!i10b 1
-!s100 THbUXAYo:Wg??LiWDfSi;0
-I5WgBa3oUJHI]dTdWQ2ZNQ2
-S1
-R1
-R7
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/UART.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/UART.sv
-!i122 8
-L0 1 168
-R8
-R9
-r1
-!s85 0
-31
 R10
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/UART.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/UART.sv|
-!i113 0
 R11
-R12
-R3
-n@u@a@r@t
-vUART_FSM
-R28
-R5
-R16
-!i10b 1
-!s100 F2O<^^429BiYU]bciNkG90
-I:[SHXnZZ1j[iVOn?L]e9[3
-S1
-R1
-R7
-R29
-R30
-!i122 13
-L0 1 53
-R8
-R9
 r1
 !s85 0
 31
 R17
-R31
-R32
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/Topmodule.sv|
 !i113 0
-R11
-R12
-R3
-n@u@a@r@t_@f@s@m
-vxor_op
-2C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/xor_op.sv
-R5
 R13
-!i10b 1
-!s100 [@SSgf_V`_S0VVL=7IGCE1
-I]S]AiYXWDCc8PV7f1ETG73
-S1
-R1
-R20
-8C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/xor_op.sv
-FC:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/xor_op.sv
-!i122 2
 R14
+R5
+n@topmodule
+vUART
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv
+R7
 R8
+!i10b 1
+!s100 THbUXAYo:Wg??LiWDfSi;0
+IARb_;:;?1e67U`g=GLV`:3
+S1
+R2
 R9
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv
+!i122 8
+L0 1 168
+R10
+R11
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/xor_op.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU|C:/Users/joseb/Documents/GitHub/CE1107_PG1/ALU/xor_op.sv|
-!i113 0
-R11
 R12
-R3
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/UART.sv|
+!i113 0
+R13
+R14
+R5
+n@u@a@r@t
+vUART_FSM
+R29
+R7
+R18
+!i10b 1
+!s100 F2O<^^429BiYU]bciNkG90
+IUIeMF9EAzNESJ5iIN]jLN0
+S1
+R2
+R9
+R30
+R31
+!i122 13
+L0 1 53
+R10
+R11
+r1
+!s85 0
+31
+R19
+R32
+R33
+!i113 0
+R13
+R14
+R5
+n@u@a@r@t_@f@s@m
+vxor_op
+2C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/xor_op.sv
+R7
+R15
+!i10b 1
+!s100 [@SSgf_V`_S0VVL=7IGCE1
+IF8aJTn^OId?D6]d@O2WJA2
+S1
+R2
+R21
+8C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/xor_op.sv
+FC:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/xor_op.sv
+!i122 2
+R16
+R10
+R11
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/xor_op.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU|C:/Users/amv22/Dev/repos/FAC/CE1107_PG1/ALU/xor_op.sv|
+!i113 0
+R13
+R14
+R5
